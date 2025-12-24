@@ -76,6 +76,7 @@ No manual version bumping needed!
 
 - [Architecture Documentation](docs/ARCHITECTURE.md) - Complete architecture and schema documentation
 - [Contributing Guide](docs/CONTRIBUTING.md) - How to contribute and commit message guidelines
+- [Release Documentation](docs/RELEASE.md) - Release process and semantic versioning
 
 ## License
 
