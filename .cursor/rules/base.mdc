@@ -2,4 +2,13 @@
 alwaysApply: true
 ---
 
-- You MUST follow the instructions on all documents on the `docs/` directory on the root of the project
+- All the rules mentioned in this document MUST ALWAYS be followed COMPLETELY.
+- On ALL chats, plans, debugs and agents mode action you MUST follow the instructions on all documents on the `docs/` directory on the root of the project.
+- You should NEVER create new project documentation unless explicitly and clearly requested by the user.
+- You SHOULD ALWAYS follow all best practices related to the language and format of the file you are interacting with.
+- When writing code and files, you SHOULD ALWAYS AVOID writing comments and using emojis. Comments MAY ONLY BE used if absolutely necessary for the user to understand something that is not explicitly stated in the code.
+- The language in which the code, files, directories, comments, docstrings, and the like are written MUST ALWAYS be English.
+- Responses in chat conversations MUST always follow the user's preference.
+- The project's `README.md` file MUST ALWAYS reflect the project description directly, indicating its "purpose," direct details, and when dealing with things like "getting started," "architecture," and other specific documents, it should link to the files in `docs/`.
+- You SHOULD ALWAYS follow the SOLID principles when writing code.
+- You MUST ALWAYS use DRY principles when writing documentation, especially referencing other documentation where necessary with links instead of repeating it.

@@ -1,0 +1,1178 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OpenEV Data Vehicle Record",
+  "description": "Official schema for OpenEV Data electric vehicle data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "make",
+    "model",
+    "year",
+    "trim",
+    "vehicle_type",
+    "powertrain",
+    "battery",
+    "charge_ports",
+    "charging",
+    "range",
+    "sources"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Path or URL to this schema file."
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "unique_code": {
+      "type": "string",
+      "description": "Internal unique code or database key (optional in input)."
+    },
+    "make": {
+      "$ref": "#/definitions/slug_name"
+    },
+    "model": {
+      "$ref": "#/definitions/slug_name"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1900,
+      "maximum": 2100,
+      "description": "Vehicle model year."
+    },
+    "trim": {
+      "$ref": "#/definitions/slug_name"
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slug",
+        "name"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string",
+          "description": "Ex: range_upgrade, performance_package"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "markets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z]{2}$",
+        "description": "ISO 3166-1 alpha-2 code (ex: BR, DE, US)."
+      }
+    },
+    "availability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "production",
+            "discontinued",
+            "concept",
+            "announced",
+            "prototype"
+          ]
+        },
+        "start_year": {
+          "type": "integer"
+        },
+        "end_year": {
+          "type": "integer"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "vehicle_type": {
+      "type": "string",
+      "enum": [
+        "passenger_car",
+        "suv",
+        "pickup",
+        "van",
+        "bus",
+        "motorcycle",
+        "scooter",
+        "commercial",
+        "truck",
+        "other"
+      ]
+    },
+    "body": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "style": {
+          "type": "string",
+          "description": "Ex: sedan, hatchback, crossover"
+        },
+        "doors": {
+          "type": "integer"
+        },
+        "seats": {
+          "type": "integer"
+        },
+        "rows": {
+          "type": "integer"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "drag_coefficient_cd": {
+          "type": "number"
+        }
+      }
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "length_mm": {
+          "type": "number"
+        },
+        "width_mm": {
+          "type": "number"
+        },
+        "width_with_mirrors_mm": {
+          "type": "number"
+        },
+        "height_mm": {
+          "type": "number"
+        },
+        "wheelbase_mm": {
+          "type": "number"
+        },
+        "ground_clearance_mm": {
+          "type": "number"
+        },
+        "turning_circle_m": {
+          "type": "number"
+        }
+      }
+    },
+    "weights": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "curb_weight_kg": {
+          "type": "number"
+        },
+        "gross_vehicle_weight_kg": {
+          "type": "number"
+        },
+        "max_payload_kg": {
+          "type": "number"
+        },
+        "roof_load_kg": {
+          "type": "number"
+        }
+      }
+    },
+    "capacity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cargo_l": {
+          "type": "number"
+        },
+        "cargo_max_l": {
+          "type": "number"
+        },
+        "frunk_l": {
+          "type": "number"
+        },
+        "towing_braked_kg": {
+          "type": "number"
+        },
+        "towing_unbraked_kg": {
+          "type": "number"
+        },
+        "towing_vertical_load_kg": {
+          "type": "number"
+        }
+      }
+    },
+    "powertrain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "drivetrain"
+      ],
+      "properties": {
+        "drivetrain": {
+          "type": "string",
+          "enum": [
+            "fwd",
+            "rwd",
+            "awd",
+            "4wd"
+          ]
+        },
+        "system_power_kw": {
+          "type": "number"
+        },
+        "system_torque_nm": {
+          "type": "number"
+        },
+        "motors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "position"
+            ],
+            "properties": {
+              "position": {
+                "type": "string",
+                "enum": [
+                  "front",
+                  "rear",
+                  "other"
+                ]
+              },
+              "type": {
+                "type": "string",
+                "description": "Ex: pmsm, asm, brushes"
+              },
+              "power_kw": {
+                "type": "number"
+              },
+              "torque_nm": {
+                "type": "number"
+              },
+              "cooling": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "transmission": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "gears": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "battery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "manufacturer": {
+          "type": "string"
+        },
+        "chemistry": {
+          "type": "string",
+          "description": "Ex: li-ion, lfp, nmc, nca, solid_state"
+        },
+        "cathode_material": {
+          "type": "string"
+        },
+        "pack_capacity_kwh_gross": {
+          "type": "number"
+        },
+        "pack_capacity_kwh_net": {
+          "type": "number"
+        },
+        "pack_voltage_nominal_v": {
+          "type": "number"
+        },
+        "pack_voltage_max_v": {
+          "type": "number"
+        },
+        "pack_voltage_min_v": {
+          "type": "number"
+        },
+        "cell_count": {
+          "type": "integer"
+        },
+        "module_count": {
+          "type": "integer"
+        },
+        "thermal_management": {
+          "type": "string",
+          "enum": [
+            "liquid",
+            "air",
+            "passive",
+            "refrigerant",
+            "none"
+          ]
+        },
+        "heat_pump": {
+          "type": "boolean"
+        },
+        "preconditioning": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "supported"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "modes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "warranty": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "years": {
+              "type": "integer"
+            },
+            "distance_km": {
+              "type": "integer"
+            },
+            "capacity_retention_percent": {
+              "type": "number"
+            }
+          }
+        },
+        "usable_soc_window_percent": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "min_percent": {
+              "type": "number"
+            },
+            "max_percent": {
+              "type": "number"
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "charge_ports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "connector"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "ac_only",
+              "dc_only",
+              "combo"
+            ]
+          },
+          "connector": {
+            "type": "string",
+            "enum": [
+              "type_1",
+              "type_2",
+              "ccs1",
+              "ccs2",
+              "nacs",
+              "chademo",
+              "gb_t_ac",
+              "gb_t_dc",
+              "tesla_type_2",
+              "other"
+            ]
+          },
+          "location": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "side": {
+                "type": "string",
+                "enum": [
+                  "left",
+                  "right",
+                  "front",
+                  "rear",
+                  "center"
+                ]
+              },
+              "position": {
+                "type": "string",
+                "enum": [
+                  "front",
+                  "rear",
+                  "mid"
+                ]
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          },
+          "covers": {
+            "type": "string"
+          },
+          "light": {
+            "type": "boolean"
+          },
+          "motorized": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "charging": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ac": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "max_power_kw"
+          ],
+          "properties": {
+            "max_power_kw": {
+              "type": "number"
+            },
+            "supported_power_steps_kw": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "phases": {
+              "type": "integer",
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "voltage_range_v": {
+              "$ref": "#/definitions/min_max_v"
+            },
+            "frequency_hz": {
+              "type": "number"
+            },
+            "max_current_a": {
+              "type": "number"
+            },
+            "onboard_charger_count": {
+              "type": "integer"
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "dc": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "max_power_kw"
+          ],
+          "properties": {
+            "max_power_kw": {
+              "type": "number"
+            },
+            "voltage_range_v": {
+              "$ref": "#/definitions/min_max_v"
+            },
+            "max_current_a": {
+              "type": "number"
+            },
+            "architecture_voltage_class": {
+              "type": "string",
+              "enum": [
+                "400v",
+                "800v",
+                "other"
+              ]
+            },
+            "power_limits_by_voltage": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "voltage_class",
+                  "max_power_kw"
+                ],
+                "properties": {
+                  "voltage_class": {
+                    "type": "string"
+                  },
+                  "max_power_kw": {
+                    "type": "number"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "protocols": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "ac": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "dc": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "description": "Ex: din_70121, iso_15118_2, chademo"
+              }
+            },
+            "plug_and_charge": {
+              "type": "boolean"
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "dc_charge_curve": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "curve_type",
+            "points"
+          ],
+          "properties": {
+            "curve_type": {
+              "type": "string",
+              "enum": [
+                "power_by_soc",
+                "current_by_soc"
+              ]
+            },
+            "points": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "soc_percent": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  "power_kw": {
+                    "type": "number"
+                  },
+                  "current_a": {
+                    "type": "number"
+                  },
+                  "voltage_v": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "soc_percent"
+                ]
+              }
+            },
+            "conditions": {
+              "$ref": "#/definitions/conditions"
+            },
+            "source_url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "charging_time": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "ac": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "power_kw",
+                  "from_soc_percent",
+                  "to_soc_percent",
+                  "time_min"
+                ],
+                "properties": {
+                  "power_kw": {
+                    "type": "number"
+                  },
+                  "from_soc_percent": {
+                    "type": "number"
+                  },
+                  "to_soc_percent": {
+                    "type": "number"
+                  },
+                  "time_min": {
+                    "type": "number"
+                  },
+                  "conditions": {
+                    "$ref": "#/definitions/conditions"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "dc": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "charger_power_kw",
+                  "from_soc_percent",
+                  "to_soc_percent",
+                  "time_min"
+                ],
+                "properties": {
+                  "charger_power_kw": {
+                    "type": "number"
+                  },
+                  "from_soc_percent": {
+                    "type": "number"
+                  },
+                  "to_soc_percent": {
+                    "type": "number"
+                  },
+                  "time_min": {
+                    "type": "number"
+                  },
+                  "conditions": {
+                    "$ref": "#/definitions/conditions"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "v2x": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "v2l": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "supported"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "max_power_kw": {
+              "type": "number"
+            },
+            "outlets": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "description": "Ex: socket_type_f, socket_type_g, usb_c"
+                  },
+                  "count": {
+                    "type": "integer"
+                  },
+                  "location": {
+                    "type": "string"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "v2h": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "supported"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "max_power_kw": {
+              "type": "number"
+            },
+            "connector": {
+              "type": "string"
+            },
+            "protocols": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "v2g": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "supported"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "max_power_kw": {
+              "type": "number"
+            },
+            "connector": {
+              "type": "string"
+            },
+            "protocols": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rated"
+      ],
+      "properties": {
+        "rated": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "cycle",
+              "range_km"
+            ],
+            "properties": {
+              "cycle": {
+                "type": "string",
+                "enum": [
+                  "wltp",
+                  "epa",
+                  "nedc",
+                  "cltc",
+                  "jc08",
+                  "other"
+                ]
+              },
+              "range_km": {
+                "type": "number"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "real_world": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "profile",
+              "range_km"
+            ],
+            "properties": {
+              "profile": {
+                "type": "string",
+                "enum": [
+                  "highway",
+                  "city",
+                  "mixed",
+                  "cold_weather",
+                  "winter",
+                  "summer"
+                ]
+              },
+              "range_km": {
+                "type": "number"
+              },
+              "conditions": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "weather": {
+                    "type": "string"
+                  },
+                  "speed_kmh": {
+                    "type": "number"
+                  }
+                }
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "efficiency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "energy_consumption_wh_per_km": {
+          "type": "number"
+        },
+        "mpge": {
+          "type": "number"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "performance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "acceleration_0_100_kmh_s": {
+          "type": "number"
+        },
+        "acceleration_0_60_mph_s": {
+          "type": "number"
+        },
+        "top_speed_kmh": {
+          "type": "number"
+        },
+        "quarter_mile_s": {
+          "type": "number"
+        }
+      }
+    },
+    "wheels_tires": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "standard_wheel_size_in": {
+          "type": "number"
+        },
+        "optional_wheel_sizes_in": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "tire_sizes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "recommended_pressure_kpa": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "front_kpa": {
+              "type": "number"
+            },
+            "rear_kpa": {
+              "type": "number"
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "msrp": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "currency",
+              "amount"
+            ],
+            "properties": {
+              "currency": {
+                "type": "string",
+                "minLength": 3,
+                "maxLength": 3
+              },
+              "amount": {
+                "type": "number"
+              },
+              "country": {
+                "type": "string"
+              },
+              "year": {
+                "type": "integer"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "software": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "os": {
+          "type": "string"
+        },
+        "ota_supported": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "manufacturer_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "press_kit_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "spec_sheet_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "configurator_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "images": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "exterior_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "interior_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "charging_curve_plot_url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "title",
+          "url",
+          "accessed_at"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "oem",
+              "regulatory",
+              "press",
+              "community",
+              "testing_org"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "accessed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "license": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "contributors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "data_quality": {
+          "type": "string"
+        },
+        "internal_notes": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "slug_name": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "slug",
+        "name"
+      ]
+    },
+    "min_max_v": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min_v": {
+          "type": "number"
+        },
+        "max_v": {
+          "type": "number"
+        }
+      }
+    },
+    "conditions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "battery_temp_c": {
+          "type": "number"
+        },
+        "ambient_temp_c": {
+          "type": "number"
+        },
+        "preconditioning": {
+          "type": "boolean"
+        },
+        "charger_power_kw": {
+          "type": "number"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

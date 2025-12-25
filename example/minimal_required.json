@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "generic_motors",
+    "name": "Generic Motors"
+  },
+  "model": {
+    "slug": "ev_example",
+    "name": "EV Example"
+  },
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "vehicle_type": "passenger_car",
+  "powertrain": {
+    "drivetrain": "fwd"
+  },
+  "battery": {
+    "pack_capacity_kwh_net": 60.0
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2"
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 400
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Official Specification Sheet",
+      "url": "https://example.com/ev-example-specs",
+      "accessed_at": "2024-12-25T00:00:00Z"
+    }
+  ]
+}

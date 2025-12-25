@@ -1,12 +1,10 @@
-# ARCHITECTURE.md — OpenEV Data Dataset
+# ARCHITECTURE — OpenEV Data Dataset
 
 ## 1. Repository Architecture
 
 ### 1.1. Architectural Style: Layered Canonical Dataset (LCD)
 
-This repository follows a **Layered Canonical Dataset (LCD)** architecture: a directory-driven, inheritance-based
-data model in which **vehicle specifications are authored as layered JSON fragments** and compiled into
-**canonical, fully-expanded vehicle records**.
+This repository follows a **Layered Canonical Dataset (LCD)** architecture: a directory-driven, inheritance-based data model in which **vehicle specifications are authored as layered JSON fragments** and compiled into **canonical, fully-expanded vehicle records**.
 
 **Why LCD**
 - **Eliminates repetition**: shared attributes live in `base.json` and are inherited by year and variant files.
@@ -29,7 +27,7 @@ src/
         <vehicle_slug>_<variant_slug>.json
         <vehicle_slug>_<variant_slug>.json
         ...
-````
+```
 
 **Example**
 
@@ -67,7 +65,7 @@ To guarantee predictable compilation:
 * **Objects**: deep-merged by key.
 * **Scalars (string/number/bool)**: overridden by the higher-precedence layer.
 * **Arrays**: replaced entirely by the higher-precedence layer (no implicit concatenation).
-* **Nulls**: not allowed as a “delete” mechanism. If a value must be removed, the schema must represent that state explicitly.
+* **Nulls**: not allowed as a "delete" mechanism. If a value must be removed, the schema must represent that state explicitly.
 * **Unknown keys**: forbidden (schema validation fails).
 
 ### 1.5. Naming and Slugs
@@ -83,42 +81,26 @@ A variant file name must match its internal `variant.slug`.
 
 ---
 
-## 2. Canonical JSON Contract (Full Vehicle Record)
+## 2. Canonical Vehicle Record Contract
 
-This section defines the **fully-expanded** JSON format produced by compilation and used by downstream consumers.
-Source files (`base.json`, year files, variant files) may be **partial**, but the canonical output must satisfy
-the contract below.
+This section defines the contract for **fully-expanded** JSON vehicle records produced by compilation.
+
+For complete documentation of all fields, data types, and validation rules, see **[SCHEMA.md](./SCHEMA.md)**.
 
 ### 2.1. Global Rules
 
-**1) Key style**
-
+**Key style**
 * JSON keys are `snake_case`.
 * All semantic identifiers (make/model/trim/variant) use slugs in addition to human-readable names.
 
-**2) Units (mandatory)**
-All measures must be stored in **SI** or explicitly specified units below:
+**Units**
+All measures must be stored in **SI** or explicitly specified units. See [SCHEMA.md](./SCHEMA.md) for the complete units convention.
 
-* Distances: `km`
-* Energy: `kwh`
-* Power: `kw`
-* Torque: `nm`
-* Speed: `kmh`
-* Mass: `kg`
-* Dimensions: `mm`
-* Consumption: `wh_per_km`
-* Temperature: `c` (Celsius)
-* Pressure (tires): `kpa` (or specify unit explicitly if not `kpa`)
-* Time: seconds (`s`) for performance metrics; minutes (`min`) for charge-time tables
-* Dates: ISO-8601 (`YYYY-MM-DD`) for dates; ISO-8601 datetime for timestamps
-
-**3) Numbers**
-
+**Numbers**
 * Store numeric values as JSON numbers (not strings).
 * Use `.` as decimal separator.
 
-**4) Sources**
-
+**Sources**
 * Every canonical record must include at least one **verifiable** source reference in `sources`.
 * If a variant changes a spec, the variant must provide a source covering that change.
 * If values depend on conditions (temperature, wheel size, market), sources must reflect those conditions.
@@ -127,8 +109,8 @@ All measures must be stored in **SI** or explicitly specified units below:
 
 Each canonical vehicle record must have a stable identifier:
 
-* `id`: a globally unique, stable string.
-* Recommended format (normative for canonical output):
+* `unique_code`: an optional internal unique code or database key.
+* Recommended format for external usage (normative for canonical output):
 
   * Base vehicle: `oed:<make_slug>:<model_slug>:<year>:<trim_slug>`
   * Variant vehicle: `oed:<make_slug>:<model_slug>:<year>:<trim_slug>:<variant_slug>`
@@ -138,377 +120,24 @@ Where:
 * `trim_slug` is a stable slug for the trim/grade.
 * `variant_slug` is a stable slug for the variant.
 
-### 2.3. Canonical Schema (All Fields)
-
-Below is the complete set of fields supported by the dataset.
-
-> Notes:
->
-> * “Required” means required in the canonical output.
-> * Many optional fields exist because some manufacturers do not publish them consistently worldwide.
-> * Charging-related fields are intentionally extensive to support global charging ecosystems.
-
-#### 2.3.1. Core Identity
-
-* `schema_version` (string, **required**) — Schema version for validation (e.g., `"1.0.0"`).
-* `id` (string, **required**) — Global unique ID (see Identifier Policy).
-* `make` (object, **required**)
-
-  * `make.slug` (string, **required**) — e.g., `"bmw"`.
-  * `make.name` (string, **required**) — e.g., `"BMW"`.
-* `model` (object, **required**)
-
-  * `model.slug` (string, **required**) — e.g., `"ix1"`.
-  * `model.name` (string, **required**) — e.g., `"iX1"`.
-* `year` (integer, **required**) — Model year for this specification set (e.g., `2024`).
-* `trim` (object, **required**)
-
-  * `trim.slug` (string, **required**) — stable trim slug (e.g., `"base"`, `"xdrive30"`).
-  * `trim.name` (string, **required**) — human label (e.g., `"xDrive30"`).
-* `variant` (object, optional) — present only for variants
-
-  * `variant.slug` (string, **required if variant present**) — e.g., `"350_autonomy"`.
-  * `variant.name` (string, **required if variant present**) — e.g., `"350 Autonomy"`.
-  * `variant.kind` (string, optional) — e.g., `"range_upgrade"`, `"battery_upgrade"`, `"market_specific"`.
-  * `variant.notes` (string, optional) — clarifying intent and scope.
-
-#### 2.3.2. Market and Lifecycle
-
-* `markets` (array of strings, optional) — ISO 3166-1 alpha-2 country codes (e.g., `["DE","BR"]`).
-* `availability` (object, optional)
-
-  * `availability.status` (string, **required if availability present**) — one of:
-
-    * `production`, `discontinued`, `concept`, `prototype`
-  * `availability.start_year` (integer, optional)
-  * `availability.end_year` (integer, optional)
-
-#### 2.3.3. Vehicle Classification
-
-* `vehicle_type` (string, **required**) — one of:
-
-  * `passenger_car`, `suv`, `pickup`, `van`, `bus`, `motorcycle`, `scooter`, `commercial`, `other`
-* `body` (object, optional)
-
-  * `body.style` (string, optional) — e.g., `crossover`, `hatchback`, `sedan`, `wagon`
-  * `body.doors` (integer, optional)
-  * `body.seats` (integer, optional)
-  * `body.platform` (string, optional) — OEM platform code/name if published
-
-#### 2.3.4. Powertrain
-
-* `powertrain` (object, **required**)
-
-  * `powertrain.drivetrain` (string, **required**) — one of: `fwd`, `rwd`, `awd`, `4wd`
-  * `powertrain.motors` (array of objects, **required**, min 1)
-
-    * `position` (string, **required**) — one of: `front`, `rear`, `other`
-    * `type` (string, optional) — e.g., `pmsm`, `asm`, `sr`, `other`
-    * `power_kw` (number, **required**) — motor rated power
-    * `torque_nm` (number, optional)
-  * `powertrain.system_power_kw` (number, optional) — combined system power
-  * `powertrain.system_torque_nm` (number, optional) — combined system torque
-
-#### 2.3.5. Battery System
-
-* `battery` (object, **required**)
-
-  * `battery.chemistry` (string, optional) — e.g., `lfp`, `nmc`, `nca`, `other`
-  * `battery.pack_capacity_kwh_gross` (number, optional)
-  * `battery.pack_capacity_kwh_net` (number, optional)
-  * `battery.pack_voltage_nominal_v` (number, optional) — nominal pack voltage
-  * `battery.pack_voltage_max_v` (number, optional) — max voltage at 100% SOC (if known)
-  * `battery.pack_voltage_min_v` (number, optional) — min voltage at low SOC (if known)
-  * `battery.cell_count` (integer, optional)
-  * `battery.module_count` (integer, optional)
-  * `battery.thermal_management` (string, optional) — `liquid`, `air`, `passive`, `other`
-  * `battery.preconditioning` (object, optional)
-
-    * `supported` (boolean, **required if preconditioning present**)
-    * `modes` (array of strings, optional) — e.g., `["manual","route_planner","auto_on_dc"]`
-    * `notes` (string, optional)
-  * `battery.warranty` (object, optional)
-
-    * `years` (integer, optional)
-    * `distance_km` (integer, optional)
-    * `capacity_retention_percent` (number, optional)
-  * `battery.usable_soc_window_percent` (object, optional)
-
-    * `min_percent` (number, optional)
-    * `max_percent` (number, optional)
-    * `notes` (string, optional)
-
-**Rule**: at least one of `pack_capacity_kwh_gross` or `pack_capacity_kwh_net` must be present in canonical output.
-
-#### 2.3.6. Charging (Extended Model)
-
-Charging is modeled to support global infrastructure differences (connectors, voltages, protocols),
-as well as real-world charging behavior (curves and timings).
-
-##### 2.3.6.1. Charge Ports
-
-* `charge_ports` (array of objects, **required**, min 1)
-
-  * `kind` (string, **required**) — `ac_only`, `dc_only`, `combo`
-    (Example: CCS is typically `combo` because AC+DC share the inlet.)
-  * `connector` (string, **required**) — one of:
-
-    * `type_1` (SAE J1772)
-    * `type_2` (IEC 62196-2)
-    * `ccs1` (Combo 1)
-    * `ccs2` (Combo 2)
-    * `chademo`
-    * `gb_t_ac`
-    * `gb_t_dc`
-    * `nacs` (North American Charging Standard / Tesla-style inlet)
-    * `tesla_type_2` (legacy Tesla EU Type 2 usage, if applicable)
-    * `pantograph` (buses / opportunity charging, if applicable)
-    * `mcs` (megawatt charging system, heavy-duty, if applicable)
-    * `other`
-  * `location` (object, optional)
-
-    * `side` (string, optional) — `left`, `right`, `front`, `rear`, `center`
-    * `position` (string, optional) — `front`, `rear`, `mid`, `unknown`
-    * `notes` (string, optional)
-  * `covers` (string, optional) — e.g., `flap`, `cap`, `motorized`, `none`
-  * `notes` (string, optional)
-
-##### 2.3.6.2. AC Charging
-
-* `charging` (object, **required**)
-
-  * `charging.ac` (object, optional)
-
-    * `max_power_kw` (number, **required if ac present**)
-    * `supported_power_steps_kw` (array of numbers, optional) — e.g., `[2.3, 3.7, 7.4, 11.0, 22.0]`
-    * `phases` (integer, optional) — typically `1` or `3`
-    * `voltage_range_v` (object, optional)
-
-      * `min_v` (number, optional)
-      * `max_v` (number, optional)
-    * `frequency_hz` (number, optional) — e.g., `50` or `60`
-    * `max_current_a` (number, optional)
-    * `onboard_charger_count` (integer, optional) — if dual OBC is available
-    * `notes` (string, optional)
-
-##### 2.3.6.3. DC Fast Charging
-
-* `charging.dc` (object, optional)
-
-  * `max_power_kw` (number, **required if dc present**) — headline peak
-  * `voltage_range_v` (object, optional)
-
-    * `min_v` (number, optional)
-    * `max_v` (number, optional)
-  * `max_current_a` (number, optional)
-  * `architecture_voltage_class` (string, optional) — `400v`, `800v`, `other`
-  * `power_limits_by_voltage` (array of objects, optional)
-
-    * `voltage_class` (string, **required**) — `400v`, `800v`, `other`
-    * `max_power_kw` (number, **required**)
-    * `notes` (string, optional)
-  * `notes` (string, optional)
-
-##### 2.3.6.4. Charging Protocols and Interoperability
-
-* `charging.protocols` (object, optional)
-
-  * `ac` (array of strings, optional) — e.g., `["iec_61851"]`
-  * `dc` (array of strings, optional) — e.g., `["din_70121","iso_15118_2","iso_15118_20"]`
-  * `plug_and_charge` (boolean, optional) — supports ISO 15118 Plug&Charge
-  * `notes` (string, optional)
-
-##### 2.3.6.5. Real Charging Behavior: DC Charge Curve (Optional but Highly Valuable)
-
-Because peak kW is not enough to estimate charging time, this dataset supports representing
-**DC charge curves** as points.
-
-* `charging.dc_charge_curve` (object, optional)
-
-  * `curve_type` (string, **required if curve present**) — `power_by_soc`, `current_by_soc`
-  * `points` (array of objects, **required if curve present**, min 2)
-
-    * `soc_percent` (number, **required**) — 0–100
-    * `power_kw` (number, optional) — required if `curve_type=power_by_soc`
-    * `current_a` (number, optional) — required if `curve_type=current_by_soc`
-    * `voltage_v` (number, optional) — if known at that point
-  * `conditions` (object, optional) — disclose measurement conditions
-
-    * `battery_temp_c` (number, optional)
-    * `ambient_temp_c` (number, optional)
-    * `preconditioning` (boolean, optional)
-    * `charger_power_kw` (number, optional) — station limit for the measurement
-    * `notes` (string, optional)
-  * `notes` (string, optional)
-
-**Rule**: If a charge curve is included, it must be backed by a source describing the curve or the test.
-
-##### 2.3.6.6. Charging Time Tables (Optional but Highly Valuable)
-
-Charging times should always disclose:
-
-* SOC window (`from_soc_percent`, `to_soc_percent`)
-
-* power context (AC kW or DC station class)
-
-* conditions (temperature, preconditioning, etc.)
-
-* `charging_time` (object, optional)
-
-  * `ac` (array of objects, optional)
-
-    * `power_kw` (number, **required**)
-    * `from_soc_percent` (number, **required**)
-    * `to_soc_percent` (number, **required**)
-    * `time_min` (number, **required**)
-    * `conditions` (object, optional)
-
-      * `ambient_temp_c` (number, optional)
-      * `notes` (string, optional)
-    * `notes` (string, optional)
-  * `dc` (array of objects, optional)
-
-    * `charger_power_kw` (number, **required**) — station advertised limit
-    * `from_soc_percent` (number, **required**)
-    * `to_soc_percent` (number, **required**)
-    * `time_min` (number, **required**)
-    * `conditions` (object, optional)
-
-      * `battery_temp_c` (number, optional)
-      * `ambient_temp_c` (number, optional)
-      * `preconditioning` (boolean, optional)
-      * `notes` (string, optional)
-    * `notes` (string, optional)
-
-##### 2.3.6.7. Bidirectional Charging (V2X)
-
-Bidirectional support is critical for many ecosystems and varies by market, connector, and protocol.
-
-* `v2x` (object, optional)
-
-  * `v2l` (object, optional)
-
-    * `supported` (boolean, **required**)
-    * `max_power_kw` (number, optional)
-    * `outlets` (array of objects, optional)
-
-      * `kind` (string, **required**) — `ac`, `dc`
-      * `count` (integer, optional)
-      * `notes` (string, optional)
-    * `notes` (string, optional)
-  * `v2h` (object, optional)
-
-    * `supported` (boolean, **required**)
-    * `max_power_kw` (number, optional)
-    * `connector` (string, optional) — same connector enum as charge_ports
-    * `protocols` (array of strings, optional) — e.g., `["iso_15118_20","chademo"]`
-    * `notes` (string, optional)
-  * `v2g` (object, optional)
-
-    * `supported` (boolean, **required**)
-    * `max_power_kw` (number, optional)
-    * `connector` (string, optional)
-    * `protocols` (array of strings, optional)
-    * `notes` (string, optional)
-
-#### 2.3.7. Range and Efficiency
-
-* `range` (object, **required**)
-
-  * `range.rated` (array of objects, **required**, min 1)
-
-    * `cycle` (string, **required**) — one of: `wltp`, `epa`, `nedc`, `cltc`, `jc08`, `other`
-    * `range_km` (number, **required**)
-    * `notes` (string, optional)
-  * `range.real_world` (array of objects, optional)
-
-    * `profile` (string, **required**) — e.g., `highway`, `city`, `mixed`
-    * `range_km` (number, **required**)
-    * `notes` (string, optional)
-
-* `efficiency` (object, optional)
-
-  * `energy_consumption_wh_per_km` (number, optional)
-  * `mpge` (number, optional)
-
-#### 2.3.8. Performance
-
-* `performance` (object, optional)
-
-  * `acceleration_0_100_kmh_s` (number, optional)
-  * `top_speed_kmh` (number, optional)
-
-#### 2.3.9. Dimensions, Weight, Capacity
-
-* `dimensions` (object, optional)
-
-  * `length_mm` (number, optional)
-  * `width_mm` (number, optional)
-  * `height_mm` (number, optional)
-  * `wheelbase_mm` (number, optional)
-  * `drag_coefficient_cd` (number, optional)
-* `weights` (object, optional)
-
-  * `curb_weight_kg` (number, optional)
-  * `gross_vehicle_weight_kg` (number, optional)
-* `capacity` (object, optional)
-
-  * `cargo_l` (number, optional)
-  * `frunk_l` (number, optional)
-  * `towing_kg` (number, optional)
-
-#### 2.3.10. Wheels and Tires (Optional, Charging-Relevant via Efficiency/Range)
-
-Wheel/tire configuration can meaningfully affect efficiency and range.
-
-* `wheels_tires` (object, optional)
-
-  * `wheel_sizes_in` (array of numbers, optional) — e.g., `[18,19,20]`
-  * `tire_sizes` (array of strings, optional) — e.g., `["225/55R18","245/45R19"]`
-  * `recommended_pressure_kpa` (object, optional)
-
-    * `front_kpa` (number, optional)
-    * `rear_kpa` (number, optional)
-  * `notes` (string, optional)
-
-#### 2.3.11. Pricing (Optional, Market-Dependent)
-
-* `pricing` (object, optional)
-
-  * `msrp` (array of objects, optional)
-
-    * `currency` (string, **required**) — ISO 4217 (e.g., `USD`, `EUR`, `BRL`)
-    * `amount` (number, **required**)
-    * `country` (string, optional) — ISO 3166-1 alpha-2
-    * `notes` (string, optional)
-
-#### 2.3.12. Links and References
-
-* `links` (object, optional)
-
-  * `manufacturer_url` (string, optional)
-  * `press_kit_url` (string, optional)
-  * `spec_sheet_url` (string, optional)
-
-* `sources` (array of objects, **required**, min 1)
-
-  * `type` (string, **required**) — e.g., `oem`, `regulatory`, `press`, `community`, `testing_org`
-  * `title` (string, **required**)
-  * `publisher` (string, optional)
-  * `url` (string, **required**)
-  * `accessed_at` (string, **required**) — ISO-8601 datetime (e.g., `"2025-12-24T00:00:00Z"`)
-  * `license` (string, optional) — if known
-  * `notes` (string, optional)
-
-#### 2.3.13. Metadata
-
-* `metadata` (object, optional)
-
-  * `created_at` (string, optional) — ISO-8601 datetime
-  * `updated_at` (string, optional) — ISO-8601 datetime
-  * `contributors` (array of strings, optional) — contributor handles
-  * `data_quality` (string, optional) — e.g., `verified`, `partially_verified`, `unverified`
-  * `internal_notes` (string, optional) — not for consumer-facing usage
+### 2.3. Required Fields (Root Level)
+
+The following fields are **required** at the root level of every canonical vehicle record:
+
+* `schema_version`: "1.0.0"
+* `make`: object with `slug` and `name`
+* `model`: object with `slug` and `name`
+* `year`: integer (model year)
+* `trim`: object with `slug` and `name`
+* `vehicle_type`: classification string
+* `powertrain`: object with `drivetrain` (and optionally motors, power, etc.)
+* `battery`: object (must include at least one of `pack_capacity_kwh_gross` or `pack_capacity_kwh_net`)
+* `charge_ports`: array with at least one port
+* `charging`: object (should include `ac` and/or `dc` specifications)
+* `range`: object with `rated` array (at least one rated range entry)
+* `sources`: array with at least one verifiable source
+
+For detailed specifications of all fields (required and optional), see **[SCHEMA.md](./SCHEMA.md)**.
 
 ---
 
@@ -552,8 +181,7 @@ This repository is authored in layers, but compiled into canonical full records.
 
 ### 3.3. Variant Vehicle (`src/<make>/<model>/<year>/<vehicle_slug>_<variant_slug>.json`)
 
-A variant represents a **distinct, consumer-relevant configuration** that should become a separate canonical record
-(e.g., higher-range battery option, different charge port, higher DC peak, different protocol support).
+A variant represents a **distinct, consumer-relevant configuration** that should become a separate canonical record (e.g., higher-range battery option, different charge port, higher DC peak, different protocol support).
 
 **Mandatory rules**
 
@@ -651,9 +279,9 @@ A variant represents a **distinct, consumer-relevant configuration** that should
   1. Base canonical vehicle (from `ix1.json`)
   2. Variant canonical vehicle (merged `base.json` + `ix1.json` + `ix1_350_autonomy.json`)
 
-### 3.5. When a “Variant” Must Become a New Vehicle Record
+### 3.5. When a "Variant" Must Become a New Vehicle Record
 
-A change should be modeled as a separate canonical vehicle record when it impacts at least one of:
+A change should be modeled as a separate canonical vehicle record (variant) when it impacts at least one of:
 
 * range rating (any test cycle)
 * battery capacity (gross/net), voltage class, or usable SOC window
@@ -669,7 +297,7 @@ Minor changes that do not affect key specs (e.g., infotainment-only changes) sho
 
 ---
 
-## 4. Professional Data Quality Requirements (Global Project)
+## 4. Professional Data Quality Requirements
 
 * **No unverifiable claims**: every meaningful spec must be backed by at least one source.
 * **Market ambiguity must be explicit**: if a spec is market-limited, specify `markets`.
@@ -680,10 +308,40 @@ Minor changes that do not affect key specs (e.g., infotainment-only changes) sho
 
 ---
 
-## 5. Summary (Normative)
+## 5. Build and Validation Process
 
-* Author data in layers: model base → year base → year variants.
-* Compile deterministically using strict merge rules.
-* Canonical output must match the full JSON contract and include sources.
-* Variants must be explicit, minimal, source-backed deltas that produce separate vehicles.
-* Charging is first-class: ports, AC/DC limits, protocols, curves, times, and V2X can be represented for global compatibility.
+### 5.1. Compilation Pipeline (Future)
+
+The repository will provide tooling to:
+
+1. **Discover** all vehicle files in `src/`
+2. **Merge** layers according to precedence rules
+3. **Validate** against `schema.json`
+4. **Generate** canonical output files
+5. **Export** to various formats (JSON, CSV, SQL, etc.)
+
+### 5.2. Validation
+
+All canonical vehicle records must:
+
+* Pass JSON Schema validation against `schema.json`
+* Have at least one source
+* Have at least one rated range entry
+* Have at least one charge port
+* Have battery capacity (gross or net)
+* Follow naming conventions for slugs
+
+---
+
+## 6. Summary (Normative)
+
+* **Author data in layers**: model base → year base → year variants.
+* **Compile deterministically** using strict merge rules (objects merge, scalars override, arrays replace).
+* **Canonical output** must match the full JSON contract defined in `schema.json` and documented in [SCHEMA.md](./SCHEMA.md).
+* **Variants** must be explicit, minimal, source-backed deltas that produce separate vehicles.
+* **Charging is first-class**: ports, AC/DC limits, protocols, curves, times, and V2X can be represented for global compatibility.
+* **Data quality is paramount**: every spec must be verifiable, market-specific data must be explicit, and ambiguity must be minimized.
+
+---
+
+For complete field-by-field documentation of the schema, see **[SCHEMA.md](./SCHEMA.md)**.
