@@ -15,11 +15,14 @@ This repository provides a **structured, versioned, and community-maintained dat
 
 ## Documentation
 
+### Repository Documentation
 - **[Architecture](docs/ARCHITECTURE.md)** — Repository architecture, layered data model, build process, and authoring rules
 - **[Schema Reference](docs/SCHEMA.md)** — Complete field-by-field documentation of the vehicle data schema
-- **[Getting Started](docs/GET_STARTED.md)** — How to start the project
-- **[Contributing Guide](https://github.com/open-ev-data/.github/blob/main/CONTRIBUTE.md)** — How to contribute and commit message guidelines
-- **[Release Documentation](https://github.com/open-ev-data/.github/blob/main/RELEASE.md)** — Release process and semantic versioning
+
+### Project Governance
+- **[Getting Started](https://github.com/open-ev-data/.github/blob/main/GET_STARTED.md)** — How to set up the complete development environment with all repositories
+- **[Contributing Guide](https://github.com/open-ev-data/.github/blob/main/CONTRIBUTING.md)** — How to contribute, data quality standards, and commit message guidelines
+- **[Code of Conduct](https://github.com/open-ev-data/.github/blob/main/CODE_OF_CONDUCT.md)** — Community standards and expected behavior
 
 ## Data Coverage
 
