@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "byd",
+    "name": "BYD"
+  },
+  "model": {
+    "slug": "seal",
+    "name": "Seal"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5,
+    "drag_coefficient_cd": 0.219
+  },
+  "dimensions": {
+    "length_mm": 4800,
+    "width_mm": 1875,
+    "height_mm": 1460,
+    "wheelbase_mm": 2920
+  }
+}
+

@@ -1,0 +1,101 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "standard",
+    "name": "Standard"
+  },
+  "markets": ["BR", "CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 55,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 55
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 38.88,
+    "pack_capacity_kwh_net": 38.0,
+    "thermal_management": "liquid",
+    "warranty": {
+      "years": 8,
+      "distance_km": 150000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 6.6,
+      "phases": 1,
+      "frequency_hz": 60
+    },
+    "dc": {
+      "max_power_kw": 60,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 280
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 12.5,
+    "top_speed_kmh": 130
+  },
+  "weights": {
+    "curb_weight_kg": 1240
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 149800,
+        "country": "BR",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Brazil Official Website - Dolphin Mini",
+      "url": "https://www.byd.com/br",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD China Official Website - Dolphin Mini",
+      "url": "https://www.byd.com/cn",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "awd",
+    "name": "AWD",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 380,
+    "system_torque_nm": 680,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 310
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 220,
+        "torque_nm": 370
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.3,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2350
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 469800,
+        "country": "BR",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Brazil Official Website - King AWD 2025",
+      "url": "https://www.byd.com/br",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD China Official Website - Song Plus EV Performance",
+      "url": "https://www.byd.com/cn",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "standard",
+    "name": "Standard"
+  },
+  "markets": ["BR", "DE", "FR", "IT", "PT", "GB", "CN", "AU", "NZ", "TH", "SG", "MX"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 70,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 70
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 44.9,
+    "pack_capacity_kwh_net": 44.0,
+    "thermal_management": "liquid",
+    "warranty": {
+      "years": 8,
+      "distance_km": 150000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1,
+      "frequency_hz": 60
+    },
+    "dc": {
+      "max_power_kw": 60,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 340
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 10.9,
+    "top_speed_kmh": 150
+  },
+  "weights": {
+    "curb_weight_kg": 1405
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 209800,
+        "country": "BR",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Brazil Official Website - Dolphin 2025",
+      "url": "https://www.byd.com/br",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Europe Official Website - Dolphin",
+      "url": "https://www.byd.com/eu/car/dolphin.html",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD UK Official Website - Dolphin",
+      "url": "https://www.byd.com/en/car/dolphin",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Germany Official Website - Dolphin",
+      "url": "https://www.byd.com/de/car/dolphin",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Australia Official Website - Dolphin",
+      "url": "https://www.byd.com/au/car/dolphin",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD China Official Website - Dolphin",
+      "url": "https://www.byd.com/cn/car/dolphin",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    }
+  ]
+}

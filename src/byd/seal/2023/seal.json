@@ -1,0 +1,131 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "standard",
+    "name": "Standard"
+  },
+  "markets": ["BR", "DE", "FR", "IT", "PT", "GB", "CN", "JP", "AU", "NZ", "TH", "SG", "MX"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 150,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 61.44,
+    "pack_capacity_kwh_net": 61.0,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "warranty": {
+      "years": 8,
+      "distance_km": 200000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3,
+      "frequency_hz": 60
+    },
+    "dc": {
+      "max_power_kw": 110,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 460
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.5,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 1870
+  },
+  "capacity": {
+    "cargo_l": 400
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 309800,
+        "country": "BR",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Brazil Official Website - Seal",
+      "url": "https://www.byd.com/br",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Europe Official Website - Seal",
+      "url": "https://www.byd.com/eu/car/seal.html",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD UK Official Website - Seal",
+      "url": "https://www.byd.com/en/car/seal",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Germany Official Website - Seal",
+      "url": "https://www.byd.com/de/car/seal",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Australia Official Website - Seal",
+      "url": "https://www.byd.com/au/car/seal",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD China Official Website - Seal",
+      "url": "https://www.byd.com/cn/car/seal",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    }
+  ]
+}

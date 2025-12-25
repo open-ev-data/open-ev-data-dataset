@@ -1,0 +1,130 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "standard_range",
+    "name": "Standard Range"
+  },
+  "markets": ["BR", "US", "DE", "FR", "IT", "PT", "GB", "CN", "JP", "AU", "NZ", "TH", "SG"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 150,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 49.92,
+    "pack_capacity_kwh_net": 49.0,
+    "thermal_management": "liquid",
+    "warranty": {
+      "years": 8,
+      "distance_km": 150000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1,
+      "frequency_hz": 60
+    },
+    "dc": {
+      "max_power_kw": 70,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 320
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.3,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1750
+  },
+  "capacity": {
+    "cargo_l": 440
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 249800,
+        "country": "BR",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Brazil Official Website - Yuan Plus 2025",
+      "url": "https://www.byd.com/br",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Europe Official Website - Atto 3",
+      "url": "https://www.byd.com/eu/car/atto3.html",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD UK Official Website - Atto 3",
+      "url": "https://www.byd.com/en/car/atto-3",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Germany Official Website - Atto 3",
+      "url": "https://www.byd.com/de/car/atto-3",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Australia Official Website - Atto 3",
+      "url": "https://www.byd.com/au/car/atto-3",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD China Official Website - Yuan Plus",
+      "url": "https://www.byd.com/cn/car/yuanplus",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    }
+  ]
+}

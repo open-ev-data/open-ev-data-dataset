@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "byd",
+    "name": "BYD"
+  },
+  "model": {
+    "slug": "dolphin",
+    "name": "Dolphin"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4290,
+    "width_mm": 1770,
+    "height_mm": 1550,
+    "wheelbase_mm": 2700
+  }
+}
+

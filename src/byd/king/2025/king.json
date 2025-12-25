@@ -1,0 +1,113 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "gls",
+    "name": "GLS"
+  },
+  "markets": ["BR", "CN", "MX"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 160,
+    "system_torque_nm": 330,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 330
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 71.8,
+    "pack_capacity_kwh_net": 71.0,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "warranty": {
+      "years": 8,
+      "distance_km": 200000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3,
+      "frequency_hz": 60
+    },
+    "dc": {
+      "max_power_kw": 90,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 520
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.9,
+    "top_speed_kmh": 175
+  },
+  "weights": {
+    "curb_weight_kg": 2050
+  },
+  "capacity": {
+    "cargo_l": 500
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 379800,
+        "country": "BR",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Brazil Official Website - King 2025",
+      "url": "https://www.byd.com/br",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD China Official Website - Song Plus EV",
+      "url": "https://www.byd.com/cn",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Mexico Official Website",
+      "url": "https://www.byd.com/mx",
+      "accessed_at": "2025-12-25T00:00:00Z"
+    }
+  ]
+}
