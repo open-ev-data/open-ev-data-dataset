@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## 1.1.0 (2025-12-25)
+
+* feat(byd): add new vehicle data for BYD models ([4b657c2](https://github.com/open-ev-data/open-ev-data-dataset/commit/4b657c2))
+* chore(rules): update vehicle data guidelines in base.mdc ([e90df56](https://github.com/open-ev-data/open-ev-data-dataset/commit/e90df56))
+* feat(schemas, docs, examples): update README, add schema and new documentations ([7670ead](https://github.com/open-ev-data/open-ev-data-dataset/commit/7670ead))
+
 ## 1.0.0 (2025-12-24)
 
 * feat: add release documentation and update GitHub Actions workflow for token generation ([7dc2316](https://github.com/open-ev-data/open-ev-data-dataset/commit/7dc2316))
