@@ -12,3 +12,4 @@ alwaysApply: true
 - The project's `README.md` file MUST ALWAYS reflect the project description directly, indicating its "purpose," direct details, and when dealing with things like "getting started," "architecture," and other specific documents, it should link to the files in `docs/`.
 - You SHOULD ALWAYS follow the SOLID principles when writing code.
 - You MUST ALWAYS use DRY principles when writing documentation, especially referencing other documentation where necessary with links instead of repeating it.
+- When adding new vehicles or making adjustments to existing ones, you MUST ALWAYS keep the data in an international format, that is, you must include the "sources" for each country, especially the USA, Brazil, European countries (primarily Portugal, England, Germany, France, and Italy), China, and Japan. Variation should only occur if some important characteristic changes, which makes it a variant model of the original.
