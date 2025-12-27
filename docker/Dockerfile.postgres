@@ -1,0 +1,16 @@
+FROM postgres:17-alpine
+
+LABEL org.opencontainers.image.source="https://github.com/open-ev-data/open-ev-data-dataset"
+LABEL org.opencontainers.image.description="OpenEV Data - PostgreSQL database with pre-populated electric vehicle specifications"
+LABEL org.opencontainers.image.licenses="CDLA-Permissive-2.0"
+
+ENV POSTGRES_USER=openevdata
+ENV POSTGRES_PASSWORD=openevdata
+ENV POSTGRES_DB=openevdata
+
+COPY dist/data/open-ev-data.sql /docker-entrypoint-initdb.d/01-data.sql
+
+EXPOSE 5432
+
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD pg_isready -U $POSTGRES_USER -d $POSTGRES_DB || exit 1

@@ -65,6 +65,18 @@ module.exports = {
       }
     ],
     [
+      '@semantic-release/npm',
+      {
+        npmPublish: false
+      }
+    ],
+    [
+      '@semantic-release/exec',
+      {
+        prepareCmd: 'chmod +x scripts/release/*.sh && ./scripts/release/prepare-artifacts.sh && ./scripts/release/generate-formats.sh ${nextRelease.version} latest && ./scripts/release/build-postgres-docker.sh ${nextRelease.version}'
+      }
+    ],
+    [
       '@semantic-release/git',
       {
         assets: [
@@ -81,7 +93,33 @@ module.exports = {
         successComment: false,
         labels: false,
         releasedLabels: false,
-        assets: []
+        assets: [
+          {
+            path: 'dist/data/open-ev-data.json',
+            label: 'OpenEV Data (JSON)',
+            name: 'open-ev-data-${nextRelease.gitTag}.json'
+          },
+          {
+            path: 'dist/data/open-ev-data.csv',
+            label: 'OpenEV Data (CSV)',
+            name: 'open-ev-data-${nextRelease.gitTag}.csv'
+          },
+          {
+            path: 'dist/data/open-ev-data.sql',
+            label: 'OpenEV Data (PostgreSQL)',
+            name: 'open-ev-data-${nextRelease.gitTag}.sql'
+          },
+          {
+            path: 'dist/data/open-ev-data.db',
+            label: 'OpenEV Data (SQLite)',
+            name: 'open-ev-data-${nextRelease.gitTag}.db'
+          },
+          {
+            path: 'dist/data/open-ev-data.xml',
+            label: 'OpenEV Data (XML)',
+            name: 'open-ev-data-${nextRelease.gitTag}.xml'
+          }
+        ]
       }
     ]
   ]
