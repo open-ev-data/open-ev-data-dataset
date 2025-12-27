@@ -73,7 +73,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        prepareCmd: 'chmod +x scripts/release/*.sh && ./scripts/release/prepare-artifacts.sh && ./scripts/release/generate-formats.sh ${nextRelease.version} latest && ./scripts/release/build-postgres-docker.sh ${nextRelease.version}'
+        prepareCmd: 'chmod +x scripts/release/*.sh && ./scripts/release/prepare-artifacts.sh && ./scripts/release/generate-formats.sh ${nextRelease.version} && ./scripts/release/build-postgres-docker.sh ${nextRelease.version}'
       }
     ],
     [

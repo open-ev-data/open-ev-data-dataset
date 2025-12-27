@@ -32,35 +32,26 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.generate_token.outputs.token }}
 
-      - name: Checkout API repository
-        uses: actions/checkout@v4
-        with:
-          repository: open-ev-data/open-ev-data-api
-          path: open-ev-data-api
-          token: ${{ steps.generate_token.outputs.token }}
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Install Rust toolchain
-        uses: dtolnay/rust-toolchain@stable
-
-      - name: Cache cargo
-        uses: Swatinem/rust-cache@v2
-        with:
-          workspaces: open-ev-data-api
-
-      - name: Build ev-etl binary
-        working-directory: open-ev-data-api
-        run: cargo build --release -p ev-etl
-
-      - name: Build ev-etl Docker image
-        working-directory: open-ev-data-api
+      - name: Download ev-etl binary
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/ev-etl:latest -f docker/Dockerfile.etl .
-          echo "✅ ev-etl image built successfully and available locally"
+          echo "📥 Downloading latest ev-etl binary..."
+          LATEST_RELEASE=$(curl -s https://api.github.com/repos/open-ev-data/open-ev-data-api/releases/latest | jq -r .tag_name)
+          echo "Latest release: $LATEST_RELEASE"
+
+          curl -L -o ev-etl.tar.gz \
+            "https://github.com/open-ev-data/open-ev-data-api/releases/download/$LATEST_RELEASE/ev-etl-x86_64-unknown-linux-gnu.tar.gz"
+
+          tar -xzf ev-etl.tar.gz
+          chmod +x ev-etl
+          sudo mv ev-etl /usr/local/bin/
+
+          echo "✅ ev-etl binary installed"
+          ev-etl --version
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3

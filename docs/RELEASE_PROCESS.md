@@ -51,24 +51,32 @@ semantic-release analyzes commit messages following [Conventional Commits](https
 
 The release scripts execute in sequence:
 
-#### a. Prepare Artifacts
+#### a. Download ev-etl Binary
+```bash
+# Downloads the latest ev-etl binary from API releases
+curl -L -o ev-etl.tar.gz \
+  "https://github.com/open-ev-data/open-ev-data-api/releases/download/$LATEST_RELEASE/ev-etl-x86_64-unknown-linux-gnu.tar.gz"
+```
+This is fast, lightweight, and doesn't require Docker authentication.
+
+#### b. Prepare Artifacts
 ```bash
 ./scripts/release/prepare-artifacts.sh
 ```
 Creates the `dist/` directory structure.
 
-#### b. Generate Formats
+#### c. Generate Formats
 ```bash
-./scripts/release/generate-formats.sh ${version} latest
+./scripts/release/generate-formats.sh ${version}
 ```
-Uses the `ev-etl` Docker image to transform source JSON files into:
+Uses the `ev-etl` binary to transform source JSON files into:
 - `open-ev-data.json` - Canonical JSON format with metadata
 - `open-ev-data.csv` - Flattened tabular format
 - `open-ev-data.sql` - PostgreSQL dump with DDL and data
 - `open-ev-data.db` - SQLite database file
 - `open-ev-data.xml` - Hierarchical XML structure
 
-#### c. Build PostgreSQL Image
+#### d. Build PostgreSQL Image
 ```bash
 ./scripts/release/build-postgres-docker.sh ${version}
 ```
@@ -129,8 +137,8 @@ The project follows [Semantic Versioning 2.0.0](https://semver.org/):
 
 The release process depends on:
 
-- **ev-etl**: Tool from open-ev-data-api for format generation
-- **Docker**: Container runtime for ev-etl and PostgreSQL image
+- **ev-etl**: CLI tool from open-ev-data-api (downloaded as binary)
+- **Docker**: Container runtime for PostgreSQL image
 - **Node.js**: semantic-release and related plugins
 - **GitHub Actions**: CI/CD automation
 - **GitHub Container Registry**: Docker image storage
@@ -147,7 +155,8 @@ Check:
 ### Artifact generation failed
 
 Verify:
-- `ev-etl` Docker image is available and accessible
+- Latest API release has the `ev-etl` binary available
+- Binary is compatible with Linux x86_64
 - Source JSON files are valid
 - Sufficient disk space in runner
 

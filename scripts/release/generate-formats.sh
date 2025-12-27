@@ -4,45 +4,26 @@ set -euo pipefail
 trap 'echo "❌ ERROR on line $LINENO: Command failed with exit code $?" >&2' ERR
 
 VERSION="${1:-dev}"
-REGISTRY="${DOCKER_REGISTRY:-ghcr.io}"
-OWNER="${GITHUB_REPOSITORY_OWNER:-open-ev-data}"
-ETL_VERSION="${2:-latest}"
 
 echo "📊 Generating dataset formats (version: $VERSION)..."
 echo "::group::Dataset Generation"
 
 mkdir -p dist/data
 
-echo "🔍 Checking for ev-etl Docker image..."
-if docker image inspect "$REGISTRY/$OWNER/ev-etl:$ETL_VERSION" >/dev/null 2>&1; then
-    echo "✅ ev-etl image found locally"
-else
-    echo "🔐 Verifying Docker authentication..."
-    docker info 2>&1 | grep -i "username" || echo "⚠️  No docker authentication detected, will try to pull anyway..."
-
-    echo "📥 Pulling ev-etl Docker image from registry..."
-    echo "    Registry: $REGISTRY"
-    echo "    Owner: $OWNER"
-    echo "    Image: $REGISTRY/$OWNER/ev-etl:$ETL_VERSION"
-
-    docker pull "$REGISTRY/$OWNER/ev-etl:$ETL_VERSION" || {
-        echo "❌ Failed to pull ev-etl:$ETL_VERSION"
-        echo "💡 Either:"
-        echo "   1. Make the ev-etl package visibility public in GHCR, OR"
-        echo "   2. Build the ev-etl image locally in the workflow before this step"
-        exit 1
-    }
-
-    echo "✅ ev-etl image pulled successfully"
+echo "🔍 Checking for ev-etl binary..."
+if ! command -v ev-etl &> /dev/null; then
+    echo "❌ ev-etl binary not found"
+    echo "💡 Make sure ev-etl is installed in the workflow before this step"
+    exit 1
 fi
 
+echo "✅ ev-etl binary found"
+ev-etl --version
+
 echo "📦 Running ev-etl to generate all formats..."
-docker run --rm \
-    -v "$(pwd)/src:/input:ro" \
-    -v "$(pwd)/dist/data:/output" \
-    "$REGISTRY/$OWNER/ev-etl:$ETL_VERSION" \
-    --input /input \
-    --output /output \
+ev-etl \
+    --input "$(pwd)/src" \
+    --output "$(pwd)/dist/data" \
     --formats json,csv,postgresql,sqlite,xml \
     --verbose || {
     echo "❌ ev-etl failed to generate formats"

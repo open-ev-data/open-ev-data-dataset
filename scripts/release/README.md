@@ -4,7 +4,7 @@ Automation scripts for building and releasing OpenEV Data dataset artifacts.
 
 ## Overview
 
-These scripts generate multiple dataset formats using the `ev-etl` tool from the API repository and publish them as release assets along with a PostgreSQL Docker image.
+These scripts generate multiple dataset formats using the `ev-etl` binary from the API repository and publish them as release assets along with a PostgreSQL Docker image.
 
 ## Scripts
 
@@ -14,7 +14,7 @@ Prepares the `dist/` directory structure for release artifacts.
 
 ### `generate-formats.sh`
 
-Uses `ev-etl` Docker image to generate all dataset formats:
+Uses `ev-etl` binary to generate all dataset formats:
 - JSON (canonical format)
 - CSV (tabular format)
 - PostgreSQL (SQL dump)
@@ -23,12 +23,12 @@ Uses `ev-etl` Docker image to generate all dataset formats:
 
 **Usage:**
 ```bash
-./scripts/release/generate-formats.sh <version> [etl-version]
+./scripts/release/generate-formats.sh <version>
 ```
 
 **Example:**
 ```bash
-./scripts/release/generate-formats.sh 1.2.0 latest
+./scripts/release/generate-formats.sh 1.2.0
 ```
 
 ### `build-postgres-docker.sh`
@@ -51,10 +51,11 @@ These scripts are automatically executed by semantic-release during the release 
 
 1. CI workflow validates the dataset
 2. Release workflow triggers after successful CI
-3. semantic-release determines the next version
-4. `prepareCmd` executes all release scripts in sequence
-5. Generated artifacts are attached to the GitHub release
-6. PostgreSQL Docker image is pushed to GHCR
+3. Latest `ev-etl` binary is downloaded from API releases
+4. semantic-release determines the next version
+5. `prepareCmd` executes all release scripts in sequence
+6. Generated artifacts are attached to the GitHub release
+7. PostgreSQL Docker image is pushed to GHCR
 
 ## Docker Images
 
@@ -74,8 +75,9 @@ Default credentials:
 
 ## Requirements
 
-- Docker (for ev-etl and PostgreSQL image building)
+- `ev-etl` binary (automatically downloaded from API releases in CI/CD)
 - Bash
+- Docker (for PostgreSQL image building)
 - Access to GitHub Container Registry (for CI/CD)
 
 ## Local Testing
@@ -83,11 +85,20 @@ Default credentials:
 To test the release process locally:
 
 ```bash
+# Download ev-etl binary
+LATEST_RELEASE=$(curl -s https://api.github.com/repos/open-ev-data/open-ev-data-api/releases/latest | jq -r .tag_name)
+curl -L -o ev-etl.tar.gz \
+  "https://github.com/open-ev-data/open-ev-data-api/releases/download/$LATEST_RELEASE/ev-etl-x86_64-unknown-linux-gnu.tar.gz"
+tar -xzf ev-etl.tar.gz
+chmod +x ev-etl
+sudo mv ev-etl /usr/local/bin/
+
+# Run release scripts
 export GITHUB_REPOSITORY_OWNER=open-ev-data
 
 chmod +x scripts/release/*.sh
 
 ./scripts/release/prepare-artifacts.sh
-./scripts/release/generate-formats.sh dev latest
+./scripts/release/generate-formats.sh dev
 ./scripts/release/build-postgres-docker.sh dev
 ```
