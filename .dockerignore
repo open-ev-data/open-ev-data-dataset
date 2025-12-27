@@ -1,0 +1,15 @@
+.git
+.github
+node_modules
+dist
+*.md
+!docker/README.md
+.vscode
+.idea
+*.log
+.env
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

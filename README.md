@@ -15,6 +15,9 @@ This repository provides a **structured, versioned, and community-maintained dat
 
 ## Documentation
 
+### Getting Started
+- **[How to Consume](docs/HOW_TO_CONSUME.md)** — Complete guide on using the dataset in all available formats with examples
+
 ### Repository Documentation
 - **[Architecture](docs/ARCHITECTURE.md)** — Repository architecture, layered data model, build process, and authoring rules
 - **[Schema Reference](docs/SCHEMA.md)** — Complete field-by-field documentation of the vehicle data schema
@@ -47,6 +50,27 @@ This dataset aims to cover:
 - **Applications**: EV comparison tools, range calculators, charging time estimators
 - **APIs**: Backend data source for automotive applications
 - **Education**: Learning about EV technology and specifications
+
+## Quick Start
+
+### Download Latest Release
+
+```bash
+LATEST_TAG=$(curl -s https://api.github.com/repos/open-ev-data/open-ev-data-dataset/releases/latest | jq -r .tag_name)
+curl -L -o open-ev-data.json "https://github.com/open-ev-data/open-ev-data-dataset/releases/download/$LATEST_TAG/open-ev-data-$LATEST_TAG.json"
+```
+
+### Run with Docker Compose Latest Release Version
+
+Start the complete stack with API and pre-populated database:
+
+```bash
+docker-compose up -d
+```
+
+Access the API at `http://localhost:8080/api/v1/vehicles`
+
+See [How to Consume](docs/HOW_TO_CONSUME.md) for detailed usage examples in all formats.
 
 ## License
 

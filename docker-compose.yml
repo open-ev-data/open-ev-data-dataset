@@ -1,0 +1,34 @@
+name: open-ev-data
+
+services:
+  api:
+    image: ghcr.io/open-ev-data/ev-server:latest
+    container_name: openev-api
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: /app/vehicles.db
+      PORT: 8080
+      HOST: 0.0.0.0
+      RUST_LOG: info
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    init: true
+    entrypoint: >
+      sh -c "
+        echo '🔍 Getting latest release version...' &&
+        LATEST_VERSION=$$(curl -sL https://api.github.com/repos/open-ev-data/open-ev-data-dataset/releases/latest | grep '\"tag_name\":' | cut -d'\"' -f4) &&
+        echo \"📦 Latest version: $$LATEST_VERSION\" &&
+        DOWNLOAD_URL=\"https://github.com/open-ev-data/open-ev-data-dataset/releases/download/$$LATEST_VERSION/open-ev-data-$$LATEST_VERSION.db\" &&
+        echo \"📥 Downloading from: $$DOWNLOAD_URL\" &&
+        curl -fSL -o /app/vehicles.db \"$$DOWNLOAD_URL\" &&
+        echo '✅ Database downloaded' &&
+        ls -lh /app/vehicles.db &&
+        echo '🚀 Starting API server...' &&
+        exec /app/ev-server
+      "
