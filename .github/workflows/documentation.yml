@@ -1,0 +1,52 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "README.md"
+      - "CHANGELOG.md"
+
+permissions:
+  contents: read
+
+jobs:
+  sync-documentation:
+    name: Sync Documentation to Website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get latest release version
+        id: version
+        run: |
+          VERSION=$(gh release view --json tagName -q .tagName 2>/dev/null || echo "v0.0.0")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+
+      - name: Trigger Website Documentation Sync
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ steps.generate_token.outputs.token }}
+          repository: open-ev-data/open-ev-data.github.io
+          event-type: sync-dataset-docs
+          client-payload: |
+            {
+              "source": "dataset",
+              "version": "${{ steps.version.outputs.version }}",
+              "sha": "${{ github.sha }}",
+              "ref": "${{ github.ref }}"
+            }
