@@ -10,15 +10,19 @@ OWNER="${GITHUB_REPOSITORY_OWNER:-open-ev-data}"
 echo "🔍 Pre-flight checks..."
 if [ ! -f "dist/data/open-ev-data.sql" ]; then
     echo "❌ PostgreSQL dump not found: dist/data/open-ev-data.sql"
+    echo "📋 Files in dist/data/:"
+    ls -lh dist/data/ || echo "dist/data/ directory not found"
     exit 1
 fi
 
-echo "✅ PostgreSQL dump found"
+echo "✅ PostgreSQL dump found ($(du -h dist/data/open-ev-data.sql | cut -f1))"
 echo "🐳 Building PostgreSQL Docker image (version: $VERSION)..."
 echo "::group::Docker Build - PostgreSQL"
 
 docker build -t "$REGISTRY/$OWNER/open-ev-data-postgres:$VERSION" -f docker/Dockerfile.postgres . || {
     echo "❌ Failed to build PostgreSQL Docker image"
+    echo "🔍 Docker build context:"
+    ls -la docker/
     exit 1
 }
 

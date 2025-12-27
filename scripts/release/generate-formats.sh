@@ -21,12 +21,19 @@ echo "✅ ev-etl binary found"
 ev-etl --version
 
 echo "📦 Running ev-etl to generate all formats..."
+echo "   Input: $(pwd)/src"
+echo "   Output: $(pwd)/dist/data"
+echo "   Formats: json,csv,postgresql,sqlite,xml"
+echo ""
+
 ev-etl \
     --input "$(pwd)/src" \
     --output "$(pwd)/dist/data" \
     --formats json,csv,postgresql,sqlite,xml \
     --verbose || {
     echo "❌ ev-etl failed to generate formats"
+    echo "🔍 Checking what was generated:"
+    ls -la dist/data/ || echo "dist/data/ not created"
     exit 1
 }
 
