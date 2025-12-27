@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## 1.3.0 (2025-12-27)
+
+* fix(dockerignore): exclude SQL dump from Docker context ([4a0e590](https://github.com/open-ev-data/open-ev-data-dataset/commit/4a0e590))
+* fix(dockerignore): refine exclusion rules for distribution files ([7b28dee](https://github.com/open-ev-data/open-ev-data-dataset/commit/7b28dee))
+* fix(scripts): enhance build and format generation scripts with additional checks ([077b3b9](https://github.com/open-ev-data/open-ev-data-dataset/commit/077b3b9))
+* feat(docker): implement docker compose with latest version ([2e7f7ce](https://github.com/open-ev-data/open-ev-data-dataset/commit/2e7f7ce))
+* feat(scripts): add build and validation scripts for dataset management ([c1df23d](https://github.com/open-ev-data/open-ev-data-dataset/commit/c1df23d))
+
 ## 1.2.0 (2025-12-27)
 
 * fix(release): update Docker authentication method in release workflow ([529e8ed](https://github.com/open-ev-data/open-ev-data-dataset/commit/529e8ed))
