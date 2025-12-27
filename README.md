@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/open-ev-data/.github/378e7b6f98236e4b5597dee96e864373bdfc2541/assets/open-ev-data.svg" alt="OpenEV Data Logo" width="200" />
+  <img src="https://raw.githubusercontent.com/open-ev-data/.github/bd1f96d4c236e7c1dc43a33535fc9f065f9b152e/assets/open-ev-data-logo.svg" alt="OpenEV Data Logo" width="200" />
 </div>
 
 # OpenEV Data Dataset
