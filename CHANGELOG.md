@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## 1.2.0 (2025-12-27)
+
+* fix(release): update Docker authentication method in release workflow ([529e8ed](https://github.com/open-ev-data/open-ev-data-dataset/commit/529e8ed))
+* fix(release): update Docker authentication method in workflows ([0988094](https://github.com/open-ev-data/open-ev-data-dataset/commit/0988094))
+* perf(release): streamline dataset generation and update release process ([bd90f8b](https://github.com/open-ev-data/open-ev-data-dataset/commit/bd90f8b))
+* feat(release): enhance release process and update dependencies ([0ffae55](https://github.com/open-ev-data/open-ev-data-dataset/commit/0ffae55))
+* feat(release): enhance release workflow and dataset generation script ([f8ecd4c](https://github.com/open-ev-data/open-ev-data-dataset/commit/f8ecd4c))
+* chore: add vscode settings to workspace ([8f9552b](https://github.com/open-ev-data/open-ev-data-dataset/commit/8f9552b))
+* chore(docs): update README structure and enhance project governance section ([39ba76f](https://github.com/open-ev-data/open-ev-data-dataset/commit/39ba76f))
+
 ## 1.1.0 (2025-12-25)
 
 * feat(byd): add new vehicle data for BYD models ([4b657c2](https://github.com/open-ev-data/open-ev-data-dataset/commit/4b657c2))
