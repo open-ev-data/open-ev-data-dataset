@@ -61,7 +61,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ steps.generate_token.outputs.token }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: npm ci
@@ -71,5 +71,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
           DOCKER_REGISTRY_USER: ${{ github.repository_owner }}
-          DOCKER_REGISTRY_PASSWORD: ${{ steps.generate_token.outputs.token }}
+          DOCKER_REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
