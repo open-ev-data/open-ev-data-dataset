@@ -1,0 +1,24 @@
+{
+  "recommendations": [
+    // JSON support and validation
+    "vscode.json-language-features",
+    // Python support (for build tools)
+    "ms-python.python",
+    "ms-python.black-formatter",
+    "ms-python.flake8",
+    "charliermarsh.ruff",
+    // Markdown support
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-mermaid",
+    // Git support
+    "mhutchie.git-graph",
+    // YAML support (for CI/CD configs)
+    "redhat.vscode-yaml",
+    // Code quality
+    "christian-kohler.path-intellisense",
+    "Gruntfuggly.todo-tree",
+    // Optional: Prettier (if you want consistent formatting across all file types)
+    "esbenp.prettier-vscode"
+  ],
+  "unwantedRecommendations": []
+}
