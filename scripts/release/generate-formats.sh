@@ -13,21 +13,28 @@ echo "::group::Dataset Generation"
 
 mkdir -p dist/data
 
-echo "🔐 Verifying Docker authentication..."
-docker info 2>&1 | grep -i "username" || echo "⚠️  No docker authentication detected, continuing anyway..."
+echo "🔍 Checking for ev-etl Docker image..."
+if docker image inspect "$REGISTRY/$OWNER/ev-etl:$ETL_VERSION" >/dev/null 2>&1; then
+    echo "✅ ev-etl image found locally"
+else
+    echo "🔐 Verifying Docker authentication..."
+    docker info 2>&1 | grep -i "username" || echo "⚠️  No docker authentication detected, will try to pull anyway..."
 
-echo "🔍 Pulling ev-etl Docker image..."
-echo "    Registry: $REGISTRY"
-echo "    Owner: $OWNER"
-echo "    Image: $REGISTRY/$OWNER/ev-etl:$ETL_VERSION"
+    echo "📥 Pulling ev-etl Docker image from registry..."
+    echo "    Registry: $REGISTRY"
+    echo "    Owner: $OWNER"
+    echo "    Image: $REGISTRY/$OWNER/ev-etl:$ETL_VERSION"
 
-docker pull "$REGISTRY/$OWNER/ev-etl:$ETL_VERSION" || {
-    echo "❌ Failed to pull ev-etl:$ETL_VERSION"
-    echo "💡 Make sure the ev-etl package visibility is set to public or authentication is configured"
-    exit 1
-}
+    docker pull "$REGISTRY/$OWNER/ev-etl:$ETL_VERSION" || {
+        echo "❌ Failed to pull ev-etl:$ETL_VERSION"
+        echo "💡 Either:"
+        echo "   1. Make the ev-etl package visibility public in GHCR, OR"
+        echo "   2. Build the ev-etl image locally in the workflow before this step"
+        exit 1
+    }
 
-echo "✅ ev-etl image pulled successfully"
+    echo "✅ ev-etl image pulled successfully"
+fi
 
 echo "📦 Running ev-etl to generate all formats..."
 docker run --rm \
