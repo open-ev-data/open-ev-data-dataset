@@ -39,6 +39,18 @@ echo "📋 Renaming output files to standard names..."
 [ -f "dist/data/vehicles.db" ] && mv dist/data/vehicles.db dist/data/open-ev-data.db
 [ -f "dist/data/vehicles.xml" ] && mv dist/data/vehicles.xml dist/data/open-ev-data.xml
 
+echo "📊 Verifying generated files..."
+for file in dist/data/open-ev-data.*; do
+  if [ -f "$file" ]; then
+    echo "  ✅ $file ($(du -h "$file" | cut -f1))"
+  fi
+done
+
+if [ ! -f "dist/data/open-ev-data.sql" ]; then
+  echo "❌ ERROR: PostgreSQL dump was not generated!"
+  exit 1
+fi
+
 echo "::endgroup::"
 echo "✅ Dataset generation complete!"
 ls -lh dist/data/
