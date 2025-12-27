@@ -1,8 +1,10 @@
 .git
 .github
 node_modules
+dist/*
+!dist/data
+dist/data/*
 !dist/data/open-ev-data.sql
-dist
 *.md
 !docker/README.md
 .vscode
