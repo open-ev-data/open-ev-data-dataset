@@ -13,9 +13,17 @@ echo "::group::Dataset Generation"
 
 mkdir -p dist/data
 
+echo "🔐 Verifying Docker authentication..."
+docker info 2>&1 | grep -i "username" || echo "⚠️  No docker authentication detected, continuing anyway..."
+
 echo "🔍 Pulling ev-etl Docker image..."
+echo "    Registry: $REGISTRY"
+echo "    Owner: $OWNER"
+echo "    Image: $REGISTRY/$OWNER/ev-etl:$ETL_VERSION"
+
 docker pull "$REGISTRY/$OWNER/ev-etl:$ETL_VERSION" || {
     echo "❌ Failed to pull ev-etl:$ETL_VERSION"
+    echo "💡 Make sure the ev-etl package visibility is set to public or authentication is configured"
     exit 1
 }
 
