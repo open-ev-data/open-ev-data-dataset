@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## 1.8.0 (2025-12-28)
+
+* Merge branch 'main' of github.com:open-ev-data/open-ev-data-dataset ([050988f](https://github.com/open-ev-data/open-ev-data-dataset/commit/050988f))
+* feat(bmw): add data for various model years ([7360a02](https://github.com/open-ev-data/open-ev-data-dataset/commit/7360a02))
+
 ## 1.7.0 (2025-12-28)
 
 * feat(tesla): add Tesla vehicles models and variants specs ([ddbe4e5](https://github.com/open-ev-data/open-ev-data-dataset/commit/ddbe4e5))
