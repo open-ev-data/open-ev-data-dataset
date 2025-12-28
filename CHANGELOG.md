@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## 1.4.0 (2025-12-28)
+
+* feat: add full data validation script and a guide for contributing vehicle data ([47503d8](https://github.com/open-ev-data/open-ev-data-dataset/commit/47503d8))
+* chore: add documentation sync workflow for GitHub Pages ([52d5932](https://github.com/open-ev-data/open-ev-data-dataset/commit/52d5932))
+* chore: update OpenEV Data logo in README ([c68f49c](https://github.com/open-ev-data/open-ev-data-dataset/commit/c68f49c))
+
 ## 1.3.0 (2025-12-27)
 
 * fix(dockerignore): exclude SQL dump from Docker context ([4a0e590](https://github.com/open-ev-data/open-ev-data-dataset/commit/4a0e590))
