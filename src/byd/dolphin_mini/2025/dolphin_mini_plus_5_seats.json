@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "plus_5_seats",
+    "name": "Plus 5 Seats",
+    "kind": "seating_configuration"
+  },
+  "trim": {
+    "slug": "plus",
+    "name": "Plus"
+  },
+  "body": {
+    "seats": 5
+  },
+  "markets": [
+    "BR"
+  ],
+  "battery": {
+    "pack_capacity_kwh_gross": 38.88,
+    "pack_capacity_kwh_net": 38.0
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 40
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "other",
+        "range_km": 280
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1260
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 149800,
+        "country": "BR",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Brazil Official Website - Dolphin Mini Plus 5 Seats 2025",
+      "url": "https://www.byd.com/br",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

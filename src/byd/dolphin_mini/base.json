@@ -13,7 +13,7 @@
   "body": {
     "style": "hatchback",
     "doors": 5,
-    "seats": 5
+    "seats": 4
   },
   "dimensions": {
     "length_mm": 3780,

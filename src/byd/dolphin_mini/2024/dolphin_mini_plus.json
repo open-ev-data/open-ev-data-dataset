@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "plus",
+    "name": "Plus",
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "plus",
+    "name": "Plus"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 38.88,
+    "pack_capacity_kwh_net": 38.0
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 40
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 405
+      },
+      {
+        "cycle": "other",
+        "range_km": 280
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1240
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 135800,
+        "country": "BR",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Brazil Official Website - Dolphin Mini Plus",
+      "url": "https://www.byd.com/br",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    },
+    {
+      "type": "community",
+      "title": "Car Sales Australia - BYD Dolphin Mini",
+      "url": "https://www.carsales.com.au/",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
