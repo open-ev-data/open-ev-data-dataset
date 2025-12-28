@@ -80,7 +80,7 @@
         "src/**/base.json",
         "src/**/*.json"
       ],
-      "url": "./schema/vehicle-schema.json"
+      "url": "./schema.json"
     }
   ],
   "json.validate.enable": true,

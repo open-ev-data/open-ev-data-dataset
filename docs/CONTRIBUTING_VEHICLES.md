@@ -247,6 +247,8 @@ Variants are for configurations with material differences (battery size, chargin
 
 ## Step 5: Validate Your Changes
 
+The validation system has three levels:
+
 ### Quick Syntax Check
 
 Validates JSON syntax only:
@@ -255,29 +257,75 @@ Validates JSON syntax only:
 npm run validate
 ```
 
+### Schema Validation
+
+Validates directory structure and JSON schema (no Docker required):
+
+```bash
+npm run validate:schema
+```
+
+This validates:
+
+**Structure Rules**:
+- Each model directory must contain `base.json`
+- Each year directory must contain `{model}.json`
+- Variant files must be named `{model}_{variant}.json`
+- No other files allowed in model directory
+
+**Schema Rules**:
+- All required fields present after merge
+- No extra fields (only fields defined in schema.json allowed)
+- Field values match expected types and constraints
+
 ### Full Validation
 
-Validates the complete merge pipeline and all required fields:
+Validates everything including the Rust ETL pipeline:
 
 ```bash
 npm run validate:full
 ```
 
-This command:
-1. Loads all vehicle files from `src/`
-2. Merges layers (base.json + year + variant)
-3. Validates each canonical vehicle
-4. Reports errors with affected vehicle count
+This runs schema validation first, then the ev-etl Docker binary for complete compilation testing.
 
 **Expected output for valid data**:
 
 ```
-Loaded 27 vehicle files
-Merged into 13 vehicles
-Validation complete: 13 valid, 0 invalid
+=== OpenEV Data Validation ===
+
+Step 1: Validating directory structure...
+Structure validation passed.
+
+Step 2: Validating merged vehicles against schema.json...
+Found 13 vehicles to validate.
+All 13 vehicles passed schema validation.
+
+=== Validation Complete ===
 ```
 
-**If validation fails**, the output will indicate which vehicles have errors.
+**Example error output** (missing required field):
+
+```
+SCHEMA ERRORS: 1 vehicle(s) have errors.
+
+File: src/byd/dolphin/2024/dolphin.json
+Type: year_base
+Errors:
+  - /: must have required property 'sources'
+```
+
+**Example error output** (invalid file name):
+
+```
+STRUCTURE ERRORS: 1 issue(s) found.
+
+  src/byd/dolphin/2024/wrong_name.json
+    Invalid file name. Variants must be named dolphin_<variant>.json
+```
+
+### IDE Real-Time Validation
+
+VS Code, Cursor, and compatible editors show validation errors while you edit. Look for red squiggly lines under fields with issues.
 
 ---
 
