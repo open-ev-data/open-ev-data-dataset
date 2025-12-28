@@ -1,0 +1,71 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "extended_range",
+    "name": "Extended Range",
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "premium",
+    "name": "Premium"
+  },
+  "powertrain": {
+    "system_power_kw": 150,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 60.48,
+    "pack_capacity_kwh_net": 60.0
+  },
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 88
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 427
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.0,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1520
+  },
+  "v2x": {
+    "v2l": {
+      "supported": true,
+      "max_power_kw": 3.3
+    }
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Europe Official Website - Dolphin Extended Range 2025",
+      "url": "https://www.byd.com/eu/car/dolphin.html",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "BYD Australia Official Website - Dolphin Premium",
+      "url": "https://www.byd.com/au/car/dolphin",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

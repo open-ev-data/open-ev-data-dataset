@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "boost",
+    "name": "Boost",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "boost",
+    "name": "Boost"
+  },
+  "powertrain": {
+    "system_power_kw": 130,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 130
+      }
+    ]
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 310
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.5,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1450
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD UK Official Website - Dolphin Boost 2025",
+      "url": "https://www.byd.com/uk/car/dolphin",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
