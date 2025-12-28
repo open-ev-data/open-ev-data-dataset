@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "ix",
+    "name": "iX"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4953,
+    "width_mm": 1967,
+    "height_mm": 1696,
+    "wheelbase_mm": 2984
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "ix2",
+    "name": "iX2"
+  },
+  "vehicle_type": "suv",
+  "year": 2025,
+  "trim": {
+    "slug": "xdrive30",
+    "name": "xDrive30"
+  },
+  "markets": [
+    "DE",
+    "GB",
+    "FR"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 230,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 115
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 115
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 66.4,
+    "pack_capacity_kwh_net": 64.7,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 130,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 449
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.6,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2050
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "EUR",
+        "amount": 58900,
+        "country": "DE",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW iX2 xDrive30 2025",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

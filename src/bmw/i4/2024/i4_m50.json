@@ -1,0 +1,103 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "i4",
+    "name": "i4"
+  },
+  "vehicle_type": "passenger_car",
+  "year": 2024,
+  "variant": {
+    "slug": "m50",
+    "name": "M50",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "m50",
+    "name": "M50"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 400,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 190
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 210
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 83.9,
+    "pack_capacity_kwh_net": 81.3,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 207,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 516
+      },
+      {
+        "cycle": "epa",
+        "range_km": 435
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.7,
+    "top_speed_kmh": 225
+  },
+  "weights": {
+    "curb_weight_kg": 2215
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 68200,
+        "country": "US",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW i4 M50 2024",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

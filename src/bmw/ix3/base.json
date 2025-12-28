@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "ix3",
+    "name": "iX3"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4734,
+    "width_mm": 1891,
+    "height_mm": 1668,
+    "wheelbase_mm": 2864
+  }
+}

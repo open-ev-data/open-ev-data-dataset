@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "i7",
+    "name": "i7"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 5391,
+    "width_mm": 1950,
+    "height_mm": 1544,
+    "wheelbase_mm": 3215
+  }
+}

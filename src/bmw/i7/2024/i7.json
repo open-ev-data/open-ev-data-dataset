@@ -1,0 +1,105 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "i7",
+    "name": "i7"
+  },
+  "vehicle_type": "passenger_car",
+  "year": 2024,
+  "trim": {
+    "slug": "xdrive60",
+    "name": "xDrive60"
+  },
+  "markets": [
+    "US",
+    "DE",
+    "GB",
+    "FR",
+    "CN"
+  ],
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 400,
+    "motors": [
+      {
+        "position": "front",
+        "type": "system",
+        "power_kw": 190
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 210
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 105.7,
+    "pack_capacity_kwh_net": 101.7,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 195,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 625
+      },
+      {
+        "cycle": "epa",
+        "range_km": 505
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "top_speed_kmh": 240
+  },
+  "weights": {
+    "curb_weight_kg": 2715
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 105700,
+        "country": "US",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW i7 xDrive60 2024",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "i7",
+    "name": "i7"
+  },
+  "vehicle_type": "passenger_car",
+  "year": 2025,
+  "variant": {
+    "slug": "m70",
+    "name": "M70",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "m70",
+    "name": "M70"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 485,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 230
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 255
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 105.7,
+    "pack_capacity_kwh_net": 101.7,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 22.0
+    },
+    "dc": {
+      "max_power_kw": 195,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 560
+      },
+      {
+        "cycle": "epa",
+        "range_km": 459
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.5,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2805
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 168500,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW i7 M70 2025",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

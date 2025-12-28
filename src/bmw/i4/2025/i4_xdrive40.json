@@ -1,0 +1,102 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "i4",
+    "name": "i4"
+  },
+  "vehicle_type": "passenger_car",
+  "year": 2025,
+  "variant": {
+    "slug": "xdrive40",
+    "name": "xDrive40"
+  },
+  "trim": {
+    "slug": "xdrive40",
+    "name": "xDrive40"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 295,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 135
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 160
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 84.3,
+    "pack_capacity_kwh_net": 81.3,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 207,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 557
+      },
+      {
+        "cycle": "epa",
+        "range_km": 494
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "top_speed_kmh": 190
+  },
+  "weights": {
+    "curb_weight_kg": 2125
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 63900,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW i4 xDrive40 2025",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

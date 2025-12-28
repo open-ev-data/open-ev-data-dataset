@@ -1,0 +1,112 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "i4",
+    "name": "i4"
+  },
+  "vehicle_type": "passenger_car",
+  "year": 2025,
+  "trim": {
+    "slug": "edrive40",
+    "name": "eDrive40"
+  },
+  "markets": [
+    "US",
+    "DE",
+    "GB",
+    "FR",
+    "PT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 250,
+    "system_torque_nm": 430,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 250,
+        "torque_nm": 430
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 84.3,
+    "pack_capacity_kwh_net": 81.3,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 207,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 598
+      },
+      {
+        "cycle": "epa",
+        "range_km": 512
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.5,
+    "top_speed_kmh": 190
+  },
+  "weights": {
+    "curb_weight_kg": 2050
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 59400,
+        "country": "US",
+        "year": 2025
+      },
+      {
+        "currency": "EUR",
+        "amount": 61900,
+        "country": "DE",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW i4 eDrive40 2025",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

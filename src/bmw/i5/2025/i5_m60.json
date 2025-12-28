@@ -1,0 +1,103 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "i5",
+    "name": "i5"
+  },
+  "vehicle_type": "passenger_car",
+  "year": 2025,
+  "variant": {
+    "slug": "m60",
+    "name": "M60",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "m60",
+    "name": "M60"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 442,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 190
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 252
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 84.3,
+    "pack_capacity_kwh_net": 81.2,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 205,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 512
+      },
+      {
+        "cycle": "epa",
+        "range_km": 408
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.7,
+    "top_speed_kmh": 230
+  },
+  "weights": {
+    "curb_weight_kg": 2260
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 84100,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW i5 M60 2025",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

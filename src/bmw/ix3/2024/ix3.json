@@ -1,0 +1,98 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "ix3",
+    "name": "iX3"
+  },
+  "vehicle_type": "suv",
+  "year": 2024,
+  "trim": {
+    "slug": "ix3",
+    "name": "iX3"
+  },
+  "markets": [
+    "DE",
+    "GB",
+    "CN"
+  ],
+  "availability": {
+    "status": "discontinued",
+    "start_year": 2020,
+    "end_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 210,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 210
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 80.0,
+    "pack_capacity_kwh_net": 74.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 155,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 461
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.8,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2260
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "EUR",
+        "amount": 70400,
+        "country": "DE",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW iX3 2024",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "ix",
+    "name": "iX"
+  },
+  "vehicle_type": "suv",
+  "year": 2025,
+  "variant": {
+    "slug": "m60",
+    "name": "M60",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "m60",
+    "name": "M60"
+  },
+  "markets": [
+    "US",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2022
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 455,
+    "system_torque_nm": 1015,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 200
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 255
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 111.5,
+    "pack_capacity_kwh_net": 105.2,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 195,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 561
+      },
+      {
+        "cycle": "epa",
+        "range_km": 459
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.6,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2710
+  },
+  "capacity": {
+    "cargo_l": 500
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 119900,
+        "country": "US",
+        "year": 2025
+      },
+      {
+        "currency": "EUR",
+        "amount": 139900,
+        "country": "DE",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW iX M60 Official Specifications",
+      "url": "https://www.bmw.com/en/models/bmw-i/ix/bmw-ix-highlights.html",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "bmw",
+    "name": "BMW"
+  },
+  "model": {
+    "slug": "ix",
+    "name": "iX"
+  },
+  "vehicle_type": "suv",
+  "year": 2023,
+  "trim": {
+    "slug": "xdrive50",
+    "name": "xDrive50"
+  },
+  "markets": [
+    "US",
+    "DE",
+    "GB",
+    "FR"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 385,
+    "system_torque_nm": 765,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 190
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 195
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BMW",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 111.5,
+    "pack_capacity_kwh_net": 105.2,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 195,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 630
+      },
+      {
+        "cycle": "epa",
+        "range_km": 520
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.4,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2585
+  },
+  "capacity": {
+    "cargo_l": 500
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 83200,
+        "country": "US",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BMW iX xDrive50 2023",
+      "url": "https://www.bmw.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
