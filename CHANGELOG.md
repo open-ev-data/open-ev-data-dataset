@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## <small>1.5.1 (2025-12-28)</small>
+
+* fix: adjust to validate with latest image docker ([8c7d030](https://github.com/open-ev-data/open-ev-data-dataset/commit/8c7d030))
+
 ## 1.5.0 (2025-12-28)
 
 * feat(byd): add dolphin mini data vehicles variations ([3db735b](https://github.com/open-ev-data/open-ev-data-dataset/commit/3db735b))
