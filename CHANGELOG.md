@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## 1.5.0 (2025-12-28)
+
+* feat(byd): add dolphin mini data vehicles variations ([3db735b](https://github.com/open-ev-data/open-ev-data-dataset/commit/3db735b))
+* feat(byd): include dolphing 202, 2024 and 2025 variations ([155501b](https://github.com/open-ev-data/open-ev-data-dataset/commit/155501b))
+* feat(validation): implement complete dataset validation scripts ([5a3660a](https://github.com/open-ev-data/open-ev-data-dataset/commit/5a3660a))
+
 ## 1.4.0 (2025-12-28)
 
 * feat: add full data validation script and a guide for contributing vehicle data ([47503d8](https://github.com/open-ev-data/open-ev-data-dataset/commit/47503d8))
