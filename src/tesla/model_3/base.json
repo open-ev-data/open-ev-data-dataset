@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "tesla",
+    "name": "Tesla"
+  },
+  "model": {
+    "slug": "model_3",
+    "name": "Model 3"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5,
+    "drag_coefficient_cd": 0.219
+  },
+  "dimensions": {
+    "length_mm": 4720,
+    "width_mm": 1933,
+    "height_mm": 1440,
+    "wheelbase_mm": 2875
+  }
+}

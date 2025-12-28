@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "cyberbeast",
+    "name": "Cyberbeast",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "cyberbeast",
+    "name": "Cyberbeast"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 630,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 255
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 375
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "Tesla",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 123,
+    "pack_capacity_kwh_net": 122
+  },
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.5
+    },
+    "dc": {
+      "max_power_kw": 250,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 515
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 2.6,
+    "top_speed_kmh": 209
+  },
+  "weights": {
+    "curb_weight_kg": 3130
+  },
+  "capacity": {
+    "towing_braked_kg": 4990
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 99990,
+        "country": "US",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Cybertruck Cyberbeast",
+      "url": "https://www.tesla.com/cybertruck",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

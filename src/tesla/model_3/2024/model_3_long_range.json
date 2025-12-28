@@ -1,0 +1,84 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range",
+    "kind": "extended_range"
+  },
+  "trim": {
+    "slug": "long_range",
+    "name": "Long Range"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 366,
+    "system_torque_nm": 493,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 161
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 205,
+        "torque_nm": 493
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "Panasonic",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 79,
+    "pack_capacity_kwh_net": 75
+  },
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 250,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 678
+      },
+      {
+        "cycle": "epa",
+        "range_km": 584
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.4,
+    "top_speed_kmh": 201
+  },
+  "weights": {
+    "curb_weight_kg": 1828
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 47490,
+        "country": "US",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Model 3 Long Range Specs",
+      "url": "https://www.tesla.com/model3",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "rwd",
+    "name": "Rear-Wheel Drive"
+  },
+  "markets": [
+    "US",
+    "CN",
+    "DE",
+    "GB",
+    "FR",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 208,
+    "system_torque_nm": 420,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 208,
+        "torque_nm": 420
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 60,
+    "pack_capacity_kwh_net": 57,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "nacs",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 170,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 554
+      },
+      {
+        "cycle": "epa",
+        "range_km": 438
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.1,
+    "top_speed_kmh": 201
+  },
+  "weights": {
+    "curb_weight_kg": 1765
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 38990,
+        "country": "US",
+        "year": 2024
+      },
+      {
+        "currency": "EUR",
+        "amount": 42990,
+        "country": "DE",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Model 3 Official Specs",
+      "url": "https://www.tesla.com/model3",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

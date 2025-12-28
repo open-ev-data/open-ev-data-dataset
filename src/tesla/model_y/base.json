@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "tesla",
+    "name": "Tesla"
+  },
+  "model": {
+    "slug": "model_y",
+    "name": "Model Y"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 4,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4751,
+    "width_mm": 2129,
+    "height_mm": 1624,
+    "wheelbase_mm": 2890
+  }
+}

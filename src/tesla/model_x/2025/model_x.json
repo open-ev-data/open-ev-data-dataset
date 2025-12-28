@@ -1,0 +1,103 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "long_range",
+    "name": "Long Range"
+  },
+  "markets": [
+    "US",
+    "CN",
+    "DE",
+    "GB",
+    "FR",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 493,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 201
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 292
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "Panasonic",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 95,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "nacs",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 250,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 580
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 560
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.9,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2459
+  },
+  "capacity": {
+    "towing_braked_kg": 2250
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 79990,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Model X Specifications",
+      "url": "https://www.tesla.com/modelx",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

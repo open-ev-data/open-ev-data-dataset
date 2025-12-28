@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range RWD",
+    "kind": "extended_range"
+  },
+  "trim": {
+    "slug": "long_range",
+    "name": "Long Range"
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 340,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 340
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "Tesla",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 123,
+    "pack_capacity_kwh_net": 122
+  },
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.5
+    },
+    "dc": {
+      "max_power_kw": 250,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 563
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.2,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2900
+  },
+  "capacity": {
+    "towing_braked_kg": 3400
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 60990,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Cybertruck Long Range",
+      "url": "https://www.tesla.com/cybertruck",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

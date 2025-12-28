@@ -1,0 +1,96 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "long_range_rwd",
+    "name": "Long Range RWD"
+  },
+  "markets": [
+    "US",
+    "CN",
+    "DE",
+    "GB",
+    "FR",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 208,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 208
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 78,
+    "pack_capacity_kwh_net": 75,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "nacs",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 170,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 542
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 600
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.5,
+    "top_speed_kmh": 201
+  },
+  "weights": {
+    "curb_weight_kg": 1900
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 44990,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Model Y Specs",
+      "url": "https://www.tesla.com/modely",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

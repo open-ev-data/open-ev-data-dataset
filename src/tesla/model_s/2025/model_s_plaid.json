@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "plaid",
+    "name": "Plaid",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "plaid",
+    "name": "Plaid"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 760,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 255
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 505
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "Panasonic",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 95
+  },
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 250,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 560
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 600
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 2.1,
+    "top_speed_kmh": 322
+  },
+  "weights": {
+    "curb_weight_kg": 2162
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 89990,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Model S Plaid Specifications",
+      "url": "https://www.tesla.com/models",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

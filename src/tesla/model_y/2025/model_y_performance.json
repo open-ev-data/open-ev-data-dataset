@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "performance",
+    "name": "Performance",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "performance",
+    "name": "Performance"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 393,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 161
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 232
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "Panasonic",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 82,
+    "pack_capacity_kwh_net": 79
+  },
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 250,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 446
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 514
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.5,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2054
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 54990,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Model Y Performance",
+      "url": "https://www.tesla.com/modely",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

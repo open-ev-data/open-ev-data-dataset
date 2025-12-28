@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "long_range_awd",
+    "name": "Long Range AWD",
+    "kind": "extended_range"
+  },
+  "trim": {
+    "slug": "long_range",
+    "name": "Long Range"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 366,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 161
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 205
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "Panasonic",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 82,
+    "pack_capacity_kwh_net": 79
+  },
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 250,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 500
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 719
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.8,
+    "top_speed_kmh": 201
+  },
+  "weights": {
+    "curb_weight_kg": 2003
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 49990,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tesla Model Y Long Range AWD",
+      "url": "https://www.tesla.com/modely",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
