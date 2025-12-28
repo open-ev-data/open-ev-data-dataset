@@ -405,15 +405,15 @@
           "connector": {
             "type": "string",
             "enum": [
-              "type_1",
-              "type_2",
+              "type1",
+              "type2",
               "ccs1",
               "ccs2",
               "nacs",
               "chademo",
               "gb_t_ac",
               "gb_t_dc",
-              "tesla_type_2",
+              "tesla_type2",
               "other"
             ]
           },
