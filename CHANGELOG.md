@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.9.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.8.2...v1.9.0) (2025-12-28)
+
+### Features
+
+* **peugeot:** add specifications for e-2008, e-208, e-3008, e-408, and e-5008 models for 2023-2025 ([b319980](https://github.com/open-ev-data/open-ev-data-dataset/commit/b3199804a8a42e8919fc7b6b018ff469840d4b7c))
+
 ## [1.8.2](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.8.1...v1.8.2) (2025-12-28)
 
 ### Bug Fixes
