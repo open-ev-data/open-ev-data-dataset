@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "byd",
+    "name": "BYD"
+  },
+  "model": {
+    "slug": "han",
+    "name": "Han"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4995,
+    "width_mm": 1910,
+    "height_mm": 1495,
+    "wheelbase_mm": 2920
+  }
+}

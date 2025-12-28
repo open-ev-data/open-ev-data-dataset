@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "superior",
+    "name": "Superior"
+  },
+  "markets": [
+    "CN",
+    "BR"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 130,
+    "system_torque_nm": 290,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 130,
+        "torque_nm": 290
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 45.12,
+    "pack_capacity_kwh_net": 45.12,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0
+    },
+    "dc": {
+      "max_power_kw": 65,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 401
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.9,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1540
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "CNY",
+        "amount": 119800,
+        "country": "CN",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD China - Yuan Up",
+      "url": "https://www.byd.com/cn/car/yuanup",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

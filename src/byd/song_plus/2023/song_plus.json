@@ -1,0 +1,96 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "comfort",
+    "name": "Comfort"
+  },
+  "markets": [
+    "BR",
+    "CN",
+    "DE",
+    "FR"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 160,
+    "system_torque_nm": 330,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 330
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 71.8,
+    "pack_capacity_kwh_net": 71.8,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 115,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 420
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 520
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 9.3,
+    "top_speed_kmh": 175
+  },
+  "weights": {
+    "curb_weight_kg": 2020
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "EUR",
+        "amount": 41990,
+        "country": "DE",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Europe - Seal U (Song Plus)",
+      "url": "https://www.byd.com/eu/car/sealu",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

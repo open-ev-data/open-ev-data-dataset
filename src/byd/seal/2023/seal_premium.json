@@ -2,25 +2,19 @@
   "$schema": "../../../../schema.json",
   "schema_version": "1.0.0",
   "variant": {
-    "slug": "performance",
-    "name": "Performance",
-    "kind": "performance_package"
+    "slug": "premium",
+    "name": "Premium",
+    "kind": "battery_upgrade"
   },
   "trim": {
-    "slug": "performance",
-    "name": "Performance"
+    "slug": "premium",
+    "name": "Premium"
   },
   "powertrain": {
-    "drivetrain": "awd",
-    "system_power_kw": 390,
-    "system_torque_nm": 670,
+    "drivetrain": "rwd",
+    "system_power_kw": 230,
+    "system_torque_nm": 360,
     "motors": [
-      {
-        "position": "front",
-        "type": "asm",
-        "power_kw": 160,
-        "torque_nm": 310
-      },
       {
         "position": "rear",
         "type": "pmsm",
@@ -43,23 +37,29 @@
     "rated": [
       {
         "cycle": "wltp",
-        "range_km": 520
+        "range_km": 570
       }
     ]
   },
   "performance": {
-    "acceleration_0_100_kmh_s": 3.8
+    "acceleration_0_100_kmh_s": 5.9
   },
   "weights": {
-    "curb_weight_kg": 2185
+    "curb_weight_kg": 2055
   },
   "pricing": {
     "msrp": [
       {
+        "currency": "BRL",
+        "amount": 296800,
+        "country": "BR",
+        "year": 2023
+      },
+      {
         "currency": "AUD",
-        "amount": 68748,
+        "amount": 58798,
         "country": "AU",
-        "year": 2025
+        "year": 2023
       }
     ]
   },

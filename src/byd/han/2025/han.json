@@ -1,0 +1,96 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "flagship",
+    "name": "Flagship"
+  },
+  "markets": [
+    "BR",
+    "DE",
+    "FR",
+    "CN"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2020
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 380,
+    "system_torque_nm": 700,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 180
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 85.4,
+    "pack_capacity_kwh_net": 85.4,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0
+    },
+    "dc": {
+      "max_power_kw": 120,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 521
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.9,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2250
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 539990,
+        "country": "BR",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Europe - Han",
+      "url": "https://www.byd.com/eu/car/han",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

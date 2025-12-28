@@ -4,22 +4,35 @@
   "variant": {
     "slug": "extended_range",
     "name": "Extended Range",
-    "kind": "range_upgrade"
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "extended_range",
+    "name": "Extended Range"
   },
   "battery": {
     "pack_capacity_kwh_gross": 60.48,
-    "pack_capacity_kwh_net": 60.0
+    "pack_capacity_kwh_net": 60.48
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 88
+    }
   },
   "range": {
     "rated": [
       {
         "cycle": "wltp",
         "range_km": 420
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 510
       }
     ]
   },
   "weights": {
-    "curb_weight_kg": 1785
+    "curb_weight_kg": 1750
   },
   "pricing": {
     "msrp": [
@@ -34,21 +47,9 @@
   "sources": [
     {
       "type": "oem",
-      "title": "BYD Brazil Official Website - Yuan Plus Extended Range 2025",
-      "url": "https://www.byd.com/br",
-      "accessed_at": "2025-12-25T00:00:00Z"
-    },
-    {
-      "type": "oem",
-      "title": "BYD Europe Official Website - Atto 3 Extended Range",
-      "url": "https://www.byd.com/eu/car/atto3.html",
-      "accessed_at": "2025-12-25T00:00:00Z"
-    },
-    {
-      "type": "oem",
-      "title": "BYD China Official Website - Yuan Plus Extended",
-      "url": "https://www.byd.com/cn/car/yuanplus",
-      "accessed_at": "2025-12-25T00:00:00Z"
+      "title": "BYD Global - Atto 3 Specs",
+      "url": "https://www.byd.com/en/car/atto-3",
+      "accessed_at": "2025-12-28T00:00:00Z"
     }
   ]
 }

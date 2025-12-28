@@ -3,34 +3,41 @@
   "schema_version": "1.0.0",
   "year": 2025,
   "trim": {
-    "slug": "gls",
-    "name": "GLS"
+    "slug": "gs",
+    "name": "GS"
   },
-  "markets": ["BR", "CN", "MX"],
+  "markets": [
+    "BR",
+    "MX",
+    "CN"
+  ],
   "availability": {
     "status": "production",
     "start_year": 2024
   },
   "powertrain": {
     "drivetrain": "fwd",
-    "system_power_kw": 160,
-    "system_torque_nm": 330,
+    "system_power_kw": 173,
+    "system_torque_nm": 325,
     "motors": [
       {
         "position": "front",
         "type": "pmsm",
-        "power_kw": 160,
-        "torque_nm": 330
+        "power_kw": 145,
+        "torque_nm": 325
       }
-    ]
+    ],
+    "transmission": {
+      "type": "e-cvt",
+      "gears": 1
+    }
   },
   "battery": {
     "manufacturer": "BYD",
     "chemistry": "lfp",
-    "pack_capacity_kwh_gross": 71.8,
-    "pack_capacity_kwh_net": 71.0,
+    "pack_capacity_kwh_gross": 18.3,
+    "pack_capacity_kwh_net": 18.3,
     "thermal_management": "liquid",
-    "heat_pump": true,
     "warranty": {
       "years": 8,
       "distance_km": 200000,
@@ -39,8 +46,8 @@
   },
   "charge_ports": [
     {
-      "kind": "combo",
-      "connector": "ccs2",
+      "kind": "ac_only",
+      "connector": "type2",
       "location": {
         "side": "right",
         "position": "rear"
@@ -49,42 +56,36 @@
   ],
   "charging": {
     "ac": {
-      "max_power_kw": 11.0,
-      "phases": 3,
-      "frequency_hz": 60
-    },
-    "dc": {
-      "max_power_kw": 90,
-      "architecture_voltage_class": "400v"
-    },
-    "protocols": {
-      "dc": ["iso_15118_2"],
-      "plug_and_charge": false
+      "max_power_kw": 3.3,
+      "phases": 1,
+      "frequency_hz": 60,
+      "notes": "PHEV vehicle. Limited charging speed."
     }
   },
   "range": {
     "rated": [
       {
-        "cycle": "wltp",
-        "range_km": 520
+        "cycle": "nedc",
+        "range_km": 120,
+        "notes": "Electric-only range"
       }
     ]
   },
   "performance": {
-    "acceleration_0_100_kmh_s": 7.9,
-    "top_speed_kmh": 175
+    "acceleration_0_100_kmh_s": 7.3,
+    "top_speed_kmh": 185
   },
   "weights": {
-    "curb_weight_kg": 2050
+    "curb_weight_kg": 1695
   },
   "capacity": {
-    "cargo_l": 500
+    "cargo_l": 450
   },
   "pricing": {
     "msrp": [
       {
         "currency": "BRL",
-        "amount": 379800,
+        "amount": 187800,
         "country": "BR",
         "year": 2025
       }
@@ -94,20 +95,8 @@
     {
       "type": "oem",
       "title": "BYD Brazil Official Website - King 2025",
-      "url": "https://www.byd.com/br",
-      "accessed_at": "2025-12-25T00:00:00Z"
-    },
-    {
-      "type": "oem",
-      "title": "BYD China Official Website - Song Plus EV",
-      "url": "https://www.byd.com/cn",
-      "accessed_at": "2025-12-25T00:00:00Z"
-    },
-    {
-      "type": "oem",
-      "title": "BYD Mexico Official Website",
-      "url": "https://www.byd.com/mx",
-      "accessed_at": "2025-12-25T00:00:00Z"
+      "url": "https://www.byd.com/br/cars/king",
+      "accessed_at": "2025-12-28T12:00:00Z"
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "byd",
+    "name": "BYD"
+  },
+  "model": {
+    "slug": "tang",
+    "name": "Tang"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 7
+  },
+  "dimensions": {
+    "length_mm": 4870,
+    "width_mm": 1950,
+    "height_mm": 1725,
+    "wheelbase_mm": 2820
+  }
+}

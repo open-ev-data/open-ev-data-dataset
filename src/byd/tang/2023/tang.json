@@ -1,0 +1,100 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "flagship",
+    "name": "Flagship"
+  },
+  "markets": [
+    "BR",
+    "DE",
+    "NO",
+    "CN"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 380,
+    "system_torque_nm": 680,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 180
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 108.8,
+    "pack_capacity_kwh_net": 108.8,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0
+    },
+    "dc": {
+      "max_power_kw": 170,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 530
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.9,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2589
+  },
+  "capacity": {
+    "cargo_l": 235,
+    "cargo_max_l": 1655
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "BRL",
+        "amount": 529990,
+        "country": "BR",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "BYD Europe - Tang",
+      "url": "https://www.byd.com/eu/car/tang",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
