@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node scripts/build.js",
     "validate": "node scripts/validate.js",
+    "validate:full": "node scripts/validate-full.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release",
     "commitlint": "commitlint --edit",
