@@ -35,6 +35,9 @@ function main() {
   const command = `docker run --rm -v "${dockerSrcPath}:/data" ${IMAGE} --input /data --validate-only --verbose`;
 
   try {
+    console.log(`Pulling latest image: ${IMAGE}...`);
+    execSync(`docker pull ${IMAGE}`, { stdio: 'inherit' });
+    console.log('\nRunning validation tool...');
     execSync(command, { stdio: 'inherit' });
     console.log('\nValidation complete.');
     process.exit(0);
