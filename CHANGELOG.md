@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## 1.6.0 (2025-12-28)
+
+* fix(schema): update connector format ([913ffa8](https://github.com/open-ev-data/open-ev-data-dataset/commit/913ffa8))
+* feat(byd): add data for various BYD EV models ([eca4351](https://github.com/open-ev-data/open-ev-data-dataset/commit/eca4351))
+
 ## <small>1.5.1 (2025-12-28)</small>
 
 * fix: adjust to validate with latest image docker ([8c7d030](https://github.com/open-ev-data/open-ev-data-dataset/commit/8c7d030))
