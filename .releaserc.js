@@ -41,18 +41,18 @@ module.exports = {
         preset: 'conventionalcommits',
         presetConfig: {
           types: [
-            { type: 'feat', section: '✨ Features' },
-            { type: 'fix', section: '🐛 Bug Fixes' },
-            { type: 'perf', section: '⚡ Performance Improvements' },
-            { type: 'revert', section: '⏪ Reverts' },
-            { type: 'docs', section: '📝 Documentation', hidden: false },
-            { type: 'style', section: '💄 Styles', hidden: true },
-            { type: 'chore', section: '🔧 Miscellaneous Chores', hidden: false },
-            { type: 'refactor', section: '♻️ Code Refactoring' },
-            { type: 'test', section: '✅ Tests', hidden: true },
-            { type: 'build', section: '👷 Build System', hidden: false },
-            { type: 'ci', section: '👷 CI', hidden: false },
-            { type: 'data', section: '📊 Dataset Updates', hidden: false }
+            { type: 'feat', section: 'Features' },
+            { type: 'fix', section: 'Bug Fixes' },
+            { type: 'perf', section: 'Performance Improvements' },
+            { type: 'revert', section: 'Reverts' },
+            { type: 'docs', section: 'Documentation', hidden: false },
+            { type: 'style', section: 'Styles', hidden: true },
+            { type: 'chore', section: 'Miscellaneous Chores', hidden: false },
+            { type: 'refactor', section: 'Code Refactoring' },
+            { type: 'test', section: 'Tests', hidden: true },
+            { type: 'build', section: 'Build System', hidden: false },
+            { type: 'ci', section: 'CI', hidden: false },
+            { type: 'data', section: 'Dataset Updates', hidden: false }
           ]
         }
       }
