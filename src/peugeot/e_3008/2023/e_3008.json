@@ -1,0 +1,91 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "peugeot",
+    "name": "Peugeot"
+  },
+  "model": {
+    "slug": "e_3008",
+    "name": "e-3008"
+  },
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 157,
+    "system_torque_nm": 345,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 157,
+        "torque_nm": 345
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 73.0,
+    "pack_capacity_kwh_net": 70.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 160,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 525
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 8.7,
+    "top_speed_kmh": 170
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Peugeot e-3008 Official Specifications",
+      "url": "https://www.peugeot.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

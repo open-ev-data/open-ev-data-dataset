@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "peugeot",
+    "name": "Peugeot"
+  },
+  "model": {
+    "slug": "e_408",
+    "name": "e-408"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "fastback",
+    "doors": 5,
+    "seats": 5
+  }
+}

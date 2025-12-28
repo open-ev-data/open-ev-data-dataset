@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "dual_motor",
+    "name": "Dual Motor",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 239,
+    "system_torque_nm": 520,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 157,
+        "torque_nm": 260
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 82,
+        "torque_nm": 260
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 73.0,
+    "pack_capacity_kwh_net": 70.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 490
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.5,
+    "top_speed_kmh": 170
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Peugeot e-3008 Dual Motor 2025 Official Specifications",
+      "url": "https://www.peugeot.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

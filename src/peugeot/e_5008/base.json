@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "peugeot",
+    "name": "Peugeot"
+  },
+  "model": {
+    "slug": "e_5008",
+    "name": "e-5008"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 7,
+    "rows": 3
+  }
+}

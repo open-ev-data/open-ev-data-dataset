@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range",
+    "kind": "battery_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 170,
+    "motors": [
+      {
+        "position": "front",
+        "power_kw": 170
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 98.0,
+    "pack_capacity_kwh_net": 96.9
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 668
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Peugeot e-5008 Long Range 2025 Official Specifications",
+      "url": "https://www.peugeot.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
