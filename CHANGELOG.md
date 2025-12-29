@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.12.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.11.0...v1.12.0) (2025-12-29)
+
+### Features
+
+* **volvo:** add specifications for EC40, EX30, EX40, and EX90 models for 2023-2025 ([4bba13c](https://github.com/open-ev-data/open-ev-data-dataset/commit/4bba13ce0bca76ffd554c3f4c04344ab4afb89df))
+
 ## [1.11.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.10.0...v1.11.0) (2025-12-29)
 
 ### Features
