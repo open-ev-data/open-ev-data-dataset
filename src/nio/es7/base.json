@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "nio",
+    "name": "NIO"
+  },
+  "model": {
+    "slug": "es7",
+    "name": "ES7"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5,
+    "rows": 2
+  },
+  "dimensions": {
+    "length_mm": 4912,
+    "width_mm": 1987,
+    "height_mm": 1720,
+    "wheelbase_mm": 2960
+  }
+}

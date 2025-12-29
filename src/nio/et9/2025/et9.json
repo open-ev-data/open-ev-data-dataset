@@ -1,0 +1,97 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "CN",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 520,
+    "system_torque_nm": 700,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 340
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 180
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 120,
+    "pack_capacity_kwh_net": 111,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    },
+    {
+      "kind": "dc_only",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 500,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 650
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.9,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2550
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "NIO ET9 Official Specifications",
+      "url": "https://www.nio.com/et9",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

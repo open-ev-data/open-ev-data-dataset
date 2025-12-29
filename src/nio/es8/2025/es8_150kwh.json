@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "150kwh",
+    "name": "150 kWh",
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 150,
+    "pack_capacity_kwh_net": 140
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 900
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "NIO ES8 2025 150 kWh Specifications",
+      "url": "https://www.nio.com/es8",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

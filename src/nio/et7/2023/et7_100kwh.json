@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "variant": {
+    "slug": "100kwh",
+    "name": "100 kWh",
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 93
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 700
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "NIO ET7 100 kWh Specifications",
+      "url": "https://www.nio.com/et7",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

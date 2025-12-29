@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "nio",
+    "name": "NIO"
+  },
+  "model": {
+    "slug": "firefly_ev",
+    "name": "Firefly EV"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 5,
+    "rows": 1
+  },
+  "dimensions": {
+    "length_mm": 4200,
+    "width_mm": 1800,
+    "height_mm": 1550,
+    "wheelbase_mm": 2600
+  }
+}

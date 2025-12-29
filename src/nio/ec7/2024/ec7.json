@@ -1,0 +1,97 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "CN",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 480,
+    "system_torque_nm": 850,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 180
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 300
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 75,
+    "pack_capacity_kwh_net": 70,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    },
+    {
+      "kind": "dc_only",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 485
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.9,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2400
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "NIO EC7 2024 Official Specifications",
+      "url": "https://www.nio.com/ec7",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

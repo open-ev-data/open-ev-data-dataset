@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "nio",
+    "name": "NIO"
+  },
+  "model": {
+    "slug": "et9",
+    "name": "ET9"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5,
+    "rows": 1
+  },
+  "dimensions": {
+    "length_mm": 5320,
+    "width_mm": 2016,
+    "height_mm": 1620,
+    "wheelbase_mm": 3250
+  }
+}

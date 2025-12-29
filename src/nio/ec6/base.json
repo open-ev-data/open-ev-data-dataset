@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "nio",
+    "name": "NIO"
+  },
+  "model": {
+    "slug": "ec6",
+    "name": "EC6"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "coupe",
+    "doors": 5,
+    "seats": 5,
+    "rows": 2
+  },
+  "dimensions": {
+    "length_mm": 4850,
+    "width_mm": 1965,
+    "height_mm": 1731,
+    "wheelbase_mm": 2900
+  }
+}
