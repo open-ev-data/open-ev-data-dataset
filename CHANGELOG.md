@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.10.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.9.0...v1.10.0) (2025-12-29)
+
+### Features
+
+* **mercedes_benz:** add specifications for various Mercedes-Benz electric vehicle models ([edbfa66](https://github.com/open-ev-data/open-ev-data-dataset/commit/edbfa666043bf18cce6d9529b6103d2667545f47))
+
 ## [1.9.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.8.2...v1.9.0) (2025-12-28)
 
 ### Features
