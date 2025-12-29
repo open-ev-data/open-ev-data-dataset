@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.17.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.16.0...v1.17.0) (2025-12-29)
+
+### Features
+
+* **audi:** add specifications for A6 e-tron, e-tron GT, Q4 e-tron, Q6 e-tron, and Q8 e-tron ([c750da2](https://github.com/open-ev-data/open-ev-data-dataset/commit/c750da2ead573521a5ad4216e8ba3664fe01f414))
+
 ## [1.16.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.15.0...v1.16.0) (2025-12-29)
 
 ### Features
