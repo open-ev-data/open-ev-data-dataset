@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "variant": {
+    "slug": "twin_motor",
+    "name": "Twin Motor",
+    "kind": "performance_package"
+  },
+  "markets": ["US", "BR", "DE", "GB", "FR", "PT", "IT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 300,
+    "system_torque_nm": 660,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 330
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 330
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 78.0,
+    "pack_capacity_kwh_net": 69.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 413
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.7,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2180
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volvo EC40 Twin Motor Official Specifications 2025",
+      "url": "https://www.volvocars.com/intl/v/cars/ec40",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

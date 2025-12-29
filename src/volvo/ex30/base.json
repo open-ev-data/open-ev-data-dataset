@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "volvo",
+    "name": "Volvo"
+  },
+  "model": {
+    "slug": "ex30",
+    "name": "EX30"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4233,
+    "width_mm": 1837,
+    "height_mm": 1555,
+    "wheelbase_mm": 2650
+  }
+}

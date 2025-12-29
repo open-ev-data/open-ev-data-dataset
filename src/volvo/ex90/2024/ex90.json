@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US", "BR", "DE", "GB", "FR", "PT", "IT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 380,
+    "system_torque_nm": 910,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 180,
+        "torque_nm": 420
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 490
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 111.0,
+    "pack_capacity_kwh_net": 107.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 250,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 600
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.9,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2818
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volvo EX90 Official Specifications 2024",
+      "url": "https://www.volvocars.com/intl/v/cars/ex90",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

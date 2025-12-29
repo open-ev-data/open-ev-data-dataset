@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US", "BR", "DE", "GB", "FR", "PT", "IT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 175,
+    "system_torque_nm": 330,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 175,
+        "torque_nm": 330
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 78.0,
+    "pack_capacity_kwh_net": 69.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 420
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.4,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 2100
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volvo EC40 (C40 Recharge) Official Specifications 2023",
+      "url": "https://www.volvocars.com/intl/v/cars/c40-recharge",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

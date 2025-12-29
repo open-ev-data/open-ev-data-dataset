@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "variant": {
+    "slug": "twin_motor",
+    "name": "Twin Motor",
+    "kind": "performance_package"
+  },
+  "markets": ["US", "BR", "DE", "GB", "FR", "PT", "IT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2020
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 300,
+    "system_torque_nm": 660,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 330
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 330
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 78.0,
+    "pack_capacity_kwh_net": 69.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 418
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.9,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2200
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volvo EX40 Twin Motor Official Specifications 2024",
+      "url": "https://www.volvocars.com/intl/v/cars/ex40",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

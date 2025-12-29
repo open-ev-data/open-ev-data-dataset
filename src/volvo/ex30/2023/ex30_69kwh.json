@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "variant": {
+    "slug": "69kwh",
+    "name": "69 kWh",
+    "kind": "battery_upgrade"
+  },
+  "markets": ["US", "BR", "DE", "GB", "FR", "PT", "IT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 200,
+    "system_torque_nm": 343,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 343
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 69.0,
+    "pack_capacity_kwh_net": 66.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 153,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 480
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.7,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 1900
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volvo EX30 69 kWh Official Specifications",
+      "url": "https://www.volvocars.com/intl/v/cars/ex30",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}
