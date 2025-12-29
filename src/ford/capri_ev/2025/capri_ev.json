@@ -1,0 +1,85 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 220,
+    "system_torque_nm": 450,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 110
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 110,
+        "torque_nm": 225
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 77.0,
+    "pack_capacity_kwh_net": 72.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 135,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 600
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.8,
+    "top_speed_kmh": 180
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Ford Capri EV 2025",
+      "url": "https://www.ford.pt/hibrido-eletrico/totalmente-eletrico",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

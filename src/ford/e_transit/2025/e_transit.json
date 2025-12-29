@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 198,
+    "system_torque_nm": 430,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 198,
+        "torque_nm": 430
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 68.0,
+    "pack_capacity_kwh_net": 64.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.3,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 115,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 317
+      }
+    ]
+  },
+  "performance": {
+    "top_speed_kmh": 120
+  },
+  "weights": {
+    "curb_weight_kg": 2690,
+    "max_payload_kg": 1758
+  },
+  "capacity": {
+    "cargo_l": 15100,
+    "towing_braked_kg": 2000
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Ford E-Transit 2025",
+      "url": "https://www.ford.com/commercial-trucks/e-transit/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

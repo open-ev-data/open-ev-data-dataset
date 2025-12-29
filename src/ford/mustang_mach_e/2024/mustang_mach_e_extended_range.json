@@ -1,0 +1,97 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "extended_range",
+    "name": "Extended Range",
+    "kind": "range_upgrade"
+  },
+  "trim": {
+    "slug": "extended_range",
+    "name": "Extended Range"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 258,
+    "system_torque_nm": 565,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 60
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 198,
+        "torque_nm": 430
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 98.8,
+    "pack_capacity_kwh_net": 91.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 490
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 610
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.2,
+    "acceleration_0_60_mph_s": 4.8,
+    "top_speed_kmh": 180
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Ford Mustang Mach-E Extended Range 2024",
+      "url": "https://www.ford.com/suvs/mach-e/",
+      "accessed_at": "2024-12-15T00:00:00Z"
+    }
+  ]
+}

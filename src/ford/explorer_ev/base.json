@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "slug": "explorer_ev",
+    "name": "Explorer EV"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 7,
+    "rows": 3
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "variant": {
+    "slug": "gt",
+    "name": "GT",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "gt",
+    "name": "GT"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 358,
+    "system_torque_nm": 860,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 60
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 298,
+        "torque_nm": 580
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 88.0,
+    "pack_capacity_kwh_net": 82.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 418
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 490
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.7,
+    "acceleration_0_60_mph_s": 3.5,
+    "top_speed_kmh": 200
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Ford Mustang Mach-E GT",
+      "url": "https://www.ford.com/suvs/mach-e/",
+      "accessed_at": "2024-01-15T00:00:00Z"
+    }
+  ]
+}

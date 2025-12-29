@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "slug": "mustang_mach_e",
+    "name": "Mustang Mach-E"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4743,
+    "width_mm": 1930,
+    "width_with_mirrors_mm": 2097,
+    "height_mm": 1613,
+    "wheelbase_mm": 2984
+  }
+}

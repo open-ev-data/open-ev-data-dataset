@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "pro",
+    "name": "Pro"
+  },
+  "markets": [
+    "US",
+    "CA"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 318,
+    "system_torque_nm": 1051,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 159
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 159,
+        "torque_nm": 420
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 98.0,
+    "pack_capacity_kwh_net": 91.0,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "manual",
+        "route_planner"
+      ]
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.3,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 155,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 370
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "acceleration_0_60_mph_s": 4.3,
+    "top_speed_kmh": 177
+  },
+  "weights": {
+    "curb_weight_kg": 2670
+  },
+  "capacity": {
+    "cargo_l": 592,
+    "frunk_l": 400,
+    "towing_braked_kg": 4536
+  },
+  "v2x": {
+    "v2l": {
+      "supported": true,
+      "max_power_kw": 9.6
+    }
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Ford F-150 Lightning 2024",
+      "url": "https://www.ford.com/trucks/f150/f150-lightning/",
+      "accessed_at": "2024-12-15T00:00:00Z"
+    }
+  ]
+}

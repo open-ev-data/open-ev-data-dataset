@@ -1,0 +1,94 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "lariat",
+    "name": "Lariat",
+    "kind": "trim_level"
+  },
+  "trim": {
+    "slug": "lariat",
+    "name": "Lariat"
+  },
+  "markets": [
+    "US",
+    "CA"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 318,
+    "system_torque_nm": 1051,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 159
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 159,
+        "torque_nm": 420
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 131.0,
+    "pack_capacity_kwh_net": 123.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.3,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 155,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 515
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "acceleration_0_60_mph_s": 4.3,
+    "top_speed_kmh": 177
+  },
+  "v2x": {
+    "v2l": {
+      "supported": true,
+      "max_power_kw": 9.6
+    }
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Ford F-150 Lightning Lariat 2025",
+      "url": "https://www.ford.com/trucks/f150/f150-lightning/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

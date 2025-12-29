@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "slug": "e_transit_courier",
+    "name": "E-Transit Courier"
+  },
+  "vehicle_type": "van",
+  "body": {
+    "style": "van",
+    "doors": 3,
+    "seats": 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "slug": "e_tourneo_courier",
+    "name": "E-Tourneo Courier"
+  },
+  "vehicle_type": "van",
+  "body": {
+    "style": "mpv",
+    "doors": 5,
+    "seats": 5
+  }
+}

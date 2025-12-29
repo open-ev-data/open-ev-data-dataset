@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "slug": "f_150_lightning",
+    "name": "F-150 Lightning"
+  },
+  "vehicle_type": "pickup",
+  "body": {
+    "style": "pickup",
+    "doors": 4,
+    "seats": 5,
+    "rows": 2
+  }
+}
