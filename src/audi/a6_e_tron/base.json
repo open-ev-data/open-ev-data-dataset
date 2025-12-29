@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "a6_e_tron",
+    "name": "A6 e-tron"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5,
+    "platform": "PPE",
+    "drag_coefficient_cd": 0.22
+  },
+  "dimensions": {
+    "length_mm": 4960,
+    "width_mm": 1960,
+    "height_mm": 1440,
+    "wheelbase_mm": 2960
+  }
+}

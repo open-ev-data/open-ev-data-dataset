@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "q8_e_tron",
+    "name": "Q8 e-tron"
+  },
+  "year": 2025,
+  "trim": {
+    "slug": "quattro",
+    "name": "quattro"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 300,
+    "system_torque_nm": 664,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 135
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 165,
+        "torque_nm": 664
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 106.0,
+    "pack_capacity_kwh_net": 100.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 582
+      },
+      {
+        "cycle": "epa",
+        "range_km": 446
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.7,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2620
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Audi Q8 e-tron quattro 2025 Official Specifications",
+      "url": "https://www.audi.com",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

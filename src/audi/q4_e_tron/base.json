@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "q4_e_tron",
+    "name": "Q4 e-tron"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5,
+    "drag_coefficient_cd": 0.28
+  },
+  "dimensions": {
+    "length_mm": 4588,
+    "width_mm": 1865,
+    "height_mm": 1632,
+    "wheelbase_mm": 2764
+  }
+}

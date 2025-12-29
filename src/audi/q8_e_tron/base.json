@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "q8_e_tron",
+    "name": "Q8 e-tron"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5,
+    "drag_coefficient_cd": 0.27
+  },
+  "dimensions": {
+    "length_mm": 4915,
+    "width_mm": 1937,
+    "height_mm": 1616,
+    "wheelbase_mm": 2928
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "q4_e_tron",
+    "name": "Q4 e-tron"
+  },
+  "year": 2024,
+  "trim": {
+    "slug": "40",
+    "name": "40"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 125,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 125,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 52.0,
+    "pack_capacity_kwh_net": 48.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 125,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 341
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 9.0,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1985
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Audi Q4 e-tron 40 2024 Official Specifications",
+      "url": "https://www.audi.com",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

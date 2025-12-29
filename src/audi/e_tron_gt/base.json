@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "e_tron_gt",
+    "name": "e-tron GT"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5,
+    "drag_coefficient_cd": 0.24
+  },
+  "dimensions": {
+    "length_mm": 4990,
+    "width_mm": 1960,
+    "height_mm": 1410,
+    "wheelbase_mm": 2900
+  }
+}

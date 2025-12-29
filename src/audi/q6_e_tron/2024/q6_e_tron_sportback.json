@@ -1,0 +1,105 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "q6_e_tron",
+    "name": "Q6 e-tron"
+  },
+  "year": 2024,
+  "variant": {
+    "slug": "sportback",
+    "name": "Sportback",
+    "kind": "body_style"
+  },
+  "trim": {
+    "slug": "quattro",
+    "name": "quattro"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 285,
+    "system_torque_nm": 580,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 140
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 210,
+        "torque_nm": 580
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 100.0,
+    "pack_capacity_kwh_net": 94.9,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 270,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 640
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.9,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2340
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Audi Q6 e-tron Sportback 2024 Official Specifications",
+      "url": "https://www.audi.com",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

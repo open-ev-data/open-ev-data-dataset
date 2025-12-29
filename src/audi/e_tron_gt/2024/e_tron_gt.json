@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "e_tron_gt",
+    "name": "e-tron GT"
+  },
+  "year": 2024,
+  "trim": {
+    "slug": "quattro",
+    "name": "quattro"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 390,
+    "system_torque_nm": 630,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 175
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 335,
+        "torque_nm": 630
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 93.4,
+    "pack_capacity_kwh_net": 85.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 270,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 488
+      },
+      {
+        "cycle": "epa",
+        "range_km": 383
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.1,
+    "top_speed_kmh": 245
+  },
+  "weights": {
+    "curb_weight_kg": 2347
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Audi e-tron GT quattro 2024 Official Specifications",
+      "url": "https://www.audi.com",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

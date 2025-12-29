@@ -1,0 +1,109 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "audi",
+    "name": "Audi"
+  },
+  "model": {
+    "slug": "e_tron_gt",
+    "name": "e-tron GT"
+  },
+  "year": 2024,
+  "variant": {
+    "slug": "rs",
+    "name": "RS",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "rs",
+    "name": "RS"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 440,
+    "system_torque_nm": 830,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 175
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 335,
+        "torque_nm": 830
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 93.4,
+    "pack_capacity_kwh_net": 85.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 270,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 472
+      },
+      {
+        "cycle": "epa",
+        "range_km": 370
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.3,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2350
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Audi RS e-tron GT 2024 Official Specifications",
+      "url": "https://www.audi.com",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}
