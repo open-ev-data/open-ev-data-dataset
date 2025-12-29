@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.11.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.10.0...v1.11.0) (2025-12-29)
+
+### Features
+
+* **volkswagen:** add specifications for ID.3, ID.4, ID.5, ID.7, and ID. Buzz models for 2023-2025 ([f877cc8](https://github.com/open-ev-data/open-ev-data-dataset/commit/f877cc81ea13fc1d256efe232e8cbc4af99b4c70))
+
 ## [1.10.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.9.0...v1.10.0) (2025-12-29)
 
 ### Features
