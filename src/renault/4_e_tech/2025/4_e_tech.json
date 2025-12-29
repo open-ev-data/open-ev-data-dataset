@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 90,
+    "system_torque_nm": 250,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 90,
+        "torque_nm": 250
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 52.0,
+    "pack_capacity_kwh_net": 50.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 100,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 400
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 8.5,
+    "top_speed_kmh": 150
+  },
+  "dimensions": {
+    "length_mm": 4160,
+    "width_mm": 1950,
+    "height_mm": 1900,
+    "wheelbase_mm": 2570
+  },
+  "weights": {
+    "curb_weight_kg": 1550
+  },
+  "capacity": {
+    "cargo_l": 420
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Renault 4 E-Tech 2025 Official Specifications",
+      "url": "https://www.renault.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

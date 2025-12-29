@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "40kwh",
+    "name": "40 kWh",
+    "kind": "battery_option"
+  },
+  "powertrain": {
+    "system_power_kw": 70,
+    "system_torque_nm": 200,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 70,
+        "torque_nm": 200
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 40.0,
+    "pack_capacity_kwh_net": 38.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 300
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1500
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Renault 4 E-Tech 40 kWh Variant 2025",
+      "url": "https://www.renault.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

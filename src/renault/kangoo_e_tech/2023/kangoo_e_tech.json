@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 90,
+    "system_torque_nm": 245,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 90,
+        "torque_nm": 245
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 45.0,
+    "pack_capacity_kwh_net": 43.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.4,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 300
+      }
+    ]
+  },
+  "performance": {
+    "top_speed_kmh": 130
+  },
+  "dimensions": {
+    "length_mm": 4282,
+    "width_mm": 1829,
+    "height_mm": 1812,
+    "wheelbase_mm": 2693
+  },
+  "weights": {
+    "curb_weight_kg": 1502
+  },
+  "capacity": {
+    "cargo_l": 850,
+    "cargo_max_l": 2500
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Renault Kangoo E-Tech Official Specifications",
+      "url": "https://www.renault.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

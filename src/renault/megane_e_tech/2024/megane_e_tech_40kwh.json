@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "40kwh",
+    "name": "40 kWh",
+    "kind": "battery_option"
+  },
+  "powertrain": {
+    "system_power_kw": 96,
+    "system_torque_nm": 250,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 96,
+        "torque_nm": 250
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 40.0,
+    "pack_capacity_kwh_net": 38.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 300
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1580
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Renault Megane E-Tech Electric 40 kWh Variant 2024",
+      "url": "https://www.renault.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
