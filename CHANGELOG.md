@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.14.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.13.0...v1.14.0) (2025-12-29)
+
+### Features
+
+* **renault:** add specifications for Renault 4 E-Tech, 5 E-Tech, Kangoo E-Tech, Megane and more ([57bf882](https://github.com/open-ev-data/open-ev-data-dataset/commit/57bf8823e288b6303e181bc8cd3929145e33b6b3))
+
+### Miscellaneous Chores
+
+* **husky:** remove unnecessary lines from commit-msg hook ([952f728](https://github.com/open-ev-data/open-ev-data-dataset/commit/952f728f264eb42bd419b3aa73def7c7e4969506))
+
 ## [1.13.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.12.0...v1.13.0) (2025-12-29)
 
 ### Features
