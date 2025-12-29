@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mitsubishi",
+    "name": "Mitsubishi"
+  },
+  "model": {
+    "slug": "eclipse_cross_ev",
+    "name": "Eclipse Cross EV"
+  },
+  "vehicle_type": "suv"
+}

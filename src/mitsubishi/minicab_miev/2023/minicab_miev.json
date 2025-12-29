@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 30,
+    "system_torque_nm": 196,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 30,
+        "torque_nm": 196
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_net": 10.5,
+    "thermal_management": "air"
+  },
+  "charge_ports": [
+    {
+      "kind": "ac_only",
+      "connector": "type1",
+      "location": {
+        "side": "front",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.7,
+      "phases": 1
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "jc08",
+        "range_km": 100
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mitsubishi Minicab-MiEV Official Specifications",
+      "url": "https://www.mitsubishi-motors.com/jp/products/minicab-miev/",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

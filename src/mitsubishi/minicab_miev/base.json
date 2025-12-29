@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mitsubishi",
+    "name": "Mitsubishi"
+  },
+  "model": {
+    "slug": "minicab_miev",
+    "name": "Minicab-MiEV"
+  },
+  "vehicle_type": "van"
+}

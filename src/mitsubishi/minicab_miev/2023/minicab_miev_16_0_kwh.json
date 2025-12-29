@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "variant": {
+    "slug": "16_0_kwh",
+    "name": "16.0 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_net": 16.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "jc08",
+        "range_km": 150
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mitsubishi Minicab-MiEV 16.0 kWh Battery Option",
+      "url": "https://www.mitsubishi-motors.com/jp/products/minicab-miev/",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

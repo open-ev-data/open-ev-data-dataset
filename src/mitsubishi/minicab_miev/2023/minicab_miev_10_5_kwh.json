@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "variant": {
+    "slug": "10_5_kwh",
+    "name": "10.5 kWh",
+    "kind": "battery_option"
+  },
+  "battery": {
+    "pack_capacity_kwh_net": 10.5
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "jc08",
+        "range_km": 100
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mitsubishi Minicab-MiEV 10.5 kWh Battery Option",
+      "url": "https://www.mitsubishi-motors.com/jp/products/minicab-miev/",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
