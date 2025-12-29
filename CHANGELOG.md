@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.16.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.15.0...v1.16.0) (2025-12-29)
+
+### Features
+
+* **ford:** add specifications for new electric vehicle models including Capri EV and more ([30d275c](https://github.com/open-ev-data/open-ev-data-dataset/commit/30d275c2d166e1f6c206eb97f9747384ffa48f62))
+
 ## [1.15.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.14.0...v1.15.0) (2025-12-29)
 
 ### Features
