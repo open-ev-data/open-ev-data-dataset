@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "41_3kwh",
+    "name": "41.3 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 41.3,
+    "pack_capacity_kwh_net": 36.5
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 403
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 403
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1122
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Leapmotor T03 2024 41.3 kWh Variant Specifications",
+      "url": "https://www.leapmotor.com/t03",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

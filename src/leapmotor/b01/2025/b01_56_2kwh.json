@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "56_2kwh",
+    "name": "56.2 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 56.2,
+    "pack_capacity_kwh_net": 52.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 510
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1550
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Leapmotor B01 56.2 kWh Variant Specifications",
+      "url": "https://www.leapmotor.com/b01",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

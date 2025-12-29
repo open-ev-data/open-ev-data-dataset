@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 132,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 132
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 67.1,
+    "pack_capacity_kwh_net": 62.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 120,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 600
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.8,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 1756
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Leapmotor B10 2025 Official Specifications",
+      "url": "https://www.leapmotor.com/b10",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Leapmotor B10 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leapmotor_B10",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

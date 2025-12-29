@@ -1,0 +1,78 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 55,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 55
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 36.5,
+    "pack_capacity_kwh_net": 31.9,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "front",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 6.6,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 403
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 403
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 14.0,
+    "top_speed_kmh": 100
+  },
+  "weights": {
+    "curb_weight_kg": 1122
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Leapmotor T03 2025 Official Specifications",
+      "url": "https://www.leapmotor.com/t03",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

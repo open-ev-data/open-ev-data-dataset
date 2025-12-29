@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "21_6kwh",
+    "name": "21.6 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 21.6,
+    "pack_capacity_kwh_net": 18.5
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 200
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 200
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1087
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Leapmotor T03 21.6 kWh Variant Specifications",
+      "url": "https://www.leapmotor.com/t03",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

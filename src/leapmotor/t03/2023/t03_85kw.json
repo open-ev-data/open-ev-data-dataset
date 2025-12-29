@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "85kw",
+    "name": "85 kW",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "system_power_kw": 85,
+    "motors": [
+      {
+        "position": "rear",
+        "power_kw": 85
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 12.0,
+    "top_speed_kmh": 110
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Leapmotor T03 85 kW Variant Specifications",
+      "url": "https://www.leapmotor.com/t03",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "52_6kwh",
+    "name": "52.6 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 52.6,
+    "pack_capacity_kwh_net": 48.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 361
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1600
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Leapmotor Lafa 5 52.6 kWh Variant Specifications",
+      "url": "https://www.leapmotor.com/lafa5",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 160,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 160
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 67.1,
+    "pack_capacity_kwh_net": 62.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 120,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 434
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.8,
+    "top_speed_kmh": 180
+  },
+  "dimensions": {
+    "length_mm": 4220,
+    "width_mm": 1830,
+    "height_mm": 1550,
+    "wheelbase_mm": 2650
+  },
+  "weights": {
+    "curb_weight_kg": 1650
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Leapmotor Lafa 5 2025 Official Specifications",
+      "url": "https://www.leapmotor.com/lafa5",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Leapmotor Lafa 5 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leapmotor_Lafa_5",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
