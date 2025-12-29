@@ -1,0 +1,78 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "awd",
+    "name": "All-Wheel Drive",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "awd",
+    "name": "All-Wheel Drive"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 475,
+    "system_torque_nm": 710,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 165
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 310,
+        "torque_nm": 440
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 95
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 870
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 710
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 2.84,
+    "top_speed_kmh": 210
+  },
+  "weights": {
+    "curb_weight_kg": 2150
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr 007 2024 AWD Official Specifications",
+      "url": "https://www.zeekr.com/007",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr 007 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_007",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

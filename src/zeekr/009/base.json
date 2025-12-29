@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "zeekr",
+    "name": "Zeekr"
+  },
+  "model": {
+    "slug": "009",
+    "name": "009"
+  },
+  "vehicle_type": "van",
+  "body": {
+    "style": "mpv",
+    "doors": 5,
+    "seats": 7
+  }
+}
+

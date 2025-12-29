@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "100kwh",
+    "name": "100 kWh Extended Range",
+    "kind": "range_upgrade"
+  },
+  "trim": {
+    "slug": "extended_range",
+    "name": "Extended Range"
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 95,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 780
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 640
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2250
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr 7X 2025 100 kWh Extended Range Specifications",
+      "url": "https://www.zeekr.com/7x",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr 7X Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_7X",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

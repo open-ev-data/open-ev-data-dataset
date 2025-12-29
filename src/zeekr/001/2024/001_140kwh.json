@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "140kwh",
+    "name": "140 kWh Extended Range",
+    "kind": "range_upgrade"
+  },
+  "trim": {
+    "slug": "extended_range",
+    "name": "Extended Range"
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 140,
+    "pack_capacity_kwh_net": 133,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 360,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 1032
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 850
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2450
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr 001 2024 140 kWh Extended Range Specifications",
+      "url": "https://www.zeekr.com/001",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr 001 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_001",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

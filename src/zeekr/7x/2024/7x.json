@@ -1,0 +1,96 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN", "US", "DE", "GB", "FR", "PT", "IT", "BR", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 310,
+    "system_torque_nm": 440,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 310,
+        "torque_nm": 440
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 75,
+    "pack_capacity_kwh_net": 72,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 605
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 495
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.8,
+    "top_speed_kmh": 200
+  },
+  "dimensions": {
+    "length_mm": 4825,
+    "width_mm": 1930,
+    "height_mm": 1656,
+    "wheelbase_mm": 2925
+  },
+  "weights": {
+    "curb_weight_kg": 2150
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr 7X 2024 Official Specifications",
+      "url": "https://www.zeekr.com/7x",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr 7X Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_7X",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN", "US", "DE", "GB", "FR", "PT", "IT", "BR", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 400,
+    "system_torque_nm": 686,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 200
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 108,
+    "pack_capacity_kwh_net": 102,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 22.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 604
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 822
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "top_speed_kmh": 190
+  },
+  "dimensions": {
+    "length_mm": 5209,
+    "width_mm": 2024,
+    "height_mm": 1856,
+    "wheelbase_mm": 3205
+  },
+  "weights": {
+    "curb_weight_kg": 2830
+  },
+  "body": {
+    "seats": 7,
+    "rows": 3
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr 009 2024 Official Specifications",
+      "url": "https://www.zeekr.com/009",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr 009 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_009",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

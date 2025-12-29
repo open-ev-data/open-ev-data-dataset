@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "awd_100kwh",
+    "name": "All-Wheel Drive 100 kWh",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "awd_extended_range",
+    "name": "All-Wheel Drive Extended Range"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 475,
+    "system_torque_nm": 710,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 165
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 310,
+        "torque_nm": 440
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 95,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 780
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 640
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.9,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2350
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr 7X 2024 AWD 100 kWh Official Specifications",
+      "url": "https://www.zeekr.com/7x",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr 7X Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_7X",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

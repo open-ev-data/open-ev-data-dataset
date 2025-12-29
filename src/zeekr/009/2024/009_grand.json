@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "grand",
+    "name": "Grand",
+    "kind": "luxury_package"
+  },
+  "trim": {
+    "slug": "grand",
+    "name": "Grand"
+  },
+  "body": {
+    "seats": 4,
+    "rows": 2
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr 009 2024 Grand Official Specifications",
+      "url": "https://www.zeekr.com/009",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr 009 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_009",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

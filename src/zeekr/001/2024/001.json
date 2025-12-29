@@ -1,0 +1,100 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN", "US", "DE", "GB", "FR", "PT", "IT", "BR", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 400,
+    "system_torque_nm": 768,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 200
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 95,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 22.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 360,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 741
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 606
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.8,
+    "top_speed_kmh": 200
+  },
+  "dimensions": {
+    "length_mm": 4970,
+    "width_mm": 1999,
+    "height_mm": 1560,
+    "wheelbase_mm": 3005
+  },
+  "weights": {
+    "curb_weight_kg": 2290
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr 001 2024 Official Specifications",
+      "url": "https://www.zeekr.com/001",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr 001 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_001",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

@@ -1,0 +1,96 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN", "US", "DE", "GB", "FR", "PT", "IT", "BR", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 200,
+    "system_torque_nm": 343,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 343
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 66,
+    "pack_capacity_kwh_net": 62,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 560
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 440
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.8,
+    "top_speed_kmh": 180
+  },
+  "dimensions": {
+    "length_mm": 4450,
+    "width_mm": 1836,
+    "height_mm": 1572,
+    "wheelbase_mm": 2750
+  },
+  "weights": {
+    "curb_weight_kg": 1850
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr X 2025 Official Specifications",
+      "url": "https://www.zeekr.com/x",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr X Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_X",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
+

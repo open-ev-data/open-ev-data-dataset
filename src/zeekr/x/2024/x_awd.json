@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "awd",
+    "name": "All-Wheel Drive",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "awd",
+    "name": "All-Wheel Drive"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 315,
+    "system_torque_nm": 543,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 115
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 343
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.7,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 1950
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Zeekr X 2024 AWD Official Specifications",
+      "url": "https://www.zeekr.com/x",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Zeekr X Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeekr_X",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
