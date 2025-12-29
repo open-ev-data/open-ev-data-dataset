@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.20.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.19.0...v1.20.0) (2025-12-29)
+
+### Features
+
+* **honda:** add new vehicle specifications for Honda models ([f90fa7c](https://github.com/open-ev-data/open-ev-data-dataset/commit/f90fa7c22829167afa2fa27fb467c4c64d61f7fc))
+* **lotus:** add new vehicle specifications ([446919d](https://github.com/open-ev-data/open-ev-data-dataset/commit/446919dc978e2d92eaa7615790ae682904cbaf33))
+* **polestar:** add new vehicle specifications for polestar ([b4d80aa](https://github.com/open-ev-data/open-ev-data-dataset/commit/b4d80aae862c989dd495be2c95c8b50fca953c20))
+* **smart:** add new vehicle specifications for Smart models ([4417081](https://github.com/open-ev-data/open-ev-data-dataset/commit/4417081b545a40a9ef346fced686dc046d135ab4))
+
 ## [1.19.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.18.0...v1.19.0) (2025-12-29)
 
 ### Features
