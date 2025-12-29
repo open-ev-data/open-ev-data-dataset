@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "gwm",
+    "name": "GWM"
+  },
+  "model": {
+    "slug": "ora_03_skin",
+    "name": "ORA 03 Skin"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4235,
+    "width_mm": 1825,
+    "height_mm": 1596,
+    "wheelbase_mm": 2650
+  }
+}

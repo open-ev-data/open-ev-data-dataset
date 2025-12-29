@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "gwm",
+    "name": "GWM"
+  },
+  "model": {
+    "slug": "haval_h6_gt",
+    "name": "Haval H6 GT"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5,
+    "rows": 2
+  },
+  "dimensions": {
+    "length_mm": 4727,
+    "width_mm": 1940,
+    "height_mm": 1729,
+    "wheelbase_mm": 2738
+  }
+}

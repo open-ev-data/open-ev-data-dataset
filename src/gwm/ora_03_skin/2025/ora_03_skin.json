@@ -1,0 +1,102 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "BR",
+    "CN",
+    "DE",
+    "FR",
+    "IT",
+    "PT",
+    "GB"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 126,
+    "system_torque_nm": 250,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 126,
+        "torque_nm": 250
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "GWM",
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 48.0,
+    "pack_capacity_kwh_net": 47.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 6.6,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 60,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 232,
+        "notes": "Brazilian Inmetro cycle"
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 9.0,
+    "top_speed_kmh": 152
+  },
+  "weights": {
+    "curb_weight_kg": 1430
+  },
+  "capacity": {
+    "cargo_l": 228
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "GWM Brazil Official Website - ORA 03 Skin 2025",
+      "url": "https://www.gwmmotors.com.br",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "GWM China Official Website - ORA Good Cat",
+      "url": "https://www.gwm.com.cn",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "GWM estará no Electric Experience",
+      "publisher": "GWM Motors",
+      "url": "https://www.gwmmotors.com.br/pt/media-center/news/2023/gwm-estara-no-electric-experience",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

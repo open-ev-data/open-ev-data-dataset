@@ -1,0 +1,103 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "BR",
+    "CN"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 289,
+    "system_torque_nm": 762,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 130,
+        "torque_nm": 300
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 350
+      }
+    ],
+    "transmission": {
+      "type": "dct",
+      "gears": 2
+    }
+  },
+  "battery": {
+    "manufacturer": "GWM",
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 34.0,
+    "pack_capacity_kwh_net": 33.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "ac_only",
+      "connector": "type2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.3,
+      "phases": 1,
+      "notes": "PHEV vehicle. Limited charging speed."
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v",
+      "notes": "DC fast charging available"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 113,
+        "notes": "Electric-only range (Brazilian Inmetro cycle)"
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.8,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2040
+  },
+  "capacity": {
+    "cargo_l": 560,
+    "cargo_max_l": 1445
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "GWM Brazil Official Website - Haval H6 PHEV34 2023",
+      "url": "https://www.gwmmotors.com.br",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "GWM Brazil Technical Sheet - Haval H6 PHEV34 2025",
+      "url": "https://www.gwmmotors.com.br/content/dam/gwm/pages/br/pt/models/haval-h6-phev-34-2025/FichaTecnica_Haval_H6_PHEV34_2025.pdf",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

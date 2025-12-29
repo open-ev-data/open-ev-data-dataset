@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "BR",
+    "CN"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 240,
+    "system_torque_nm": 530,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 130,
+        "torque_nm": 300
+      }
+    ],
+    "transmission": {
+      "type": "dct",
+      "gears": 2
+    }
+  },
+  "battery": {
+    "manufacturer": "GWM",
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 19.0,
+    "pack_capacity_kwh_net": 18.5,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "ac_only",
+      "connector": "type2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.3,
+      "phases": 1,
+      "notes": "PHEV vehicle. Limited charging speed."
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 80,
+        "notes": "Electric-only range"
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.6,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 1950
+  },
+  "capacity": {
+    "cargo_l": 560,
+    "cargo_max_l": 1445
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "GWM Brazil Official Website - Haval H6 PHEV19 2025",
+      "url": "https://www.gwmmotors.com.br",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "GWM Haval H6 2025: PHEV19 chega ao Brasil",
+      "publisher": "InsideEVs",
+      "url": "https://insideevs.uol.com.br/news/722252/gwm-haval-h6-2025-phev19",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
