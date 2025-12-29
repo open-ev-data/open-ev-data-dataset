@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "68kwh",
+    "name": "68.1 kWh",
+    "kind": "battery_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 165,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 165
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 68.1,
+    "pack_capacity_kwh_net": 68.1
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 650
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1870
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Aion RT Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aion_RT",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "ultra",
+    "name": "Ultra",
+    "kind": "trim_level"
+  },
+  "trim": {
+    "slug": "ultra",
+    "name": "Ultra"
+  },
+  "powertrain": {
+    "system_power_kw": 250,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 250
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 99.5,
+    "pack_capacity_kwh_net": 99.5,
+    "chemistry": "nmc"
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 750
+      },
+      {
+        "cycle": "nedc",
+        "range_km": 800
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.2
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Hyptec HT Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyptec_HT",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

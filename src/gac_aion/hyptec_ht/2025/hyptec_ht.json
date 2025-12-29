@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN", "BR"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 180,
+    "system_torque_nm": 309,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 180,
+        "torque_nm": 309
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 72.7,
+    "pack_capacity_kwh_net": 72.7,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 180,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 600
+      },
+      {
+        "cycle": "nedc",
+        "range_km": 710
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.5,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 2200
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Hyptec HT Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyptec_HT",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

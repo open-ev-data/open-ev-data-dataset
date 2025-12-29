@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "gac_aion",
+    "name": "GAC Aion"
+  },
+  "model": {
+    "slug": "aion_y",
+    "name": "Aion Y"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4535,
+    "width_mm": 1870,
+    "height_mm": 1650,
+    "wheelbase_mm": 2750
+  }
+}

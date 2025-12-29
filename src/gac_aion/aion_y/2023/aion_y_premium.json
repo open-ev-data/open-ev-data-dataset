@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "premium",
+    "name": "Premium",
+    "kind": "trim_level"
+  },
+  "trim": {
+    "slug": "premium",
+    "name": "Premium"
+  },
+  "weights": {
+    "curb_weight_kg": 1727
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "GAC Aion Y Premium 2023 Official Specifications",
+      "url": "https://www.gacgroup.com/pt-br/configuration/aion-y/2024",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

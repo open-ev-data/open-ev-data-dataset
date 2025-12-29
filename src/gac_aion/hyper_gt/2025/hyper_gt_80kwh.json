@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "80kwh",
+    "name": "80 kWh",
+    "kind": "battery_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 250,
+    "system_torque_nm": 430,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 250,
+        "torque_nm": 430
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 80,
+    "pack_capacity_kwh_net": 80
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 700
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.9,
+    "top_speed_kmh": 180
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Hyptec GT Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyptec_GT",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

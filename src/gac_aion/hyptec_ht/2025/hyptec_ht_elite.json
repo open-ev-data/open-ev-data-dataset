@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "elite",
+    "name": "Elite",
+    "kind": "trim_level"
+  },
+  "trim": {
+    "slug": "elite",
+    "name": "Elite"
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Hyptec HT Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hyptec_HT",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
