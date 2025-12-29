@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "xpeng",
+    "name": "XPeng"
+  },
+  "model": {
+    "slug": "mona_m03",
+    "name": "Mona M03"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5,
+    "rows": 2
+  },
+  "dimensions": {
+    "length_mm": 4780,
+    "width_mm": 1896,
+    "height_mm": 1445,
+    "wheelbase_mm": 2815
+  }
+}

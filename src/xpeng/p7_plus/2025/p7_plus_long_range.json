@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range",
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "long_range",
+    "name": "Long Range"
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 230,
+    "system_torque_nm": 430,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 230,
+        "torque_nm": 430
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 76.3,
+    "pack_capacity_kwh_net": 76.3,
+    "chemistry": "lfp"
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 240
+    },
+    "charging_time": {
+      "dc": [
+        {
+          "charger_power_kw": 240,
+          "from_soc_percent": 10,
+          "to_soc_percent": 80,
+          "time_min": 16
+        }
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 725
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.9
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng P7+ Long Range 2025 Specifications",
+      "url": "https://www.xpeng.com/en/models/p7-plus",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

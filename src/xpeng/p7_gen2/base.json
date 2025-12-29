@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "xpeng",
+    "name": "XPeng"
+  },
+  "model": {
+    "slug": "p7_gen2",
+    "name": "P7 (2nd Generation)"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5,
+    "rows": 2,
+    "drag_coefficient_cd": 0.201
+  },
+  "dimensions": {
+    "length_mm": 5071,
+    "width_mm": 1937,
+    "height_mm": 1512,
+    "wheelbase_mm": 3000
+  }
+}

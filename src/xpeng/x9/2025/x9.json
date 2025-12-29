@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 235,
+    "system_torque_nm": 450,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 235,
+        "torque_nm": 450
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "Eve Energy",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 84.5,
+    "pack_capacity_kwh_net": 84.5,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 300,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"]
+    },
+    "charging_time": {
+      "dc": [
+        {
+          "charger_power_kw": 300,
+          "from_soc_percent": 10,
+          "to_soc_percent": 80,
+          "time_min": 10,
+          "notes": "300 km range in 10 minutes"
+        }
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 610
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.7,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2555
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng X9 2025 Official Specifications",
+      "url": "https://www.xpeng.com/en/models/x9",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

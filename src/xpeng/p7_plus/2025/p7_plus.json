@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 180,
+    "system_torque_nm": 390,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 180,
+        "torque_nm": 390
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 60.7,
+    "pack_capacity_kwh_net": 60.7,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 240,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"]
+    },
+    "charging_time": {
+      "dc": [
+        {
+          "charger_power_kw": 240,
+          "from_soc_percent": 10,
+          "to_soc_percent": 80,
+          "time_min": 16
+        }
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 602
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.8,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2160
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng P7+ 2025 Official Specifications",
+      "url": "https://www.xpeng.com/en/models/p7-plus",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

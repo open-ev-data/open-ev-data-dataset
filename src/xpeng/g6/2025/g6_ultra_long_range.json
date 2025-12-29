@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "ultra_long_range",
+    "name": "Ultra Long Range",
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "ultra_long_range",
+    "name": "Ultra Long Range"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 87.5,
+    "pack_capacity_kwh_net": 87.5,
+    "chemistry": "nmc"
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 451
+    },
+    "charging_time": {
+      "dc": [
+        {
+          "charger_power_kw": 451,
+          "from_soc_percent": 10,
+          "to_soc_percent": 80,
+          "time_min": 12
+        }
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 755
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2116
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng G6 Ultra Long Range 2025 with 5C Charging",
+      "url": "https://www.xpeng.com/en/models/g6",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "awd_performance",
+    "name": "AWD Performance",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "awd_performance",
+    "name": "AWD Performance"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 358,
+    "system_torque_nm": 660,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 140,
+        "torque_nm": 220
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 218,
+        "torque_nm": 440
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 87.5,
+    "pack_capacity_kwh_net": 87.5,
+    "chemistry": "nmc"
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 451
+    },
+    "charging_time": {
+      "dc": [
+        {
+          "charger_power_kw": 451,
+          "from_soc_percent": 10,
+          "to_soc_percent": 80,
+          "time_min": 12
+        }
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 700
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.13,
+    "top_speed_kmh": 202
+  },
+  "weights": {
+    "curb_weight_kg": 2116
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng G6 AWD Performance 2025 with 5C Charging",
+      "url": "https://www.xpeng.com/en/models/g6",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

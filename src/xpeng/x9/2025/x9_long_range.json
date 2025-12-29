@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range",
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "long_range",
+    "name": "Long Range"
+  },
+  "battery": {
+    "manufacturer": "CALB",
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 101.5,
+    "pack_capacity_kwh_net": 101.5
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 300
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 702
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2650
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng X9 Long Range 2025 Specifications",
+      "url": "https://www.xpeng.com/en/models/x9",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

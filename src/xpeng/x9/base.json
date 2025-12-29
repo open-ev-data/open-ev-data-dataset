@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "xpeng",
+    "name": "XPeng"
+  },
+  "model": {
+    "slug": "x9",
+    "name": "X9"
+  },
+  "vehicle_type": "van",
+  "body": {
+    "style": "minivan",
+    "doors": 5,
+    "seats": 7,
+    "rows": 3
+  },
+  "dimensions": {
+    "length_mm": 5293,
+    "width_mm": 1988,
+    "height_mm": 1785,
+    "wheelbase_mm": 3160
+  }
+}

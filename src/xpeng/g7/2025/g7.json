@@ -1,0 +1,99 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 218,
+    "system_torque_nm": 440,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 218,
+        "torque_nm": 440
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CALB",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 68.5,
+    "pack_capacity_kwh_net": 68.5,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 400,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"]
+    },
+    "charging_time": {
+      "dc": [
+        {
+          "charger_power_kw": 400,
+          "from_soc_percent": 10,
+          "to_soc_percent": 80,
+          "time_min": 10,
+          "notes": "5C charging capability"
+        }
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 577
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.5,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2085
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng G7 2025 Official Specifications",
+      "url": "https://www.xpeng.com/en/models/g7",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "XPeng G7 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/XPeng_G7",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

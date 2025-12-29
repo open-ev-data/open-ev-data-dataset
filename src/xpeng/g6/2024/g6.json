@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "standard_range",
+    "name": "Standard Range"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 190,
+    "system_torque_nm": 440,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 190,
+        "torque_nm": 440
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CALB",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 66.0,
+    "pack_capacity_kwh_net": 66.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 215,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 580
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.6,
+    "top_speed_kmh": 202
+  },
+  "weights": {
+    "curb_weight_kg": 1995
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng G6 2024 Official Specifications",
+      "url": "https://www.xpeng.com/en/models/g6",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

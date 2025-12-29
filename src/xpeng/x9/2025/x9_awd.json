@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "awd",
+    "name": "AWD",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "awd",
+    "name": "AWD"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 370,
+    "system_torque_nm": 640,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 235,
+        "torque_nm": 450
+      },
+      {
+        "position": "rear",
+        "type": "asm",
+        "power_kw": 135,
+        "torque_nm": 190
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 101.5,
+    "pack_capacity_kwh_net": 101.5,
+    "chemistry": "nmc"
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 300
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 702
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.7,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2750
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng X9 AWD 2025 Specifications",
+      "url": "https://www.xpeng.com/en/models/x9",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "extended_range",
+    "name": "Extended Range",
+    "kind": "battery_upgrade"
+  },
+  "trim": {
+    "slug": "extended_range",
+    "name": "Extended Range"
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 160,
+    "system_torque_nm": 340,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 340
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 62.2,
+    "pack_capacity_kwh_net": 62.2,
+    "chemistry": "lfp"
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 150
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 620
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1739
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "XPeng Mona M03 Extended Range 2024 Specifications",
+      "url": "https://www.xpeng.com/en/models/mona-m03",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}
