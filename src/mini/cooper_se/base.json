@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mini",
+    "name": "Mini"
+  },
+  "model": {
+    "slug": "cooper_se",
+    "name": "Cooper SE"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 3,
+    "seats": 4
+  },
+  "dimensions": {
+    "length_mm": 3850,
+    "width_mm": 1727,
+    "height_mm": 1432,
+    "wheelbase_mm": 2495
+  }
+}

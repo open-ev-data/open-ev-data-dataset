@@ -1,0 +1,91 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "se",
+    "name": "SE"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2020,
+    "end_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 135,
+    "system_torque_nm": 270,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 135,
+        "torque_nm": 270
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 32.6,
+    "pack_capacity_kwh_net": 28.9,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 234
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.3,
+    "top_speed_kmh": 150
+  },
+  "weights": {
+    "curb_weight_kg": 1365
+  },
+  "capacity": {
+    "cargo_l": 211
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "MINI Cooper SE Electric Official Specifications",
+      "publisher": "MINI",
+      "url": "https://www.mini.com/en_GB/home/range/mini-cooper-electric.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
