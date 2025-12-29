@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "475kw",
+    "name": "475 kW Performance",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 475,
+    "system_torque_nm": 710,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 200
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 275,
+        "torque_nm": 343
+      }
+    ]
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 620
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.49,
+    "top_speed_kmh": 210
+  },
+  "weights": {
+    "curb_weight_kg": 2150
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely Galaxy E8 2025 475kW Performance Specifications",
+      "url": "https://www.geely.com/galaxy-e8",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Geely Galaxy E8 2025 Review",
+      "publisher": "InsideEVs",
+      "url": "https://insideevs.uol.com.br/news/752357/geely-galaxy-e8-2025-seda/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

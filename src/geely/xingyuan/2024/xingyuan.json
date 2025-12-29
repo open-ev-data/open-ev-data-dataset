@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN", "BR"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 58,
+    "system_torque_nm": 150,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 58,
+        "torque_nm": 150
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 30.12,
+    "pack_capacity_kwh_net": 28,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 40,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 310
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 10.5,
+    "top_speed_kmh": 140
+  },
+  "dimensions": {
+    "length_mm": 4135,
+    "width_mm": 1805,
+    "height_mm": 1570,
+    "wheelbase_mm": 2650
+  },
+  "weights": {
+    "curb_weight_kg": 1215
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely Xingyuan Official Specifications",
+      "url": "https://www.geely.com/xingyuan",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Geely Xingyuan Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geely_Xingyuan",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

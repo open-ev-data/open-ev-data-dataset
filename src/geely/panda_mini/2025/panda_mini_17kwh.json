@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "17kwh",
+    "name": "17 kWh Extended Range",
+    "kind": "range_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 30,
+    "motors": [
+      {
+        "position": "front",
+        "power_kw": 30
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 17,
+    "pack_capacity_kwh_net": 16
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 200
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 850
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely Panda Mini EV 2025 17 kWh Extended Range Specifications",
+      "url": "https://www.geely.com/panda-mini",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

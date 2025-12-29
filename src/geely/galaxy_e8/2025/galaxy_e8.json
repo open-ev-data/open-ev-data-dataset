@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 250,
+    "system_torque_nm": 343,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 250,
+        "torque_nm": 343
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 76,
+    "pack_capacity_kwh_net": 72,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 620
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.49,
+    "top_speed_kmh": 210
+  },
+  "dimensions": {
+    "length_mm": 5010,
+    "width_mm": 1920,
+    "height_mm": 1465,
+    "wheelbase_mm": 2925
+  },
+  "weights": {
+    "curb_weight_kg": 1950
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely Galaxy E8 2025 Official Specifications",
+      "url": "https://www.geely.com/galaxy-e8",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Geely Galaxy E8 2025 Review",
+      "publisher": "InsideEVs",
+      "url": "https://insideevs.uol.com.br/news/752357/geely-galaxy-e8-2025-seda/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

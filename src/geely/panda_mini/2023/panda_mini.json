@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2022
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 20,
+    "system_torque_nm": 85,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 20,
+        "torque_nm": 85
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 9.61,
+    "pack_capacity_kwh_net": 9,
+    "thermal_management": "air"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.3,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 20,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 120
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 15,
+    "top_speed_kmh": 100
+  },
+  "dimensions": {
+    "length_mm": 3065,
+    "width_mm": 1522,
+    "height_mm": 1600,
+    "wheelbase_mm": 2015
+  },
+  "weights": {
+    "curb_weight_kg": 800
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely Panda Mini EV Official Specifications",
+      "url": "https://www.geely.com/panda-mini",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Geely Panda Mini EV Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geely_Panda_Mini_EV",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

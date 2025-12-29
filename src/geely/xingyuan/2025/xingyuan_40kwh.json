@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "40kwh",
+    "name": "40.16 kWh Extended Range",
+    "kind": "range_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 85,
+    "motors": [
+      {
+        "position": "front",
+        "power_kw": 85
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 40.16,
+    "pack_capacity_kwh_net": 38
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 410
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1285
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely Xingyuan 2025 40.16 kWh Extended Range Specifications",
+      "url": "https://www.geely.com/xingyuan",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

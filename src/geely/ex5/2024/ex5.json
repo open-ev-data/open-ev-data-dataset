@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN", "BR"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 160,
+    "system_torque_nm": 320,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 320
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 49.52,
+    "pack_capacity_kwh_net": 46,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 80,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 440
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.9,
+    "top_speed_kmh": 175
+  },
+  "dimensions": {
+    "length_mm": 4615,
+    "width_mm": 1901,
+    "height_mm": 1670,
+    "wheelbase_mm": 2750
+  },
+  "weights": {
+    "curb_weight_kg": 1715
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely EX5 Official Specifications",
+      "url": "https://www.geelybrasil.com.br/ex5/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Geely EX5 Review",
+      "publisher": "Carros IG",
+      "url": "https://carros.ig.com.br/veiculos-eletricos/2024-11-28/geely-retorna-ao-brasil.html",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

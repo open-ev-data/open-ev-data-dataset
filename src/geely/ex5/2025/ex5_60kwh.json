@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "60kwh",
+    "name": "60.22 kWh Extended Range",
+    "kind": "range_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 60.22,
+    "pack_capacity_kwh_net": 56
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 530
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1765
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely EX5 2025 60.22 kWh Extended Range Specifications",
+      "url": "https://www.geelybrasil.com.br/ex5/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

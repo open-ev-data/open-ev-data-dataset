@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN", "BR"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 85,
+    "system_torque_nm": 150,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 85,
+        "torque_nm": 150
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 30,
+    "pack_capacity_kwh_net": 28,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 310
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 9.5,
+    "top_speed_kmh": 150
+  },
+  "dimensions": {
+    "length_mm": 4135,
+    "width_mm": 1805,
+    "height_mm": 1580,
+    "wheelbase_mm": 2650
+  },
+  "weights": {
+    "curb_weight_kg": 1300
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Geely EX2 Official Specifications",
+      "url": "https://www.geelybrasil.com.br/ex2/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Geely EX2 Technical Sheet",
+      "publisher": "Geely Brasil",
+      "url": "https://static.autoforce.com/plugins/files/clientes/geely-brasil/produtos/ws/Ficha_Tecnica_GEELY_EX2.pdf",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
