@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.19.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.18.0...v1.19.0) (2025-12-29)
+
+### Features
+
+* **dataset:** add new vehicle specifications for multiple brands and model years ([2ec21b0](https://github.com/open-ev-data/open-ev-data-dataset/commit/2ec21b0873769b2b9361a7d3c434614cc96fa45f))
+
 ## [1.18.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.17.0...v1.18.0) (2025-12-29)
 
 ### Features
