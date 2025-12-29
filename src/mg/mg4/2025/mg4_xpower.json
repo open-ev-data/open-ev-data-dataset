@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "xpower",
+    "name": "XPower",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "xpower",
+    "name": "XPower"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 320,
+    "system_torque_nm": 600,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 250
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 170,
+        "torque_nm": 350
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 64,
+    "pack_capacity_kwh_net": 61
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 150
+    },
+    "charging_time": {
+      "dc": [
+        {
+          "charger_power_kw": 150,
+          "from_soc_percent": 30,
+          "to_soc_percent": 80,
+          "time_min": 22
+        }
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 385
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.8,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 1785
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "MG Motor Brazil - MG4 XPower Specifications 2025",
+      "url": "https://www.mgmotor.com.br",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "MG4 XPower chega ao Brasil com 435 cv",
+      "publisher": "Band.com.br",
+      "url": "https://www.band.com.br/bandmotor/noticias/mg-motor-chega-oficialmente-no-brasil-com-tres-evs-precos-202511131426",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "grand_touring",
+    "name": "Grand Touring",
+    "kind": "range_upgrade"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 618,
+    "system_torque_nm": 1000,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 309,
+        "torque_nm": 500
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 309,
+        "torque_nm": 500
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 120,
+    "pack_capacity_kwh_net": 112
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 724
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.5,
+    "acceleration_0_60_mph_s": 3.5,
+    "top_speed_kmh": 240
+  },
+  "weights": {
+    "curb_weight_kg": 2750
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 94900,
+        "country": "US",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Lucid Gravity Grand Touring Official Specifications",
+      "url": "https://www.lucidmotors.com/gravity",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

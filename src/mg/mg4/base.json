@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mg",
+    "name": "MG Motor"
+  },
+  "model": {
+    "slug": "mg4",
+    "name": "MG4"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4287,
+    "width_mm": 1836,
+    "height_mm": 1516,
+    "wheelbase_mm": 2705
+  }
+}

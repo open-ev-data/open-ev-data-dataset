@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 488,
+    "system_torque_nm": 867,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 244
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 244
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 111,
+    "pack_capacity_kwh_net": 105,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 19.2,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 487
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 5517,
+    "width_mm": 2080,
+    "height_mm": 1453,
+    "wheelbase_mm": 3110
+  },
+  "weights": {
+    "curb_weight_kg": 2900
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.7,
+    "top_speed_kmh": 241
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2024 Cadillac Celestiq Specifications",
+      "url": "https://www.cadillac.com/electric/celestiq",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

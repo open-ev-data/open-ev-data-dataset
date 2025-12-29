@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "citroen",
+    "name": "Citroën"
+  },
+  "model": {
+    "slug": "e_jumpy",
+    "name": "ë-Jumpy"
+  },
+  "vehicle_type": "van",
+  "body": {
+    "style": "van",
+    "doors": 3,
+    "seats": 3
+  },
+  "dimensions": {
+    "length_mm": 4956,
+    "width_mm": 1920,
+    "height_mm": 1895,
+    "wheelbase_mm": 3000
+  }
+}

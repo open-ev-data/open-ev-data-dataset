@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "extreme",
+    "name": "Extreme",
+    "kind": "performance_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 74,
+    "system_torque_nm": 200,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 74,
+        "torque_nm": 200
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 11.0,
+    "top_speed_kmh": 125
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Dacia Spring Extreme 2025 Specifications",
+      "url": "https://www.dacia.pt/gama/dacia-spring-eletrico.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Dacia Spring 2025: uma experiência de condução otimizada a um preço acessível",
+      "publisher": "Renault Group",
+      "url": "https://imprensa.renaultgroup.com/dacia-spring-uma-experiencia-de-conducao-otimizada-a-um-preco-acessivel/",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

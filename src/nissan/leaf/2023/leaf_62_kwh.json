@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "62_kwh",
+    "name": "62 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 62,
+    "pack_capacity_kwh_net": 62
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 364
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 385
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1680
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan LEAF 62 kWh 2023 Official Specifications",
+      "url": "https://www.nissan.com.br/veiculos/eletricos/leaf.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "regulatory",
+      "title": "EPA Fuel Economy Data - Nissan LEAF 62 kWh 2023",
+      "publisher": "EPA",
+      "url": "https://www.fueleconomy.gov",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "comfort",
+    "name": "Comfort",
+    "kind": "trim_level"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Dacia Spring Comfort 2025 Specifications",
+      "url": "https://www.dacia.pt/gama/dacia-spring-eletrico.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

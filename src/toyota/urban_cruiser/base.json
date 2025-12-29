@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "toyota",
+    "name": "Toyota"
+  },
+  "model": {
+    "slug": "urban_cruiser",
+    "name": "Urban Cruiser"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5,
+    "rows": 2
+  }
+}

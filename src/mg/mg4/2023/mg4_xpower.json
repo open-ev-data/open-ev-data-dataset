@@ -1,0 +1,64 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "xpower",
+    "name": "XPower",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "xpower",
+    "name": "XPower"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 320,
+    "system_torque_nm": 600,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 250
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 170,
+        "torque_nm": 350
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 64,
+    "pack_capacity_kwh_net": 61
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 150
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 385
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.8,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 1785
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "MG Motor UK - MG4 XPower Specifications",
+      "url": "https://www.mgmotor.co.uk/electric-cars/mg4-electric",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

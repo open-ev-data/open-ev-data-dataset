@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "skoda",
+    "name": "Škoda"
+  },
+  "model": {
+    "slug": "enyaq_iv",
+    "name": "Enyaq iV"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4649,
+    "width_mm": 1879,
+    "width_with_mirrors_mm": 2126,
+    "height_mm": 1616,
+    "wheelbase_mm": 2765
+  }
+}

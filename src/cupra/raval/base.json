@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "cupra",
+    "name": "Cupra"
+  },
+  "model": {
+    "slug": "raval",
+    "name": "Raval"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4080,
+    "width_mm": 1845,
+    "height_mm": 1440,
+    "wheelbase_mm": 2600
+  }
+}

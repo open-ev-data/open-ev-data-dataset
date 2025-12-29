@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "lucid",
+    "name": "Lucid"
+  },
+  "model": {
+    "slug": "air",
+    "name": "Air"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4973,
+    "width_mm": 1960,
+    "width_with_mirrors_mm": 2160,
+    "height_mm": 1410,
+    "wheelbase_mm": 2960
+  }
+}

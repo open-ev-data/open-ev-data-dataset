@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "nissan",
+    "name": "Nissan"
+  },
+  "model": {
+    "slug": "micra_ev",
+    "name": "Micra EV"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 5
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "activ",
+    "name": "Activ",
+    "kind": "trim_level"
+  },
+  "trim": {
+    "slug": "activ",
+    "name": "Activ"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Spark EUV Activ Specifications",
+      "publisher": "General Motors",
+      "url": "https://news.gm.com.br/newsroom.detail.html/Pages/news/br/pt/2025/feb/0212-sparkeuv.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

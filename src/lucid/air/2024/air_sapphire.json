@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "sapphire",
+    "name": "Sapphire",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 920,
+    "system_torque_nm": 1930,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 306.7,
+        "torque_nm": 643.3
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 306.7,
+        "torque_nm": 643.3
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 306.7,
+        "torque_nm": 643.3
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 118,
+    "pack_capacity_kwh_net": 112
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 687
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 1.89,
+    "acceleration_0_60_mph_s": 1.89,
+    "top_speed_kmh": 330
+  },
+  "weights": {
+    "curb_weight_kg": 2350
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 249000,
+        "country": "US",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Lucid Air Sapphire Official Specifications",
+      "url": "https://www.lucidmotors.com/air/sapphire",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

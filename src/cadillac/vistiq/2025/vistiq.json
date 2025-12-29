@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "CA"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 459,
+    "system_torque_nm": 650,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 229.5
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 229.5
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 102,
+    "pack_capacity_kwh_net": 97,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "nacs",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.5,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 482
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 5100,
+    "width_mm": 2000,
+    "height_mm": 1700,
+    "wheelbase_mm": 3100
+  },
+  "weights": {
+    "curb_weight_kg": 2700
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "top_speed_kmh": 193
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2025 Cadillac Vistiq Specifications",
+      "url": "https://www.cadillac.com/electric/vistiq",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

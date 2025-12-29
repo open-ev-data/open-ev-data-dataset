@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "awd",
+    "name": "All-Wheel Drive",
+    "kind": "drivetrain_upgrade"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 218,
+    "system_torque_nm": 400,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 109,
+        "torque_nm": 200
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 109,
+        "torque_nm": 200
+      }
+    ]
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 550
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.5,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1950
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Toyota C-HR+ AWD Official Specifications",
+      "url": "https://www.toyota-europe.com/c-hr-plus",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

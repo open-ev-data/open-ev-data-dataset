@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "quad_motor_max_pack",
+    "name": "Quad Motor Max Pack",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "system_power_kw": 626,
+    "system_torque_nm": 1233,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 156.5,
+        "torque_nm": 308.25
+      },
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 156.5,
+        "torque_nm": 308.25
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 156.5,
+        "torque_nm": 308.25
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 156.5,
+        "torque_nm": 308.25
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 180,
+    "pack_capacity_kwh_net": 171.5
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 660
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.0,
+    "acceleration_0_60_mph_s": 3.0,
+    "top_speed_kmh": 201
+  },
+  "weights": {
+    "curb_weight_kg": 2970
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 102000,
+        "country": "US",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Rivian R1S Quad Motor Max Pack Configuration",
+      "url": "https://rivian.com/r1s",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

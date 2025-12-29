@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "BR",
+    "CN"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 75,
+    "system_torque_nm": 180,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 75
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 41.9,
+    "pack_capacity_kwh_net": 40,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "other",
+        "range_km": 400,
+        "notes": "Chinese cycle (WLTC)"
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 4000,
+    "width_mm": 1760,
+    "height_mm": 1730,
+    "wheelbase_mm": 2560
+  },
+  "weights": {
+    "curb_weight_kg": 1600
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Spark EUV estreia ainda em 2025 no Brasil",
+      "publisher": "General Motors",
+      "url": "https://news.gm.com.br/newsroom.detail.html/Pages/news/br/pt/2025/feb/0212-sparkeuv.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

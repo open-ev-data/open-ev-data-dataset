@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "61kwh",
+    "name": "61 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 61.0,
+    "pack_capacity_kwh_net": 60.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 500
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1720
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Toyota Urban Cruiser 61 kWh Official Specifications",
+      "url": "https://www.toyota-europe.com/urban-cruiser",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

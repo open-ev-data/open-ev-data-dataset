@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mg",
+    "name": "MG Motor"
+  },
+  "model": {
+    "slug": "cyberster",
+    "name": "Cyberster"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "convertible",
+    "doors": 2,
+    "seats": 2
+  }
+}

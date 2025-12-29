@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "vz",
+    "name": "VZ",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "vz",
+    "name": "VZ"
+  },
+  "powertrain": {
+    "system_power_kw": 175,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 175,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 430
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.4,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 1680
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Cupra Raval VZ 2025 Official Specifications",
+      "url": "https://www.cupraofficial.com",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

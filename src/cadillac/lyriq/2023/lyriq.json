@@ -1,0 +1,86 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "rwd",
+    "name": "Rear-Wheel Drive"
+  },
+  "markets": [
+    "US",
+    "CA"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 257,
+    "system_torque_nm": 440,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 257,
+        "torque_nm": 440
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 100.4,
+    "pack_capacity_kwh_net": 95.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.5,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 190,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 505
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 4996,
+    "width_mm": 1976,
+    "height_mm": 1623,
+    "wheelbase_mm": 3094
+  },
+  "weights": {
+    "curb_weight_kg": 2550
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.0,
+    "top_speed_kmh": 193
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2023 Cadillac Lyriq Specifications",
+      "url": "https://www.cadillac.com/electric/lyriq",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

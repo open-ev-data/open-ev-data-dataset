@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "variant": {
+    "slug": "awd",
+    "name": "All-Wheel Drive",
+    "kind": "drivetrain_upgrade"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 160,
+    "system_torque_nm": 337,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 80,
+        "torque_nm": 169
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 80,
+        "torque_nm": 169
+      }
+    ]
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 367
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 470
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.9,
+    "acceleration_0_60_mph_s": 6.5,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 2010
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Toyota bZ4X AWD Official Specifications",
+      "url": "https://www.toyota.com/bz4x",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

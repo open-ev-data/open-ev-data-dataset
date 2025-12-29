@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "fiat",
+    "name": "Fiat"
+  },
+  "model": {
+    "slug": "topolino",
+    "name": "Topolino"
+  },
+  "vehicle_type": "other",
+  "body": {
+    "style": "quadricycle",
+    "doors": 2,
+    "seats": 2
+  },
+  "dimensions": {
+    "length_mm": 2410,
+    "width_mm": 1390,
+    "height_mm": 1520,
+    "wheelbase_mm": 1734
+  }
+}

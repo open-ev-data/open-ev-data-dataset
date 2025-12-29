@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "dual_motor_max_pack",
+    "name": "Dual Motor Max Pack",
+    "kind": "range_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 180,
+    "pack_capacity_kwh_net": 171.5
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 660
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2820
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 88400,
+        "country": "US",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Rivian R1S Max Pack Configuration",
+      "url": "https://rivian.com/r1s",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

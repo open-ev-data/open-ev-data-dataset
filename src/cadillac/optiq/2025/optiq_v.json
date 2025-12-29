@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "v",
+    "name": "Optiq-V",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "v",
+    "name": "Optiq-V"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 387,
+    "system_torque_nm": 650,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 193.5
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 193.5
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.5,
+    "top_speed_kmh": 200
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 450
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2025 Cadillac Optiq-V Specifications",
+      "url": "https://www.cadillac.com/electric/optiq",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

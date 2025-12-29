@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "luxury",
+    "name": "Luxury"
+  },
+  "markets": ["BR", "CN", "GB", "DE", "FR", "IT", "PT"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 224,
+    "system_torque_nm": 350,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 224,
+        "torque_nm": 350
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 68,
+    "pack_capacity_kwh_net": 64,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    },
+    "charging_time": {
+      "dc": [
+        {
+          "charger_power_kw": 150,
+          "from_soc_percent": 10,
+          "to_soc_percent": 80,
+          "time_min": 26
+        }
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 351
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.3,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 1850
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "MG Motor Brazil - S5 Luxury Launch",
+      "url": "https://www.mgmotor.com.br",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "MG S5 chega ao Brasil com 305 cv",
+      "publisher": "Band.com.br",
+      "url": "https://www.band.com.br/bandmotor/noticias/mg-motor-chega-oficialmente-no-brasil-com-tres-evs-precos-202511131426",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "adventure",
+    "name": "Adventure"
+  },
+  "markets": [
+    "US"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 533,
+    "system_torque_nm": 1120,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 266.5,
+        "torque_nm": 560
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 266.5,
+        "torque_nm": 560
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 135,
+    "pack_capacity_kwh_net": 128.9,
+    "pack_voltage_nominal_v": 400,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "scheduled",
+        "manual"
+      ]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 241400,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.5,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 220,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": [
+        "din_70121",
+        "iso_15118_2"
+      ],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 505
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "acceleration_0_60_mph_s": 4.3,
+    "top_speed_kmh": 201
+  },
+  "weights": {
+    "curb_weight_kg": 2650,
+    "gross_vehicle_weight_kg": 3500,
+    "max_payload_kg": 850
+  },
+  "capacity": {
+    "cargo_l": 1354,
+    "frunk_l": 311,
+    "towing_braked_kg": 4990,
+    "towing_unbraked_kg": 750,
+    "towing_vertical_load_kg": 350
+  },
+  "v2x": {
+    "v2l": {
+      "supported": true,
+      "max_power_kw": 1.5,
+      "outlets": [
+        {
+          "kind": "socket_type_b",
+          "count": 4,
+          "location": "bed and cabin"
+        }
+      ]
+    }
+  },
+  "wheels_tires": {
+    "standard_wheel_size_in": 20,
+    "optional_wheel_sizes_in": [
+      21,
+      22
+    ],
+    "tire_sizes": [
+      "275/65R20",
+      "275/55R21",
+      "275/50R22"
+    ],
+    "recommended_pressure_kpa": {
+      "front_kpa": 276,
+      "rear_kpa": 276
+    }
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 73900,
+        "country": "US",
+        "year": 2024
+      }
+    ]
+  },
+  "software": {
+    "os": "Rivian",
+    "ota_supported": true
+  },
+  "links": {
+    "manufacturer_url": "https://rivian.com/r1t",
+    "configurator_url": "https://rivian.com/r1t/configure"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Rivian R1T Official Specifications",
+      "url": "https://rivian.com/r1t",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "regulatory",
+      "title": "EPA Fuel Economy Data",
+      "publisher": "EPA",
+      "url": "https://www.fueleconomy.gov/feg/Find.do?action=sbs&id=45084",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

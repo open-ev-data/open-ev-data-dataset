@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mg",
+    "name": "MG Motor"
+  },
+  "model": {
+    "slug": "s5",
+    "name": "S5"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5,
+    "rows": 2
+  },
+  "dimensions": {
+    "length_mm": 4470,
+    "width_mm": 1850,
+    "height_mm": 1665,
+    "wheelbase_mm": 2730
+  }
+}

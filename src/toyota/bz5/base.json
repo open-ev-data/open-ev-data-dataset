@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "toyota",
+    "name": "Toyota"
+  },
+  "model": {
+    "slug": "bz5",
+    "name": "bZ5"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5,
+    "rows": 2
+  }
+}

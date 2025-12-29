@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "dacia",
+    "name": "Dacia"
+  },
+  "model": {
+    "slug": "spring",
+    "name": "Spring"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 4
+  },
+  "dimensions": {
+    "length_mm": 3734,
+    "width_mm": 1579,
+    "height_mm": 1516,
+    "wheelbase_mm": 2423
+  }
+}

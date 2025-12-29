@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "trophy",
+    "name": "Trophy",
+    "kind": "trim_upgrade"
+  },
+  "trim": {
+    "slug": "trophy",
+    "name": "Trophy"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 64,
+    "pack_capacity_kwh_net": 61
+  },
+  "powertrain": {
+    "system_power_kw": 150,
+    "system_torque_nm": 250,
+    "motors": [
+      {
+        "position": "rear",
+        "power_kw": 150,
+        "torque_nm": 250
+      }
+    ]
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 450
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.5,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1720
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "MG Motor UK - MG4 Trophy Specifications",
+      "url": "https://www.mgmotor.co.uk/electric-cars/mg4-electric",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

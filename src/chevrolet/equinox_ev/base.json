@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "chevrolet",
+    "name": "Chevrolet"
+  },
+  "model": {
+    "slug": "equinox_ev",
+    "name": "Equinox EV"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  }
+}

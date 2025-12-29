@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "fiat",
+    "name": "Fiat"
+  },
+  "model": {
+    "slug": "600e",
+    "name": "600e"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4171,
+    "width_mm": 1781,
+    "height_mm": 1525,
+    "wheelbase_mm": 2562
+  }
+}

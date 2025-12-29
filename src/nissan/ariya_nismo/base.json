@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "nissan",
+    "name": "Nissan"
+  },
+  "model": {
+    "slug": "ariya_nismo",
+    "name": "Ariya Nismo"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4595,
+    "width_mm": 1850,
+    "height_mm": 1655,
+    "wheelbase_mm": 2775
+  }
+}

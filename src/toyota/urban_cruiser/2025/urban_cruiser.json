@@ -1,0 +1,85 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["DE", "GB", "FR", "PT", "IT"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 122,
+    "system_torque_nm": 280,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 122,
+        "torque_nm": 280
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 49.0,
+    "pack_capacity_kwh_net": 48.0,
+    "pack_voltage_nominal_v": 400,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 100,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 402
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 9.0,
+    "top_speed_kmh": 150
+  },
+  "weights": {
+    "curb_weight_kg": 1650
+  },
+  "capacity": {
+    "cargo_l": 380
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Toyota Urban Cruiser Official Specifications Europe",
+      "url": "https://www.toyota-europe.com/urban-cruiser",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

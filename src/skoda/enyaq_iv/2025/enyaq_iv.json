@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "80",
+    "name": "80"
+  },
+  "markets": [
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "BR"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 150,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 82.0,
+    "pack_capacity_kwh_net": 77.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 135,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 550
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Škoda Enyaq iV 80 2025 Official Specifications",
+      "url": "https://www.skoda-auto.com/models/enyaq-iv",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

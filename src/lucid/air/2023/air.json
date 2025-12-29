@@ -1,0 +1,130 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "pure",
+    "name": "Pure"
+  },
+  "markets": [
+    "US"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 321,
+    "system_torque_nm": 430,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 321,
+        "torque_nm": 430
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 88,
+    "pack_capacity_kwh_net": 84,
+    "pack_voltage_nominal_v": 800,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "scheduled",
+        "manual"
+      ]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 160934,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 19.2,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 300,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": [
+        "din_70121",
+        "iso_15118_2"
+      ],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 676
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "acceleration_0_60_mph_s": 4.5,
+    "top_speed_kmh": 201
+  },
+  "weights": {
+    "curb_weight_kg": 2080
+  },
+  "capacity": {
+    "cargo_l": 456,
+    "frunk_l": 280
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 71400,
+        "country": "US",
+        "year": 2023
+      }
+    ]
+  },
+  "software": {
+    "os": "Lucid UX",
+    "ota_supported": true
+  },
+  "links": {
+    "manufacturer_url": "https://www.lucidmotors.com/air",
+    "configurator_url": "https://www.lucidmotors.com/air/configure"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Lucid Air Pure Official Specifications",
+      "url": "https://www.lucidmotors.com/air",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "regulatory",
+      "title": "EPA Fuel Economy Data - Lucid Air Pure",
+      "publisher": "EPA",
+      "url": "https://www.fueleconomy.gov",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "la_prima",
+    "name": "La Prima",
+    "kind": "trim_level"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Fiat 600e La Prima Specifications 2024",
+      "url": "https://www.fiat.com/fiat-600e",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

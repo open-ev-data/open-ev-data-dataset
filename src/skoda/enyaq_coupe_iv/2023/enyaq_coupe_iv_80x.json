@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "80x",
+    "name": "80x",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "80x",
+    "name": "80x"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 195,
+    "system_torque_nm": 425,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 75,
+        "torque_nm": 150
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 515
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.9,
+    "top_speed_kmh": 160
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Škoda Enyaq Coupé iV 80x Official Specifications",
+      "url": "https://www.skoda-auto.com/models/enyaq-coupe-iv",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

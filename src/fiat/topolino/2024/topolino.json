@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 6,
+    "system_torque_nm": 40,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 6,
+        "torque_nm": 40
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 5.5,
+    "pack_capacity_kwh_net": 5.4,
+    "thermal_management": "passive"
+  },
+  "charge_ports": [
+    {
+      "kind": "ac_only",
+      "connector": "type2",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 2.3,
+      "phases": 1
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 75
+      }
+    ]
+  },
+  "performance": {
+    "top_speed_kmh": 45
+  },
+  "weights": {
+    "curb_weight_kg": 485
+  },
+  "capacity": {
+    "cargo_l": 38
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Fiat Topolino Official Specifications 2024",
+      "url": "https://www.fiat.com/fiat-topolino",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

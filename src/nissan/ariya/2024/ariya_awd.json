@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "awd",
+    "name": "AWD e-4ORCE",
+    "kind": "drivetrain_upgrade"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 290,
+    "system_torque_nm": 600,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 300
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 130,
+        "torque_nm": 300
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.1,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2200
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan Ariya AWD e-4ORCE 2024 Official Specifications",
+      "url": "https://www.nissanusa.com/vehicles/electric-cars/ariya.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

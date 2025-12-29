@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "premier",
+    "name": "Premier",
+    "kind": "trim_level"
+  },
+  "trim": {
+    "slug": "premier",
+    "name": "Premier"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Captiva EV Premier Specifications",
+      "publisher": "Chevrolet",
+      "url": "https://news.chevrolet.com.br/content/public/br/pt/chevrolet/newsroom.detail.html/Pages/news/br/pt/2025/nov/1118-captiva-ev.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

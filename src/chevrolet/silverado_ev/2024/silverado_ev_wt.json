@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "wt",
+    "name": "WT",
+    "kind": "trim_level"
+  },
+  "trim": {
+    "slug": "wt",
+    "name": "WT"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2024 Chevrolet Silverado EV WT Specifications",
+      "url": "https://www.chevrolet.com/electric/silverado-ev",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

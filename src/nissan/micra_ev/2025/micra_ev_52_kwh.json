@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "52_kwh",
+    "name": "52 kWh",
+    "kind": "battery_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 110,
+    "system_torque_nm": 250,
+    "motors": [
+      {
+        "position": "front",
+        "power_kw": 110,
+        "torque_nm": 250
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 52,
+    "pack_capacity_kwh_net": 52
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 408
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 8.0,
+    "top_speed_kmh": 150
+  },
+  "weights": {
+    "curb_weight_kg": 1520
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan Micra EV 52 kWh 2025 Official Specifications",
+      "url": "https://www.nissan.co.uk/vehicles/new-vehicles/micra.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

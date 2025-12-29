@@ -1,0 +1,91 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "essential",
+    "name": "Essential"
+  },
+  "markets": [
+    "DE",
+    "FR",
+    "PT",
+    "IT",
+    "GB"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 33,
+    "system_torque_nm": 125,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 33,
+        "torque_nm": 125
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 26.8,
+    "pack_capacity_kwh_net": 26.8,
+    "thermal_management": "air"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.4,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 30,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 230
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 19.1,
+    "top_speed_kmh": 125
+  },
+  "weights": {
+    "curb_weight_kg": 950
+  },
+  "capacity": {
+    "cargo_l": 308
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Dacia Spring Official Specifications 2023",
+      "url": "https://www.dacia.pt/gama/dacia-spring-eletrico.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "Dacia Spring 2023 Technical Data",
+      "url": "https://www.dacia.de/modelle/dacia-spring.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

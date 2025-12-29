@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "variant": {
+    "slug": "ss",
+    "name": "SS",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "ss",
+    "name": "SS"
+  },
+  "powertrain": {
+    "system_power_kw": 415,
+    "system_torque_nm": 600
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.0
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2023 Chevrolet Blazer EV SS Specifications",
+      "url": "https://www.chevrolet.com/electric/blazer-ev",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

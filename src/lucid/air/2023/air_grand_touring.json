@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "grand_touring",
+    "name": "Grand Touring",
+    "kind": "range_upgrade"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 611,
+    "system_torque_nm": 950,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 305.5,
+        "torque_nm": 475
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 305.5,
+        "torque_nm": 475
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 112,
+    "pack_capacity_kwh_net": 106
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 830
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.0,
+    "acceleration_0_60_mph_s": 3.0,
+    "top_speed_kmh": 270
+  },
+  "weights": {
+    "curb_weight_kg": 2230
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 112400,
+        "country": "US",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Lucid Air Grand Touring Official Specifications",
+      "url": "https://www.lucidmotors.com/air",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

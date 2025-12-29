@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "touring",
+    "name": "Touring",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 462,
+    "system_torque_nm": 650,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 231,
+        "torque_nm": 325
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 231,
+        "torque_nm": 325
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 92,
+    "pack_capacity_kwh_net": 88
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 684
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.4,
+    "acceleration_0_60_mph_s": 3.4,
+    "top_speed_kmh": 201
+  },
+  "weights": {
+    "curb_weight_kg": 2150
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 95000,
+        "country": "US",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Lucid Air Touring Official Specifications",
+      "url": "https://www.lucidmotors.com/air",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

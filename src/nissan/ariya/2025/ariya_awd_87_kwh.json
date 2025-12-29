@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "awd_87_kwh",
+    "name": "AWD e-4ORCE 87 kWh",
+    "kind": "drivetrain_upgrade"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 290,
+    "system_torque_nm": 600,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 300
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 130,
+        "torque_nm": 300
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 87,
+    "pack_capacity_kwh_net": 87
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 459
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 470
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.1,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2300
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan Ariya AWD e-4ORCE 87 kWh 2025 Official Specifications",
+      "url": "https://www.nissanusa.com/vehicles/electric-cars/ariya.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

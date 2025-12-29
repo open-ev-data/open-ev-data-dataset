@@ -1,0 +1,127 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "engage",
+    "name": "Engage"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 160,
+    "system_torque_nm": 300,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 300
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 63,
+    "pack_capacity_kwh_net": 63,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "scheduled",
+        "manual"
+      ]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "right",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.4,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 130,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": [
+        "din_70121",
+        "iso_15118_2"
+      ],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 383
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 430
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.5,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1920
+  },
+  "capacity": {
+    "cargo_l": 466
+  },
+  "wheels_tires": {
+    "standard_wheel_size_in": 19,
+    "tire_sizes": [
+      "235/55R19"
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan Ariya 2023 Official Specifications",
+      "url": "https://www.nissanusa.com/vehicles/electric-cars/ariya.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "regulatory",
+      "title": "EPA Fuel Economy Data - Nissan Ariya 2023",
+      "publisher": "EPA",
+      "url": "https://www.fueleconomy.gov",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

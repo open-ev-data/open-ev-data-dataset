@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "rivian",
+    "name": "Rivian"
+  },
+  "model": {
+    "slug": "r1t",
+    "name": "R1T"
+  },
+  "vehicle_type": "pickup",
+  "body": {
+    "style": "pickup",
+    "doors": 4,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 5475,
+    "width_mm": 2015,
+    "width_with_mirrors_mm": 2195,
+    "height_mm": 1815,
+    "wheelbase_mm": 3450,
+    "ground_clearance_mm": 360
+  }
+}

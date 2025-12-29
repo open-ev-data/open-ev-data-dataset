@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "toyota",
+    "name": "Toyota"
+  },
+  "model": {
+    "slug": "c_hr_plus",
+    "name": "C-HR+"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5,
+    "rows": 2
+  }
+}

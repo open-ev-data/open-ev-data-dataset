@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "87_kwh",
+    "name": "87 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 87,
+    "pack_capacity_kwh_net": 87
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 499
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 500
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2100
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan Ariya 87 kWh 2025 Official Specifications",
+      "url": "https://www.nissanusa.com/vehicles/electric-cars/ariya.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "regulatory",
+      "title": "EPA Fuel Economy Data - Nissan Ariya 87 kWh 2025",
+      "publisher": "EPA",
+      "url": "https://www.fueleconomy.gov",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "rs",
+    "name": "RS",
+    "kind": "trim_level"
+  },
+  "trim": {
+    "slug": "rs",
+    "name": "RS"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2024 Chevrolet Blazer EV RS Specifications",
+      "url": "https://www.chevrolet.com.br/eletrico/blazer-ev",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

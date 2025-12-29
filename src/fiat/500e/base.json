@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "fiat",
+    "name": "Fiat"
+  },
+  "model": {
+    "slug": "500e",
+    "name": "500e"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 3,
+    "seats": 4
+  },
+  "dimensions": {
+    "length_mm": 3632,
+    "width_mm": 1683,
+    "height_mm": 1527,
+    "wheelbase_mm": 2322
+  }
+}

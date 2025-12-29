@@ -1,0 +1,91 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "CA"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 507,
+    "system_torque_nm": 1064,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 253.5
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 253.5
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 200,
+    "pack_capacity_kwh_net": 192,
+    "module_count": 24,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "nacs",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 19.2,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 350,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 724
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 5687,
+    "width_mm": 2167,
+    "height_mm": 1933,
+    "wheelbase_mm": 3469
+  },
+  "weights": {
+    "curb_weight_kg": 3800
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.7,
+    "top_speed_kmh": 193
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2025 Cadillac Escalade IQ Specifications",
+      "url": "https://www.cadillac.com/electric/escalade-iq",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

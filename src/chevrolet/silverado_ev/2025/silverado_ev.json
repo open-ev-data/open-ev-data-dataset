@@ -1,0 +1,88 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "wt",
+    "name": "WT"
+  },
+  "markets": [
+    "US",
+    "CA"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 510,
+    "system_torque_nm": 833,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 255
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 255
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 212,
+    "pack_capacity_kwh_net": 200,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 19.2,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 350,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 724
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 5842,
+    "width_mm": 2032,
+    "height_mm": 1930,
+    "wheelbase_mm": 3747
+  },
+  "weights": {
+    "curb_weight_kg": 3629
+  },
+  "capacity": {
+    "towing_braked_kg": 4536
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "2025 Chevrolet Silverado EV Specifications",
+      "url": "https://www.chevrolet.com/electric/silverado-ev",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

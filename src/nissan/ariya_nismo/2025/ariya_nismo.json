@@ -1,0 +1,126 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "nismo",
+    "name": "Nismo"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 270,
+    "system_torque_nm": 600,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 135,
+        "torque_nm": 300
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 135,
+        "torque_nm": 300
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 66,
+    "pack_capacity_kwh_net": 66,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "scheduled",
+        "manual"
+      ]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "right",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.4,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 130,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": [
+        "din_70121",
+        "iso_15118_2"
+      ],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 400
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 420
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.0,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2150
+  },
+  "capacity": {
+    "cargo_l": 466
+  },
+  "wheels_tires": {
+    "standard_wheel_size_in": 20,
+    "tire_sizes": [
+      "255/45R20"
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan Ariya Nismo B6 2025 Official Specifications",
+      "url": "https://www.nissanusa.com/vehicles/electric-cars/ariya.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

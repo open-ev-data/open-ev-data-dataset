@@ -1,0 +1,112 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 70,
+    "system_torque_nm": 250,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 70,
+        "torque_nm": 250
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 40,
+    "pack_capacity_kwh_net": 40,
+    "thermal_management": "liquid",
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "scheduled",
+        "manual"
+      ]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 80,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": [
+        "din_70121",
+        "iso_15118_2"
+      ],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 309
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 9.0,
+    "top_speed_kmh": 150
+  },
+  "weights": {
+    "curb_weight_kg": 1450
+  },
+  "capacity": {
+    "cargo_l": 326
+  },
+  "wheels_tires": {
+    "standard_wheel_size_in": 17,
+    "tire_sizes": [
+      "195/55R17"
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan Micra EV 2025 Official Specifications",
+      "url": "https://www.nissan.co.uk/vehicles/new-vehicles/micra.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

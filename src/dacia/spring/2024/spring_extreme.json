@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "extreme",
+    "name": "Extreme",
+    "kind": "performance_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 48,
+    "system_torque_nm": 160,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 48,
+        "torque_nm": 160
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 13.7,
+    "top_speed_kmh": 125
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Dacia Spring Extreme 2024 Specifications",
+      "url": "https://www.dacia.pt/gama/dacia-spring-eletrico.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

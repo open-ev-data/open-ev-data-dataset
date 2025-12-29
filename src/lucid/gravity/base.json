@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "lucid",
+    "name": "Lucid"
+  },
+  "model": {
+    "slug": "gravity",
+    "name": "Gravity"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 7,
+    "rows": 3
+  },
+  "dimensions": {
+    "length_mm": 5035,
+    "width_mm": 2019,
+    "width_with_mirrors_mm": 2200,
+    "height_mm": 1730,
+    "wheelbase_mm": 2975
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 64,
+    "pack_capacity_kwh_net": 61
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 450
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1720
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "MG Motor UK - MG4 Long Range Specifications 2025",
+      "url": "https://www.mgmotor.co.uk/electric-cars/mg4-electric",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

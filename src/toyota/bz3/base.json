@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "toyota",
+    "name": "Toyota"
+  },
+  "model": {
+    "slug": "bz3",
+    "name": "bZ3"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4725,
+    "width_mm": 1835,
+    "height_mm": 1475,
+    "wheelbase_mm": 2880
+  }
+}

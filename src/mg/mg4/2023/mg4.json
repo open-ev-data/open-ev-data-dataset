@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "standard",
+    "name": "Standard"
+  },
+  "markets": ["GB", "DE", "FR", "IT", "PT", "CN", "AU", "NZ", "TH"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 125,
+    "system_torque_nm": 250,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 125,
+        "torque_nm": 250
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 51,
+    "pack_capacity_kwh_net": 49,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 135,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 350
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.7,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1685
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "MG Motor UK - MG4 Electric Specifications",
+      "url": "https://www.mgmotor.co.uk/electric-cars/mg4-electric",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "oem",
+      "title": "MG Motor Europe - MG4 Electric",
+      "url": "https://www.mgmotor.eu/electric-cars/mg4-electric",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

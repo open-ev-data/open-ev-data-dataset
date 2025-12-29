@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "58kwh",
+    "name": "58 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 58.0,
+    "pack_capacity_kwh_net": 58.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 500
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1720
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Toyota bZ3X 58 kWh Official Specifications",
+      "url": "https://www.toyota.com.cn/bz3x",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

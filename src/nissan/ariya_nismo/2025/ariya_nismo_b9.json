@@ -1,0 +1,56 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "b9",
+    "name": "B9",
+    "kind": "battery_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 320,
+    "system_torque_nm": 600,
+    "motors": [
+      {
+        "position": "front",
+        "power_kw": 160,
+        "torque_nm": 300
+      },
+      {
+        "position": "rear",
+        "power_kw": 160,
+        "torque_nm": 300
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 91,
+    "pack_capacity_kwh_net": 91
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 480
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 500
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.5,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2300
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Nissan Ariya Nismo B9 2025 Official Specifications",
+      "url": "https://www.nissanusa.com/vehicles/electric-cars/ariya.html",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "rivian",
+    "name": "Rivian"
+  },
+  "model": {
+    "slug": "r1s",
+    "name": "R1S"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 4,
+    "seats": 7,
+    "rows": 3
+  },
+  "dimensions": {
+    "length_mm": 5100,
+    "width_mm": 2015,
+    "width_with_mirrors_mm": 2195,
+    "height_mm": 1820,
+    "wheelbase_mm": 3075,
+    "ground_clearance_mm": 360
+  }
+}

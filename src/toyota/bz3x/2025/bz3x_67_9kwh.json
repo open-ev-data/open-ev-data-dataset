@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "67_9kwh",
+    "name": "67.9 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 67.9,
+    "pack_capacity_kwh_net": 67.9
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 620
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1780
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Toyota bZ3X 67.9 kWh Official Specifications",
+      "url": "https://www.toyota.com.cn/bz3x",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

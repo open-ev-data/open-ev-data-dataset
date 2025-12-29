@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "60",
+    "name": "60",
+    "kind": "battery_downgrade"
+  },
+  "trim": {
+    "slug": "60",
+    "name": "60"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 62.0,
+    "pack_capacity_kwh_net": 58.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 410
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Škoda Enyaq iV 60 2025 Official Specifications",
+      "url": "https://www.skoda-auto.com/models/enyaq-iv",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

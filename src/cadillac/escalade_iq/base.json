@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "cadillac",
+    "name": "Cadillac"
+  },
+  "model": {
+    "slug": "escalade_iq",
+    "name": "Escalade IQ"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 7,
+    "rows": 3
+  }
+}

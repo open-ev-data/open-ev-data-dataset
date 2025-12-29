@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 180,
+    "system_torque_nm": 303,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 180,
+        "torque_nm": 303
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 65.3,
+    "pack_capacity_kwh_net": 65.0,
+    "pack_voltage_nominal_v": 400,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": ["scheduled", "manual"]
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 80,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["gb_t"]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 600
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.5,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1710
+  },
+  "capacity": {
+    "cargo_l": 450
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Toyota bZ3 2025 Official Specifications China",
+      "url": "https://www.toyota.com.cn/bz3",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
