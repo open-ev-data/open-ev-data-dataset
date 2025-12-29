@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "7_seater",
+    "name": "7-Seater",
+    "kind": "market_specific"
+  },
+  "body": {
+    "seats": 7
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 410
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2180
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-Benz EQB 7-Seater Specifications",
+      "url": "https://www.mercedes-benz.com/en/vehicles/passenger-cars/eqb/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

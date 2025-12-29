@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "53_amg",
+    "name": "53 AMG",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 484,
+    "system_torque_nm": 950,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 184,
+        "torque_nm": 400
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 300,
+        "torque_nm": 550
+      }
+    ]
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 200
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 488
+      },
+      {
+        "cycle": "epa",
+        "range_km": 349
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.5,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2890
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-AMG EQS SUV 53 4MATIC+ Specifications",
+      "url": "https://www.mercedes-amg.com/en/vehicles/eqs-suv/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

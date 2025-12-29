@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "53_amg",
+    "name": "53 AMG",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 460,
+    "system_torque_nm": 950,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 180,
+        "torque_nm": 400
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 280,
+        "torque_nm": 550
+      }
+    ]
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 200
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 488
+      },
+      {
+        "cycle": "epa",
+        "range_km": 373
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.5,
+    "top_speed_kmh": 220
+  },
+  "weights": {
+    "curb_weight_kg": 2690
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-AMG EQE SUV 53 4MATIC+ 2025 Specifications",
+      "url": "https://www.mercedes-amg.com/en/vehicles/eqe-suv/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "580_4matic",
+    "name": "580 4MATIC",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 400,
+    "system_torque_nm": 858,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 135,
+        "torque_nm": 325
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 265,
+        "torque_nm": 533
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 118.0,
+    "pack_capacity_kwh_net": 110.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 615
+      },
+      {
+        "cycle": "epa",
+        "range_km": 441
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.6,
+    "top_speed_kmh": 210
+  },
+  "weights": {
+    "curb_weight_kg": 2820
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-Benz EQS SUV 580 4MATIC 2025 Specifications",
+      "url": "https://www.mercedes-benz.com/en/vehicles/passenger-cars/eqs-suv/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 90.0,
+    "pack_capacity_kwh_net": 85.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 365
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2850
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-Benz EQV Long Range 2025 Specifications",
+      "url": "https://www.mercedes-benz.com/en/vehicles/passenger-cars/eqv/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

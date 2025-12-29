@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US", "BR", "DE", "GB", "FR", "PT", "IT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 175,
+    "system_torque_nm": 400,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 175,
+        "torque_nm": 400
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 89.0,
+    "pack_capacity_kwh_net": 82.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 792
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.0,
+    "top_speed_kmh": 200
+  },
+  "dimensions": {
+    "length_mm": 4690,
+    "width_mm": 1830,
+    "height_mm": 1435,
+    "wheelbase_mm": 2729
+  },
+  "weights": {
+    "curb_weight_kg": 1950
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-Benz CLA EV Official Specifications",
+      "url": "https://www.mercedes-benz.com/en/vehicles/passenger-cars/cla-ev/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

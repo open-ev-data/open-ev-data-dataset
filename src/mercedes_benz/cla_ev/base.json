@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mercedes_benz",
+    "name": "Mercedes-Benz"
+  },
+  "model": {
+    "slug": "cla_ev",
+    "name": "CLA EV"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5
+  }
+}
+

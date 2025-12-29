@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "350_plus",
+    "name": "350+",
+    "kind": "range_upgrade"
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 215,
+    "system_torque_nm": 565,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 215,
+        "torque_nm": 565
+      }
+    ]
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 645
+      },
+      {
+        "cycle": "epa",
+        "range_km": 490
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.4,
+    "top_speed_kmh": 210
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-Benz EQE 350+ 2025 Specifications",
+      "url": "https://www.mercedes-benz.com/en/vehicles/passenger-cars/eqe/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

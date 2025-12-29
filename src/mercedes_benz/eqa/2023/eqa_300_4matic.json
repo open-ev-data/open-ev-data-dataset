@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "300_4matic",
+    "name": "300 4MATIC",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 168,
+    "system_torque_nm": 390,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 70,
+        "torque_nm": 148
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 98,
+        "torque_nm": 242
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.7,
+    "top_speed_kmh": 160
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 400
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-Benz EQA 300 4MATIC Specifications",
+      "url": "https://www.mercedes-benz.com/en/vehicles/passenger-cars/eqa/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}
+

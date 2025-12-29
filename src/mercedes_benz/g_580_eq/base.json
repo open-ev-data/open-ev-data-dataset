@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mercedes_benz",
+    "name": "Mercedes-Benz"
+  },
+  "model": {
+    "slug": "g_580_eq",
+    "name": "G 580 EQ"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5
+  }
+}
+

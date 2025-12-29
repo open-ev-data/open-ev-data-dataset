@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mercedes_benz",
+    "name": "Mercedes-Benz"
+  },
+  "model": {
+    "slug": "eqv",
+    "name": "EQV"
+  },
+  "vehicle_type": "van",
+  "body": {
+    "style": "van",
+    "doors": 5,
+    "seats": 8
+  }
+}
+

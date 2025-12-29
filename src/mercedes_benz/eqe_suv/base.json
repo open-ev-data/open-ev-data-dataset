@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mercedes_benz",
+    "name": "Mercedes-Benz"
+  },
+  "model": {
+    "slug": "eqe_suv",
+    "name": "EQE SUV"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  }
+}
+

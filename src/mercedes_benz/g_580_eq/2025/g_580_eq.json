@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US", "BR", "DE", "GB", "FR", "PT", "IT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 426,
+    "system_torque_nm": 1164,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 106.5,
+        "torque_nm": 291
+      },
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 106.5,
+        "torque_nm": 291
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 106.5,
+        "torque_nm": 291
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 106.5,
+        "torque_nm": 291
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 116.0,
+    "pack_capacity_kwh_net": 108.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 470
+      },
+      {
+        "cycle": "epa",
+        "range_km": 337
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.7,
+    "top_speed_kmh": 180
+  },
+  "dimensions": {
+    "length_mm": 4875,
+    "width_mm": 1931,
+    "height_mm": 1975,
+    "wheelbase_mm": 2890
+  },
+  "weights": {
+    "curb_weight_kg": 3085
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Mercedes-Benz G 580 EQ Official Specifications",
+      "url": "https://www.mercedes-benz.com/en/vehicles/passenger-cars/g-580-eq/",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}
