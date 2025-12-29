@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.18.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.17.0...v1.18.0) (2025-12-29)
+
+### Features
+
+* **dataset:** generate dataset with latest 1.3.0 api adjusts ([1f49591](https://github.com/open-ev-data/open-ev-data-dataset/commit/1f495918b2c96af611c018544bacad7479049bdd))
+
 ## [1.17.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.16.0...v1.17.0) (2025-12-29)
 
 ### Features
