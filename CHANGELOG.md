@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.13.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.12.0...v1.13.0) (2025-12-29)
+
+### Features
+
+* **hyundai:** add specifications for IONIQ 5, IONIQ 6, and IONIQ 9 models for 2023-2025 ([a4c0778](https://github.com/open-ev-data/open-ev-data-dataset/commit/a4c077826ab1489912faf4e6e9433d63d9e0e790))
+
 ## [1.12.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.11.0...v1.12.0) (2025-12-29)
 
 ### Features
