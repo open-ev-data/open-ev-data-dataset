@@ -87,3 +87,5 @@ See [LICENCE](LICENCE) for full terms.
 ## Acknowledgments
 
 This project is inspired by the need for open, structured, and verifiable EV data. Special thanks to all contributors who help maintain and improve this dataset.
+
+---
