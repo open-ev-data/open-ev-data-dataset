@@ -1,0 +1,112 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "CN",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 200,
+    "system_torque_nm": 343,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 343
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 66,
+    "pack_capacity_kwh_net": 62,
+    "pack_voltage_nominal_v": 400,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "scheduled",
+        "manual"
+      ]
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 22,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": [
+        "din_70121",
+        "iso_15118_2"
+      ]
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 440
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 535
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.7,
+    "top_speed_kmh": 180
+  },
+  "dimensions": {
+    "length_mm": 4270,
+    "width_mm": 1822,
+    "height_mm": 1636,
+    "wheelbase_mm": 2750
+  },
+  "weights": {
+    "curb_weight_kg": 1820
+  },
+  "capacity": {
+    "cargo_l": 323
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Smart #1 Official Specifications",
+      "url": "https://www.smart.com",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
