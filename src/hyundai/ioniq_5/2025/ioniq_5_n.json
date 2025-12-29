@@ -1,0 +1,109 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "hyundai",
+    "name": "Hyundai"
+  },
+  "model": {
+    "slug": "ioniq_5",
+    "name": "IONIQ 5"
+  },
+  "year": 2025,
+  "trim": {
+    "slug": "n",
+    "name": "N"
+  },
+  "variant": {
+    "slug": "n",
+    "name": "N",
+    "kind": "performance_package"
+  },
+  "markets": [
+    "US",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "vehicle_type": "suv",
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 448,
+    "system_torque_nm": 740,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 166,
+        "torque_nm": 390
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 282,
+        "torque_nm": 390
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 84.0,
+    "pack_capacity_kwh_net": 78.0,
+    "thermal_management": "liquid",
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 220,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 350
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.4,
+    "top_speed_kmh": 260
+  },
+  "weights": {
+    "curb_weight_kg": 2235
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Hyundai IONIQ 5 N Official Specifications 2025",
+      "url": "https://www.hyundai.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

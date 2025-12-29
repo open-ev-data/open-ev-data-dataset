@@ -1,0 +1,104 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "hyundai",
+    "name": "Hyundai"
+  },
+  "model": {
+    "slug": "kona_electric",
+    "name": "Kona Electric"
+  },
+  "year": 2023,
+  "trim": {
+    "slug": "standard_range",
+    "name": "Standard Range"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "vehicle_type": "suv",
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 100,
+    "system_torque_nm": 395,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 100,
+        "torque_nm": 395
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 39.2,
+    "pack_capacity_kwh_net": 36.0,
+    "thermal_management": "liquid",
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.2,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 100,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 305
+      },
+      {
+        "cycle": "epa",
+        "range_km": 258
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 9.9,
+    "top_speed_kmh": 167
+  },
+  "weights": {
+    "curb_weight_kg": 1685
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Hyundai Kona Electric Standard Range Official Specifications",
+      "url": "https://www.hyundai.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

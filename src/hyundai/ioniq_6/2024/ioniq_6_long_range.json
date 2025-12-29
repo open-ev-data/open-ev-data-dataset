@@ -1,0 +1,109 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "hyundai",
+    "name": "Hyundai"
+  },
+  "model": {
+    "slug": "ioniq_6",
+    "name": "IONIQ 6"
+  },
+  "year": 2024,
+  "trim": {
+    "slug": "long_range",
+    "name": "Long Range"
+  },
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range",
+    "kind": "range_upgrade"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "vehicle_type": "passenger_car",
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 168,
+    "system_torque_nm": 350,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 168,
+        "torque_nm": 350
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 77.4,
+    "pack_capacity_kwh_net": 72.6,
+    "thermal_management": "liquid",
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 220,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 614
+      },
+      {
+        "cycle": "epa",
+        "range_km": 581
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.4,
+    "top_speed_kmh": 185
+  },
+  "weights": {
+    "curb_weight_kg": 1950
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Hyundai IONIQ 6 Long Range Official Specifications 2024",
+      "url": "https://www.hyundai.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "hyundai",
+    "name": "Hyundai"
+  },
+  "model": {
+    "slug": "ioniq_9",
+    "name": "IONIQ 9"
+  },
+  "year": 2025,
+  "trim": {
+    "slug": "long_range_awd",
+    "name": "Long Range AWD"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "vehicle_type": "suv",
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 283,
+    "system_torque_nm": 700,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 141,
+        "torque_nm": 350
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 142,
+        "torque_nm": 350
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 110.3,
+    "pack_capacity_kwh_net": 99.5,
+    "thermal_management": "liquid",
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 350,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 620
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.0,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2650
+  },
+  "capacity": {
+    "cargo_l": 620
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Hyundai IONIQ 9 Official Specifications",
+      "url": "https://www.hyundai.com",
+      "accessed_at": "2025-12-28T00:00:00Z"
+    }
+  ]
+}
