@@ -1,0 +1,114 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "elite",
+    "name": "Elite"
+  },
+  "variant": {
+    "slug": "awd",
+    "name": "All-Wheel Drive",
+    "kind": "drivetrain_upgrade"
+  },
+  "markets": ["US", "CA"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 248,
+    "system_torque_nm": 501,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 124,
+        "torque_nm": 250
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 124,
+        "torque_nm": 251
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 85,
+    "pack_capacity_kwh_net": 81.7,
+    "pack_voltage_nominal_v": 400,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": ["scheduled", "manual"]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.5,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 155,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 451
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.0,
+    "acceleration_0_60_mph_s": 5.7,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2280
+  },
+  "capacity": {
+    "cargo_l": 881
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Honda Prologue AWD 2024 Official Specifications",
+      "url": "https://automobiles.honda.com/prologue",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "regulatory",
+      "title": "EPA Fuel Economy Data - Honda Prologue AWD",
+      "publisher": "EPA",
+      "url": "https://www.fueleconomy.gov",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
