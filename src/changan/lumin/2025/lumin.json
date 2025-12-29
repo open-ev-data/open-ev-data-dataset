@@ -1,0 +1,84 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "standard",
+    "name": "Standard"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 30,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 30
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 12.9,
+    "pack_capacity_kwh_net": 12.0,
+    "thermal_management": "passive",
+    "preconditioning": {
+      "supported": false
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "front",
+        "position": "front"
+      }
+    },
+    {
+      "kind": "ac_only",
+      "connector": "gb_t_ac",
+      "location": {
+        "side": "front",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.3,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 20,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 155
+      }
+    ]
+  },
+  "performance": {
+    "top_speed_kmh": 101
+  },
+  "weights": {
+    "curb_weight_kg": 730
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Changan Lumin Official Specifications",
+      "url": "https://www.changan.com.cn",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

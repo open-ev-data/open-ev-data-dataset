@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "standard",
+    "name": "Standard"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 160,
+    "system_torque_nm": 320,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 320
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 58.0,
+    "pack_capacity_kwh_net": 56.0,
+    "thermal_management": "liquid",
+    "preconditioning": {
+      "supported": true
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    },
+    {
+      "kind": "ac_only",
+      "connector": "gb_t_ac",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 80,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 520
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Changan Nevo A06 Official Specifications",
+      "url": "https://www.changan.com.cn",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Changan Nevo A06 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Changan_Nevo_A06",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

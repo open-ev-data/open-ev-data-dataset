@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "long_range",
+    "name": "Long Range",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 80.0,
+    "pack_capacity_kwh_net": 78.0
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 120
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 710
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 1950
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Changan Nevo A07 Long Range Official Specifications",
+      "url": "https://www.changan.com.cn",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

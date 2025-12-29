@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "changan",
+    "name": "Changan"
+  },
+  "model": {
+    "slug": "nevo_q05",
+    "name": "Nevo Q05"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "standard",
+    "name": "Standard"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 160,
+    "system_torque_nm": 320,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 320
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 66.0,
+    "pack_capacity_kwh_net": 64.0,
+    "thermal_management": "liquid",
+    "preconditioning": {
+      "supported": true
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    },
+    {
+      "kind": "ac_only",
+      "connector": "gb_t_ac",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 100,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 520
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.5,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 1950
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Deepal S7 Official Specifications",
+      "url": "https://www.deepal.com.cn",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

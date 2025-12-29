@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "changan",
+    "name": "Changan"
+  },
+  "model": {
+    "slug": "deepal_s7",
+    "name": "Deepal S7"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5
+  }
+}
