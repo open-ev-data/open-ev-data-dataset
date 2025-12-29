@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "lotus",
+    "name": "Lotus"
+  },
+  "model": {
+    "slug": "emeya",
+    "name": "Emeya"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5,
+    "rows": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "variant": {
+    "slug": "s",
+    "name": "S",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "s",
+    "name": "S"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 450,
+    "system_torque_nm": 710
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Lotus Eletre S Official Specifications",
+      "url": "https://www.lotuscars.com/eletre",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
