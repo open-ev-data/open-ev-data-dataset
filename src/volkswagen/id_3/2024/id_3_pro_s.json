@@ -1,0 +1,84 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "slug": "id_3",
+    "name": "ID.3"
+  },
+  "year": 2024,
+  "variant": {
+    "slug": "pro_s",
+    "name": "PRO S",
+    "kind": "range_upgrade"
+  },
+  "trim": {
+    "slug": "pro_s",
+    "name": "PRO S"
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 150,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 82.0,
+    "pack_capacity_kwh_net": 77.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 135,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 559
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.3,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1920
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volkswagen ID.3 PRO S 2024 Official Specifications",
+      "url": "https://www.volkswagen.de",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

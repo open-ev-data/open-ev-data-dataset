@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "slug": "id_3",
+    "name": "ID.3"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 5
+  },
+  "dimensions": {
+    "length_mm": 4261,
+    "width_mm": 1809,
+    "height_mm": 1552,
+    "wheelbase_mm": 2765
+  }
+}

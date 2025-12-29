@@ -1,0 +1,94 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "slug": "id_7",
+    "name": "ID.7"
+  },
+  "year": 2025,
+  "trim": {
+    "slug": "pro",
+    "name": "PRO"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 210,
+    "system_torque_nm": 550,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 210,
+        "torque_nm": 550
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 91.0,
+    "pack_capacity_kwh_net": 86.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 175,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 700
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.5,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2120
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volkswagen ID.7 PRO 2025 Official Specifications",
+      "url": "https://www.volkswagen.de",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

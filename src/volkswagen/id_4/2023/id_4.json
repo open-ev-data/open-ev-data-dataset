@@ -1,0 +1,98 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "slug": "id_4",
+    "name": "ID.4"
+  },
+  "year": 2023,
+  "trim": {
+    "slug": "pro",
+    "name": "PRO"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 150,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 82.0,
+    "pack_capacity_kwh_net": 77.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 135,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 520
+      },
+      {
+        "cycle": "epa",
+        "range_km": 442
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 8.5,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 2124
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volkswagen ID.4 PRO 2023 Official Specifications",
+      "url": "https://www.volkswagen.de",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

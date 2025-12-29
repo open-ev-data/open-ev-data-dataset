@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "slug": "id_5",
+    "name": "ID.5"
+  },
+  "year": 2023,
+  "variant": {
+    "slug": "gtx",
+    "name": "GTX",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "gtx",
+    "name": "GTX"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 220,
+    "system_torque_nm": 460,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 80,
+        "torque_nm": 162
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 82.0,
+    "pack_capacity_kwh_net": 77.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 135,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 480
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.2,
+    "top_speed_kmh": 180
+  },
+  "weights": {
+    "curb_weight_kg": 2236
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Volkswagen ID.5 GTX 2023 Official Specifications",
+      "url": "https://www.volkswagen.de",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}
