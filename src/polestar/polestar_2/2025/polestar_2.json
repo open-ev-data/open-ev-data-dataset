@@ -1,0 +1,140 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "performance_pack",
+    "name": "Performance Pack"
+  },
+  "markets": ["US", "DE", "GB", "FR", "PT", "IT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2020
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 350,
+    "system_torque_nm": 740,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 175,
+        "torque_nm": 370
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 175,
+        "torque_nm": 370
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 78,
+    "pack_capacity_kwh_net": 75,
+    "pack_voltage_nominal_v": 400,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": ["scheduled", "manual"]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      },
+      "motorized": true
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 418
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 540
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.2,
+    "acceleration_0_60_mph_s": 4.0,
+    "top_speed_kmh": 205
+  },
+  "weights": {
+    "curb_weight_kg": 2113
+  },
+  "capacity": {
+    "cargo_l": 405,
+    "frunk_l": 35
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 66200,
+        "country": "US",
+        "year": 2025
+      },
+      {
+        "currency": "EUR",
+        "amount": 59900,
+        "country": "DE",
+        "year": 2025
+      }
+    ]
+  },
+  "software": {
+    "os": "Android Automotive",
+    "ota_supported": true
+  },
+  "links": {
+    "manufacturer_url": "https://www.polestar.com/polestar-2",
+    "configurator_url": "https://www.polestar.com/polestar-2/configure"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Polestar 2 Performance Pack Official Specifications 2025",
+      "url": "https://www.polestar.com/polestar-2",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "2025 Polestar 2 Performance Pack Only",
+      "publisher": "Car and Driver",
+      "url": "https://www.caranddriver.com/news/a62844052/2025-polestar-2-performance-pack-only",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

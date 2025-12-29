@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "performance_pack",
+    "name": "Performance Pack",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "system_power_kw": 380,
+    "system_torque_nm": 910,
+    "motors": [
+      {
+        "position": "front",
+        "power_kw": 190,
+        "torque_nm": 455
+      },
+      {
+        "position": "rear",
+        "power_kw": 190,
+        "torque_nm": 455
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.7,
+    "acceleration_0_60_mph_s": 4.5
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 89900,
+        "country": "US",
+        "year": 2025
+      },
+      {
+        "currency": "EUR",
+        "amount": 96900,
+        "country": "DE",
+        "year": 2025
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Polestar 3 Performance Pack Specifications 2025",
+      "url": "https://www.polestar.com/polestar-3",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

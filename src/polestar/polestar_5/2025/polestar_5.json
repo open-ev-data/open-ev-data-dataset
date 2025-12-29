@@ -1,0 +1,135 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "dual_motor",
+    "name": "Dual Motor"
+  },
+  "markets": ["US", "DE", "GB", "FR", "PT", "IT", "CN"],
+  "availability": {
+    "status": "announced",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 550,
+    "system_torque_nm": 1015,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 275,
+        "torque_nm": 507.5
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 275,
+        "torque_nm": 507.5
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 103,
+    "pack_capacity_kwh_net": 100,
+    "pack_voltage_nominal_v": 800,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": ["scheduled", "manual"]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      },
+      "motorized": true
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 22,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 350,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 670
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.2,
+    "acceleration_0_60_mph_s": 3.0,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2200
+  },
+  "capacity": {
+    "cargo_l": 450
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 122600,
+        "country": "US",
+        "year": 2025
+      },
+      {
+        "currency": "EUR",
+        "amount": 122600,
+        "country": "DE",
+        "year": 2025
+      }
+    ]
+  },
+  "software": {
+    "os": "Android Automotive",
+    "ota_supported": true
+  },
+  "links": {
+    "manufacturer_url": "https://www.polestar.com/polestar-5",
+    "configurator_url": "https://www.polestar.com/polestar-5/configure"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Polestar 5 Official Specifications",
+      "url": "https://www.polestar.com/polestar-5",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Polestar 5 Apresentado Oficialmente",
+      "publisher": "Creative News",
+      "url": "https://creativenews.pt/2025/09/09/polestar-5-apresentado-oficialmente",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

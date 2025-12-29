@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "standard_range_single_motor",
+    "name": "Standard Range Single Motor",
+    "kind": "range_variant"
+  },
+  "trim": {
+    "slug": "standard_range_single_motor",
+    "name": "Standard Range Single Motor"
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 170,
+    "system_torque_nm": 330,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 170,
+        "torque_nm": 330
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 69,
+    "pack_capacity_kwh_net": 67
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 270
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 440
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.4,
+    "acceleration_0_60_mph_s": 7.0,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 1940
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 51300,
+        "country": "US",
+        "year": 2023
+      },
+      {
+        "currency": "EUR",
+        "amount": 45500,
+        "country": "DE",
+        "year": 2023
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Polestar 2 Standard Range Single Motor Specifications",
+      "url": "https://www.polestar.com/polestar-2",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

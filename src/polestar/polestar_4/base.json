@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "polestar",
+    "name": "Polestar"
+  },
+  "model": {
+    "slug": "polestar_4",
+    "name": "Polestar 4"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv_coupe",
+    "doors": 5,
+    "seats": 5,
+    "rows": 2,
+    "drag_coefficient_cd": 0.269
+  },
+  "dimensions": {
+    "length_mm": 4839,
+    "width_mm": 1994,
+    "width_with_mirrors_mm": 2139,
+    "height_mm": 1544,
+    "wheelbase_mm": 2999,
+    "ground_clearance_mm": 180
+  }
+}

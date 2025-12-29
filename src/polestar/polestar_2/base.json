@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "polestar",
+    "name": "Polestar"
+  },
+  "model": {
+    "slug": "polestar_2",
+    "name": "Polestar 2"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "fastback",
+    "doors": 5,
+    "seats": 5,
+    "drag_coefficient_cd": 0.278
+  },
+  "dimensions": {
+    "length_mm": 4606,
+    "width_mm": 1985,
+    "width_with_mirrors_mm": 2135,
+    "height_mm": 1479,
+    "wheelbase_mm": 2735,
+    "ground_clearance_mm": 151
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "long_range_dual_motor",
+    "name": "Long Range Dual Motor",
+    "kind": "base_variant"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Polestar 3 Long Range Dual Motor Specifications 2025",
+      "url": "https://www.polestar.com/polestar-3",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

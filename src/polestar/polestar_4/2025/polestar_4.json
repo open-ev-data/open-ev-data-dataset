@@ -1,0 +1,139 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "long_range_dual_motor",
+    "name": "Long Range Dual Motor"
+  },
+  "markets": ["US", "DE", "GB", "FR", "PT", "IT", "CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 400,
+    "system_torque_nm": 686,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 343
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 343
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "CATL",
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 102,
+    "pack_capacity_kwh_net": 100,
+    "pack_voltage_nominal_v": 400,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": ["scheduled", "manual"]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 160000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      },
+      "motorized": true
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 22,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 200,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": false
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 451
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 600
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.8,
+    "acceleration_0_60_mph_s": 3.7,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2230
+  },
+  "capacity": {
+    "cargo_l": 526
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 60000,
+        "country": "US",
+        "year": 2025
+      },
+      {
+        "currency": "EUR",
+        "amount": 65000,
+        "country": "DE",
+        "year": 2025
+      }
+    ]
+  },
+  "software": {
+    "os": "Android Automotive",
+    "ota_supported": true
+  },
+  "links": {
+    "manufacturer_url": "https://www.polestar.com/polestar-4",
+    "configurator_url": "https://www.polestar.com/polestar-4/configure"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Polestar 4 Official Specifications 2025",
+      "url": "https://www.polestar.com/polestar-4",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    },
+    {
+      "type": "regulatory",
+      "title": "EPA Fuel Economy Data - Polestar 4 2025",
+      "publisher": "EPA",
+      "url": "https://www.fueleconomy.gov",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "long_range_single_motor",
+    "name": "Long Range Single Motor",
+    "kind": "range_variant"
+  },
+  "trim": {
+    "slug": "long_range_single_motor",
+    "name": "Long Range Single Motor"
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 200,
+    "system_torque_nm": 330,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 330
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 78,
+    "pack_capacity_kwh_net": 75
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 418
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 540
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.4,
+    "acceleration_0_60_mph_s": 7.0,
+    "top_speed_kmh": 160
+  },
+  "weights": {
+    "curb_weight_kg": 2010
+  },
+  "pricing": {
+    "msrp": [
+      {
+        "currency": "USD",
+        "amount": 51300,
+        "country": "US",
+        "year": 2024
+      },
+      {
+        "currency": "EUR",
+        "amount": 49900,
+        "country": "DE",
+        "year": 2024
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Polestar 2 Long Range Single Motor Specifications 2024",
+      "url": "https://www.polestar.com/polestar-2",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
