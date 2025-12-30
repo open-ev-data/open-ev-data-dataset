@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "51_87kwh",
+    "name": "51.87 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 51.87,
+    "pack_capacity_kwh_net": 49.0
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 471
+      }
+    ]
+  },
+  "weights": {
+    "curb_weight_kg": 2050
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Nammi 06",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nammi_06",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

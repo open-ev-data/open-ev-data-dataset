@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "announced",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 200,
+    "system_torque_nm": 320,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 320
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 70.26,
+    "pack_capacity_kwh_net": 66.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 620
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.8,
+    "top_speed_kmh": 165
+  },
+  "dimensions": {
+    "length_mm": 4880,
+    "width_mm": 1895,
+    "height_mm": 1460,
+    "wheelbase_mm": 2915
+  },
+  "weights": {
+    "curb_weight_kg": 1850
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Dongfeng eπ 007",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dongfeng_e%CF%80_007",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

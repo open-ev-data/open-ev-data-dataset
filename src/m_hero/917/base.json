@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "m_hero",
+    "name": "M-Hero"
+  },
+  "model": {
+    "slug": "917",
+    "name": "917"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "voyah",
+    "name": "Voyah"
+  },
+  "model": {
+    "slug": "courage",
+    "name": "Courage"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 5
+  }
+}
