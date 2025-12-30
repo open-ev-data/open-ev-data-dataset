@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.24.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.23.0...v1.24.0) (2025-12-30)
+
+### Features
+
+* **battista:** add new vehicle specifications ([ecc4ff2](https://github.com/open-ev-data/open-ev-data-dataset/commit/ecc4ff280aafe5df5f46d58cde07e42127985a72))
+* **ds_automobiles:** add new vehicle specifications ([0e00cda](https://github.com/open-ev-data/open-ev-data-dataset/commit/0e00cda402fa40e065bf53355137b353c18c8d0d))
+* **fangchengbao:** add new vehicle specifications for Bao 5 and Tai 3 models ([150c9c8](https://github.com/open-ev-data/open-ev-data-dataset/commit/150c9c8b133f4e4b8e719b00977ed84526dca50f))
+* **faraday_future:** add new vehicle specifications for FF 91 models (2023-2025) ([cb7637d](https://github.com/open-ev-data/open-ev-data-dataset/commit/cb7637d13ca4906eecf0c04466cb67e62a6211d4))
+* **ferrari:** add new vehicle specifications ([826600e](https://github.com/open-ev-data/open-ev-data-dataset/commit/826600ef6c01f319d63c4d45da91c578450d86a0))
+* **hiphi:** add new vehicle specifications for HiPhi X and HiPhi Z models (2023-2025) ([d3c2bea](https://github.com/open-ev-data/open-ev-data-dataset/commit/d3c2beaa6af684f27e5f29be6237803a9335f5b8))
+* **hongqi:** add new vehicle specifications for E-HS9 and E-QM5 models (2023-2025) ([9f41b82](https://github.com/open-ev-data/open-ev-data-dataset/commit/9f41b82540a5e5d4ffbf7fb1067654ded27f6387))
+* **karma_automotive:** add new vehicle specifications ([5686231](https://github.com/open-ev-data/open-ev-data-dataset/commit/568623190d06fdb22ebcc40187085782442821b0))
+* **maserati:** add new vehicle specifications for Maserati models ([8dacc61](https://github.com/open-ev-data/open-ev-data-dataset/commit/8dacc617d88386af8876722cbd0288b388206164))
+* **mclaren:** add new vehicle specifications ([f6e8c2c](https://github.com/open-ev-data/open-ev-data-dataset/commit/f6e8c2c2c4ea779f86f7f1f2f87ab55141fba31b))
+* **rimac:** add new vehicle specifications for Rimac Nevera models (2023-2025) ([3644a7d](https://github.com/open-ev-data/open-ev-data-dataset/commit/3644a7d951437fa40819e59d99a5d10708939e7c))
+* **rolls_royce:** add new vehicle specifications for Rolls-Royce Spectre models (2023-2025) ([2344712](https://github.com/open-ev-data/open-ev-data-dataset/commit/234471295a11410f97cbebe24b36bdc087392a08))
+* **yangwang:** add new vehicle specifications for U7, U8, and U9 models (2023-2025) ([17d6e9a](https://github.com/open-ev-data/open-ev-data-dataset/commit/17d6e9a0482f8a57f1f2730f34a2d0418d0def24))
+
 ## [1.23.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.22.0...v1.23.0) (2025-12-30)
 
 ### Features
