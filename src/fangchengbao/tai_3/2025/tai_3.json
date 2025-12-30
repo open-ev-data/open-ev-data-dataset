@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "rwd",
+    "name": "RWD"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 160,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "manufacturer": "BYD",
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 78.72,
+    "pack_capacity_kwh_net": 78.72,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 80.0,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 501
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.9,
+    "top_speed_kmh": 201
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "FangChengBao Tai 3 Official Specifications",
+      "url": "https://www.fangchengbao.com/tai-3",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "awd",
+    "name": "AWD",
+    "kind": "drivetrain_upgrade"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 310,
+    "system_torque_nm": 580,
+    "motors": [
+      {
+        "position": "front",
+        "type": "asm",
+        "power_kw": 150
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.9,
+    "top_speed_kmh": 201
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "FangChengBao Tai 3 AWD Official Specifications",
+      "url": "https://www.fangchengbao.com/tai-3",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}
