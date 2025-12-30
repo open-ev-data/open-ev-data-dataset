@@ -1,0 +1,86 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 270,
+    "system_torque_nm": 500,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 270,
+        "torque_nm": 500
+      }
+    ],
+    "transmission": {
+      "type": "dct",
+      "gears": 1
+    }
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 33.7,
+    "pack_capacity_kwh_net": 33.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "ac_only",
+      "connector": "type2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.3,
+      "phases": 1,
+      "notes": "PHEV vehicle. Limited charging speed."
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v",
+      "notes": "DC fast charging available"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 200,
+        "notes": "Electric-only range"
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 5018,
+    "width_mm": 1965,
+    "height_mm": 1500,
+    "wheelbase_mm": 3000
+  },
+  "weights": {
+    "curb_weight_kg": 2085
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Chery Fulwin A9L",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chery_Fulwin_A9L",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

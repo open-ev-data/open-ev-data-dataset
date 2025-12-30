@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 155,
+    "system_torque_nm": 285,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 155,
+        "torque_nm": 285
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 67.12,
+    "pack_capacity_kwh_net": 64.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 80,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 512
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 4675,
+    "width_mm": 1910,
+    "height_mm": 1660,
+    "wheelbase_mm": 2830
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Chery eQ7 Electric SUV 2025",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chery_eQ7",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

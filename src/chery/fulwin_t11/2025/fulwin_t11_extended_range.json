@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "extended_range",
+    "name": "Extended Range",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 39.92,
+    "pack_capacity_kwh_net": 39.0
+  },
+  "weights": {
+    "curb_weight_kg": 2635
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Chery Fulwin T11 Extended Range",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chery_Fulwin_T11",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "extended_range",
+    "name": "Extended Range",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 39.33,
+    "pack_capacity_kwh_net": 39.33
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 405
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Chery QQ Domi Extended Range Specifications",
+      "publisher": "Mixvale",
+      "url": "https://www.mixvale.com.br/2025/06/25/chery-qq-domi-eletrico-chega-com-405-km-de-autonomia-e-preco-abaixo-de-r-53-mil/",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

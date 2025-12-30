@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "chery",
+    "name": "Chery"
+  },
+  "model": {
+    "slug": "icar",
+    "name": "iCar"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 4
+  }
+}

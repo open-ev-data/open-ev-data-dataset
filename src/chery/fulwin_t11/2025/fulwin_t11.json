@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 195,
+    "system_torque_nm": 400,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 100,
+        "torque_nm": 200
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 95,
+        "torque_nm": 200
+      }
+    ],
+    "transmission": {
+      "type": "dct",
+      "gears": 3
+    }
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 33.68,
+    "pack_capacity_kwh_net": 33.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "ac_only",
+      "connector": "type2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.3,
+      "phases": 1,
+      "notes": "EREV/PHEV vehicle. Limited charging speed."
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v",
+      "notes": "DC fast charging available"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 220,
+        "notes": "Electric-only range"
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 5205,
+    "width_mm": 1998,
+    "height_mm": 1800,
+    "wheelbase_mm": 3120
+  },
+  "weights": {
+    "curb_weight_kg": 2452
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Chery Fulwin T11",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chery_Fulwin_T11",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
