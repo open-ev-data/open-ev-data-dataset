@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "plus",
+    "name": "Plus",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "system_power_kw": 150
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 381
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 6 Plus Specifications",
+      "url": "https://vinfastauto.com/vf-6",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

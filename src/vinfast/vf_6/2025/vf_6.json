@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["VN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 130,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 130
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 59.6,
+    "pack_capacity_kwh_net": 59.6,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 120,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 399
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 4238,
+    "width_mm": 1820,
+    "height_mm": 1594,
+    "wheelbase_mm": 2730
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 6 Official Specifications",
+      "url": "https://vinfastauto.com/vf-6",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "VinFast VF 6 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VinFast_VF_6",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

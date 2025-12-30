@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["VN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 30,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 30
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 17,
+    "pack_capacity_kwh_net": 17,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.3,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 200
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 3767,
+    "width_mm": 1680,
+    "height_mm": 1790,
+    "wheelbase_mm": 2520
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast EC Van Official Specifications",
+      "url": "https://vinfastauto.com/ec-van",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "VinFast EC Van Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VinFast_EC_Van",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

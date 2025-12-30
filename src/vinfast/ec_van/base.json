@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "vinfast",
+    "name": "VinFast"
+  },
+  "model": {
+    "slug": "ec_van",
+    "name": "EC Van"
+  },
+  "vehicle_type": "van",
+  "body": {
+    "style": "minivan",
+    "doors": 5,
+    "seats": 7
+  }
+}

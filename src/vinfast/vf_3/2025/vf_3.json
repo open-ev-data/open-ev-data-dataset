@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["VN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 32,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 32
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 18.64,
+    "pack_capacity_kwh_net": 18.64,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 3.3,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 209
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 3190,
+    "width_mm": 1679,
+    "height_mm": 1622,
+    "wheelbase_mm": 2075
+  },
+  "performance": {
+    "top_speed_kmh": 100
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 3 Official Specifications",
+      "url": "https://vinfastauto.com/vf-3",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "VinFast VF 3 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VinFast_VF_3",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

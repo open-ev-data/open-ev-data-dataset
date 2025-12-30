@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "plus",
+    "name": "Plus",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 260,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 130
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 130
+      }
+    ]
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 431
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 7 Plus Specifications",
+      "url": "https://vinfastauto.com/vf-7",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

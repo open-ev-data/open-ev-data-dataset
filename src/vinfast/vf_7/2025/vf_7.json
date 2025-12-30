@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["VN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 150,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 75.3,
+    "pack_capacity_kwh_net": 75.3,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 450
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 4545,
+    "width_mm": 1890,
+    "height_mm": 1636,
+    "wheelbase_mm": 2840
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 7 Official Specifications",
+      "url": "https://vinfastauto.com/vf-7",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "VinFast VF 7 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VinFast_VF_7",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

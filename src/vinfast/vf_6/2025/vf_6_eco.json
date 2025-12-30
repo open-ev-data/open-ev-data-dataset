@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "eco",
+    "name": "Eco",
+    "kind": "range_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 130
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 399
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 6 Eco Specifications",
+      "url": "https://vinfastauto.com/vf-6",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

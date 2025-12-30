@@ -1,0 +1,97 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US", "VN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 260,
+    "system_torque_nm": 500,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 130
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 130
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 82,
+    "pack_capacity_kwh_net": 82,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 333
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 4750,
+    "width_mm": 1900,
+    "height_mm": 1660,
+    "wheelbase_mm": 2950
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.2,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2540
+  },
+  "capacity": {
+    "cargo_l": 378,
+    "frunk_l": 70
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 8 Official Specifications",
+      "url": "https://vinfastauto.com/vf-8",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "VinFast VF 8 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VinFast_VF_8",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

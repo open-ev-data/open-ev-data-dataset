@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "plus_awd",
+    "name": "Plus AWD",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "system_power_kw": 300,
+    "system_torque_nm": 620
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 307
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.3
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 8 Plus AWD Specifications",
+      "url": "https://vinfastauto.com/vf-8",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

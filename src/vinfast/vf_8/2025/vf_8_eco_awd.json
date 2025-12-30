@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "eco_awd",
+    "name": "Eco AWD",
+    "kind": "range_upgrade"
+  },
+  "powertrain": {
+    "system_power_kw": 260,
+    "system_torque_nm": 500
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 333
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 6.2
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 8 Eco AWD Specifications",
+      "url": "https://vinfastauto.com/vf-8",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

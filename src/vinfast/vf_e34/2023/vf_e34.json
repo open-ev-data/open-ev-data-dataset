@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["VN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 110,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 110
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 44.5,
+    "pack_capacity_kwh_net": 44.5,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 300
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 4300,
+    "width_mm": 1793,
+    "height_mm": 1613,
+    "wheelbase_mm": 2611
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF e34 Official Specifications",
+      "url": "https://vinfastauto.com/vf-e34",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "VinFast VF e34 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VinFast_VF_e34",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US", "VN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 300,
+    "system_torque_nm": 620,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 150
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 92,
+    "pack_capacity_kwh_net": 92,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 485
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 5120,
+    "width_mm": 2000,
+    "height_mm": 1721,
+    "wheelbase_mm": 3150
+  },
+  "performance": {
+    "top_speed_kmh": 200
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "VinFast VF 9 Official Specifications",
+      "url": "https://vinfastauto.com/vf-9",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "VinFast VF 9 Wikipedia",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VinFast_VF_9",
+      "accessed_at": "2025-01-29T00:00:00Z"
+    }
+  ]
+}
