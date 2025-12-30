@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.23.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.22.0...v1.23.0) (2025-12-30)
+
+### Features
+
+* **genesis, lexus, porsche:** add new vehicle specifications for multiple models ([3522a51](https://github.com/open-ev-data/open-ev-data-dataset/commit/3522a51d1027e447de3e806a88b2669603c50595))
+* **tata:** add new vehicle specifications for multiple models ([1a0b071](https://github.com/open-ev-data/open-ev-data-dataset/commit/1a0b0714bd3d77a027d40e22302a4cfb276d26c3))
+* **vinfast:** add new vehicle specifications for multiple models ([2873f8f](https://github.com/open-ev-data/open-ev-data-dataset/commit/2873f8f9aad12dafab63378e31a0bd1c780d3c0e))
+
 ## [1.22.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.21.0...v1.22.0) (2025-12-30)
 
 ### Features

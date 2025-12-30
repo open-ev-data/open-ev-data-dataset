@@ -1,6 +1,6 @@
 {
   "name": "open-ev-data-dataset",
-  "version": "1.22.0",
+  "version": "1.23.0",
   "description": "OpenEV Data Dataset - A canonical dataset of electric vehicle specifications",
   "main": "index.js",
   "scripts": {
