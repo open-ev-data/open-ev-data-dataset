@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US"],
+  "availability": {
+    "status": "production",
+    "start_year": 2020
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 400,
+    "system_torque_nm": 746,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 400,
+        "torque_nm": 746
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 28.0,
+    "pack_capacity_kwh_net": 24.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.2,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "epa",
+        "range_km": 80,
+        "notes": "Electric-only range for PHEV"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Karma Revero GT Official Specifications",
+      "url": "https://www.karmaautomotive.com/revero-gt",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    }
+  ]
+}

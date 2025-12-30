@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "karma_automotive",
+    "name": "Karma Automotive"
+  },
+  "model": {
+    "slug": "revero_gt",
+    "name": "Revero GT"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 4
+  }
+}
