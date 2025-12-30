@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "yangwang",
+    "name": "YangWang"
+  },
+  "model": {
+    "slug": "u8",
+    "name": "U8"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 7,
+    "rows": 3
+  }
+}
