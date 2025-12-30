@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "automobili_pininfarina",
+    "name": "Automobili Pininfarina"
+  },
+  "model": {
+    "slug": "battista",
+    "name": "Battista"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "coupe",
+    "doors": 2,
+    "seats": 2
+  }
+}
