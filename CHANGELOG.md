@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## [1.22.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.21.0...v1.22.0) (2025-12-30)
+
+### Features
+
+* **changan:** add new vehicle specifications for multiple models ([340fb87](https://github.com/open-ev-data/open-ev-data-dataset/commit/340fb874e1750c7674849869fc0a2508ed8cca22))
+* **chery:** add new vehicle specifications for multiple models ([1b39c1d](https://github.com/open-ev-data/open-ev-data-dataset/commit/1b39c1d99eeca6e2e8007c752a794b9742f8a1ea))
+* **dongfeng, m_hero, nammi, voyah:** add new vehicle specifications for multiple models ([085a7ae](https://github.com/open-ev-data/open-ev-data-dataset/commit/085a7ae360d9a677dfa8e9b35712237fa4339a6e))
+* **geely:** add new vehicle specifications for multiple models ([b9f4477](https://github.com/open-ev-data/open-ev-data-dataset/commit/b9f4477e244e7f448928db54f6ba997230b2ab40))
+* **im_motors, rising_auto, roewe:** add new vehicle specifications for multiple models ([41bfd25](https://github.com/open-ev-data/open-ev-data-dataset/commit/41bfd25e7d82744e40da4e83706b72232eaca450))
+
 ## [1.21.0](https://github.com/open-ev-data/open-ev-data-dataset/compare/v1.20.0...v1.21.0) (2025-12-29)
 
 ### Features
