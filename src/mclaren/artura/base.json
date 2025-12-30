@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "mclaren",
+    "name": "McLaren"
+  },
+  "model": {
+    "slug": "artura",
+    "name": "Artura"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "coupe",
+    "doors": 2,
+    "seats": 2
+  }
+}

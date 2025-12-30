@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US", "DE", "GB", "FR", "IT", "PT", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 70,
+    "system_torque_nm": 225,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 70,
+        "torque_nm": 225
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 7.4,
+    "pack_capacity_kwh_net": 6.5,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "ac_only",
+      "connector": "type2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.4,
+      "phases": 3
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 30,
+        "notes": "Electric-only range for PHEV"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "McLaren Artura Official Specifications",
+      "url": "https://www.mclaren.com/automotive/supercars/artura/",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    }
+  ]
+}
