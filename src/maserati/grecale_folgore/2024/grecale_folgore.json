@@ -1,0 +1,113 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 500,
+    "system_torque_nm": 820,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 205,
+        "torque_nm": 350
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 295,
+        "torque_nm": 470
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 105,
+    "pack_capacity_kwh_net": 96.0,
+    "pack_voltage_nominal_v": 400,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "ac",
+        "dc"
+      ]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 200000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 150,
+      "architecture_voltage_class": "400v"
+    },
+    "protocols": {
+      "dc": [
+        "din_70121",
+        "iso_15118_2"
+      ],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 500
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.8,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2200
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Maserati Grecale Folgore Official Specifications",
+      "url": "https://www.maserati.com/international/en/models/grecale-folgore",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    }
+  ]
+}

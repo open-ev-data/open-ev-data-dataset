@@ -1,0 +1,114 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 900,
+    "system_torque_nm": 1350,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 300,
+        "torque_nm": 450
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 600,
+        "torque_nm": 900
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 92.5,
+    "pack_capacity_kwh_net": 83.0,
+    "pack_voltage_nominal_v": 800,
+    "pack_voltage_max_v": 920,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": [
+        "ac",
+        "dc"
+      ]
+    },
+    "warranty": {
+      "years": 8,
+      "distance_km": 200000,
+      "capacity_retention_percent": 70
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 270,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": [
+        "din_70121",
+        "iso_15118_2"
+      ],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 450
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 2.7,
+    "top_speed_kmh": 290
+  },
+  "weights": {
+    "curb_weight_kg": 2280
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Maserati GranCabrio Folgore Official Specifications",
+      "url": "https://www.maserati.com/international/en/models/grancabrio-folgore",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "maserati",
+    "name": "Maserati"
+  },
+  "model": {
+    "slug": "gran_turismo_folgore",
+    "name": "GranTurismo Folgore"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "coupe",
+    "doors": 2,
+    "seats": 4
+  },
+  "dimensions": {
+    "length_mm": 4966,
+    "width_mm": 1957,
+    "height_mm": 1353,
+    "wheelbase_mm": 2929
+  }
+}
