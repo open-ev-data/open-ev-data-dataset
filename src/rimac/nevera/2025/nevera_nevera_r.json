@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "nevera_r",
+    "name": "Nevera R",
+    "kind": "performance_package",
+    "notes": "Enhanced performance variant with improved top speed and acceleration"
+  },
+  "powertrain": {
+    "system_power_kw": 1540,
+    "system_torque_nm": 2360
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 1.66,
+    "top_speed_kmh": 431.45
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Rimac Nevera R Official Specifications",
+      "url": "https://www.rimac-automobili.com/nevera-r",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Rimac Nevera R Launch Announcement",
+      "publisher": "Rimac Automobili",
+      "url": "https://www.rimac-automobili.com",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "DE",
+    "GB",
+    "FR",
+    "IT",
+    "CH"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 1408,
+    "system_torque_nm": 2360,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 352
+      },
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 352
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 352
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 352
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "cathode_material": "nmc",
+    "pack_capacity_kwh_gross": 120,
+    "pack_capacity_kwh_net": 120,
+    "pack_voltage_nominal_v": 800,
+    "thermal_management": "liquid",
+    "preconditioning": {
+      "supported": true,
+      "modes": ["ac", "dc"]
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 500,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 550
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 1.85,
+    "top_speed_kmh": 412
+  },
+  "weights": {
+    "curb_weight_kg": 2150
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Rimac Nevera Official Specifications",
+      "url": "https://www.rimac-automobili.com/nevera",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Rimac Nevera Technical Specifications",
+      "publisher": "Rimac Automobili",
+      "url": "https://www.rimac-automobili.com",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    }
+  ]
+}
