@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "ferrari",
+    "name": "Ferrari"
+  },
+  "model": {
+    "slug": "296_gtb",
+    "name": "296 GTB"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "coupe",
+    "doors": 2,
+    "seats": 2
+  }
+}
