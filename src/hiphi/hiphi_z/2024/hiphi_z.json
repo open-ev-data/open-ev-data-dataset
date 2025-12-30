@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2022
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 440,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 220
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 220
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 120.0,
+    "pack_capacity_kwh_net": 120.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 200.0,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 705
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 705
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "HiPhi Z Official Specifications",
+      "url": "https://www.hiphi.com/hiphi-z",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

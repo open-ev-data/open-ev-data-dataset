@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "hiphi",
+    "name": "HiPhi"
+  },
+  "model": {
+    "slug": "hiphi_x",
+    "name": "HiPhi X"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 6,
+    "rows": 3
+  }
+}
