@@ -1,0 +1,105 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2024
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 300,
+    "system_torque_nm": 650,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 100
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200,
+        "torque_nm": 650
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 95,
+    "pack_voltage_nominal_v": 800,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": ["ac", "dc"]
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 270,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 613
+      },
+      {
+        "cycle": "epa",
+        "range_km": 380
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.2,
+    "top_speed_kmh": 200
+  },
+  "weights": {
+    "curb_weight_kg": 2235
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Porsche Macan Electric 2024 Official Specifications",
+      "url": "https://www.porsche.com/international/models/macan/macan-models/macan/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

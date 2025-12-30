@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "lexus",
+    "name": "Lexus"
+  },
+  "model": {
+    "slug": "es_350e",
+    "name": "ES 350e"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5
+  }
+}

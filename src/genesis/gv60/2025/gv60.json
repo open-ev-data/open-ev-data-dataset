@@ -1,0 +1,100 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 168,
+    "system_torque_nm": 350,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 168,
+        "torque_nm": 350
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 77.4,
+    "pack_capacity_kwh_net": 74,
+    "pack_voltage_nominal_v": 800,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": ["ac", "dc"]
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs1",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 235,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 451
+      },
+      {
+        "cycle": "epa",
+        "range_km": 294
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 7.8,
+    "top_speed_kmh": 185
+  },
+  "weights": {
+    "curb_weight_kg": 2100
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Genesis GV60 2025 Official Specifications",
+      "url": "https://www.genesis.com/us/en/genesis/gv60.html",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

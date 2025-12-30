@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "genesis",
+    "name": "Genesis"
+  },
+  "model": {
+    "slug": "gv70_electrified",
+    "name": "GV70 Electrified"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  }
+}

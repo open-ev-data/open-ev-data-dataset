@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "porsche",
+    "name": "Porsche"
+  },
+  "model": {
+    "slug": "718_cayman",
+    "name": "718 Cayman"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "coupe",
+    "doors": 2,
+    "seats": 2
+  }
+}

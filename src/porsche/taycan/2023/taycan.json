@@ -1,0 +1,100 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": [
+    "US",
+    "BR",
+    "DE",
+    "GB",
+    "FR",
+    "PT",
+    "IT",
+    "CN",
+    "JP"
+  ],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 300,
+    "system_torque_nm": 345,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 300,
+        "torque_nm": 345
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 79.2,
+    "pack_capacity_kwh_net": 71.0,
+    "pack_voltage_nominal_v": 800,
+    "thermal_management": "liquid",
+    "heat_pump": true,
+    "preconditioning": {
+      "supported": true,
+      "modes": ["ac", "dc"]
+    }
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "right",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 270,
+      "architecture_voltage_class": "800v"
+    },
+    "protocols": {
+      "dc": ["din_70121", "iso_15118_2"],
+      "plug_and_charge": true
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 431
+      },
+      {
+        "cycle": "epa",
+        "range_km": 321
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.4,
+    "top_speed_kmh": 230
+  },
+  "weights": {
+    "curb_weight_kg": 2105
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Porsche Taycan 2023 Official Specifications",
+      "url": "https://www.porsche.com/international/models/taycan/taycan-models/taycan/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "lexus",
+    "name": "Lexus"
+  },
+  "model": {
+    "slug": "rz_450e",
+    "name": "RZ 450e"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  }
+}

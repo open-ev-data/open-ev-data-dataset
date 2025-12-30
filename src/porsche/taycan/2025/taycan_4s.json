@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "variant": {
+    "slug": "4s",
+    "name": "4S",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "4s",
+    "name": "4S"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 390,
+    "system_torque_nm": 640,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 140
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 250,
+        "torque_nm": 640
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 93.4,
+    "pack_capacity_kwh_net": 83.7
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 270
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 463
+      },
+      {
+        "cycle": "epa",
+        "range_km": 365
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.0,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2215
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Porsche Taycan 4S 2025 Official Specifications",
+      "url": "https://www.porsche.com/international/models/taycan/taycan-models/taycan-4s/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "luxury",
+    "name": "Luxury",
+    "kind": "trim_upgrade"
+  },
+  "trim": {
+    "slug": "luxury",
+    "name": "Luxury"
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Lexus RZ 450e Luxury 2024 Official Specifications",
+      "url": "https://www.lexus.com/models/RZ",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

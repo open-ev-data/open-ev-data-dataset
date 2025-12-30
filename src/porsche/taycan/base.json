@@ -1,0 +1,24 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "porsche",
+    "name": "Porsche"
+  },
+  "model": {
+    "slug": "taycan",
+    "name": "Taycan"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 4
+  },
+  "dimensions": {
+    "length_mm": 4963,
+    "width_mm": 1966,
+    "height_mm": 1379,
+    "wheelbase_mm": 2900
+  }
+}

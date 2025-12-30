@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "variant": {
+    "slug": "advanced",
+    "name": "Advanced",
+    "kind": "trim_upgrade"
+  },
+  "trim": {
+    "slug": "advanced",
+    "name": "Advanced"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 234,
+    "system_torque_nm": 605,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 74
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 160,
+        "torque_nm": 605
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 77.4,
+    "pack_capacity_kwh_net": 74
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 470
+      },
+      {
+        "cycle": "epa",
+        "range_km": 294
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 5.5,
+    "top_speed_kmh": 185
+  },
+  "weights": {
+    "curb_weight_kg": 2180
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Genesis GV60 Advanced 2023 Official Specifications",
+      "url": "https://www.genesis.com/us/en/genesis/gv60.html",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}

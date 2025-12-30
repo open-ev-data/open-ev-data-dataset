@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "porsche",
+    "name": "Porsche"
+  },
+  "model": {
+    "slug": "macan",
+    "name": "Macan"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  }
+}

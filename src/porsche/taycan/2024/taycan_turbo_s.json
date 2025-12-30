@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "turbo_s",
+    "name": "Turbo S",
+    "kind": "performance_package"
+  },
+  "trim": {
+    "slug": "turbo_s",
+    "name": "Turbo S"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 560,
+    "system_torque_nm": 1050,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 190
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 370,
+        "torque_nm": 1050
+      }
+    ]
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 93.4,
+    "pack_capacity_kwh_net": 83.7
+  },
+  "charging": {
+    "dc": {
+      "max_power_kw": 270
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 440
+      },
+      {
+        "cycle": "epa",
+        "range_km": 335
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 2.8,
+    "top_speed_kmh": 260
+  },
+  "weights": {
+    "curb_weight_kg": 2325
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Porsche Taycan Turbo S 2024 Official Specifications",
+      "url": "https://www.porsche.com/international/models/taycan/taycan-models/taycan-turbo-s/",
+      "accessed_at": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
