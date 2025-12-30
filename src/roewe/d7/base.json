@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "roewe",
+    "name": "Roewe"
+  },
+  "model": {
+    "slug": "d7",
+    "name": "D7"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5
+  }
+}

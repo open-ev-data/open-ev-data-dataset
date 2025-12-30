@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "trim": {
+    "slug": "standard_range",
+    "name": "Standard Range"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "rwd",
+    "system_power_kw": 145,
+    "system_torque_nm": 310,
+    "motors": [
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 145,
+        "torque_nm": 310
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 59.2,
+    "pack_capacity_kwh_net": 56.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 100,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 510
+      }
+    ]
+  },
+  "dimensions": {
+    "length_mm": 4890,
+    "width_mm": 1872,
+    "height_mm": 1510,
+    "wheelbase_mm": 2810
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Roewe D7",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roewe_D7",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

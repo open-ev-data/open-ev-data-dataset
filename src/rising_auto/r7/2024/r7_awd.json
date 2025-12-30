@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2024,
+  "variant": {
+    "slug": "awd",
+    "name": "All-Wheel Drive",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 400,
+    "system_torque_nm": 700,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 150
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 250,
+        "torque_nm": 450
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.4
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "SAIC Rising R7 AWD",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SAIC_Rising_R7",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

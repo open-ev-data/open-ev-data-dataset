@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 400,
+    "system_torque_nm": 700,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 200
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 200
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 100,
+    "pack_capacity_kwh_net": 95,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 300,
+      "architecture_voltage_class": "800v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "cltc",
+        "range_km": 702
+      },
+      {
+        "cycle": "wltp",
+        "range_km": 560
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 3.48,
+    "top_speed_kmh": 252
+  },
+  "dimensions": {
+    "length_mm": 4904,
+    "width_mm": 1988,
+    "height_mm": 1669,
+    "wheelbase_mm": 2950
+  },
+  "weights": {
+    "curb_weight_kg": 2470
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "IM Motors LS6",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IM_Motors_LS6",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

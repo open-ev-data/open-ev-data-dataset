@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "rising_auto",
+    "name": "Rising Auto"
+  },
+  "model": {
+    "slug": "f7",
+    "name": "F7"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "sedan",
+    "doors": 4,
+    "seats": 5
+  }
+}
