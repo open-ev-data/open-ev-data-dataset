@@ -1,0 +1,71 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2021
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 140,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 140
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 54.0,
+    "pack_capacity_kwh_net": 54.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.0,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 80.0,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 431
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 431
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Hongqi E-QM5 Official Specifications",
+      "url": "https://www.hongqi.com.cn/e-qm5",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

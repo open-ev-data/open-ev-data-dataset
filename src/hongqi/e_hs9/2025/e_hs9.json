@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["CN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2020
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 405,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 160
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 245
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 99.0,
+    "pack_capacity_kwh_net": 99.0,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "gb_t_dc",
+      "location": {
+        "side": "left",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 110.0,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "nedc",
+        "range_km": 460
+      },
+      {
+        "cycle": "cltc",
+        "range_km": 510
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Hongqi E-HS9 Official Specifications",
+      "url": "https://www.hongqi.com.cn/e-hs9",
+      "accessed_at": "2025-01-15T00:00:00Z"
+    }
+  ]
+}

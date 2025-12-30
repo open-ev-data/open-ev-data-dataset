@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "hongqi",
+    "name": "Hongqi"
+  },
+  "model": {
+    "slug": "e_hs9",
+    "name": "E-HS9"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 5,
+    "seats": 6,
+    "rows": 3
+  }
+}
