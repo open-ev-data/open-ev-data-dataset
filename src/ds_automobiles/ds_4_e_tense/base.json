@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "ds_automobiles",
+    "name": "DS Automobiles"
+  },
+  "model": {
+    "slug": "ds_4_e_tense",
+    "name": "DS 4 E-Tense"
+  },
+  "vehicle_type": "passenger_car",
+  "body": {
+    "style": "hatchback",
+    "doors": 5,
+    "seats": 5
+  }
+}

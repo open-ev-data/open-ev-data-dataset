@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "ds_automobiles",
+    "name": "DS Automobiles"
+  },
+  "model": {
+    "slug": "ds_3_e_tense",
+    "name": "DS 3 E-Tense"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "crossover",
+    "doors": 5,
+    "seats": 5
+  }
+}
