@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "75kwh",
+    "name": "75 kWh",
+    "kind": "battery_upgrade"
+  },
+  "battery": {
+    "pack_capacity_kwh_gross": 75,
+    "pack_capacity_kwh_net": 75
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tata Harrier EV 75 kWh Official Specifications",
+      "url": "https://www.tatamotors.com",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

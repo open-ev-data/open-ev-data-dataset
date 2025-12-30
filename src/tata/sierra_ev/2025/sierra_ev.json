@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2025,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["IN"],
+  "availability": {
+    "status": "announced",
+    "start_year": 2025
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 200,
+    "system_torque_nm": 350,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 100
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 100
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "lfp",
+    "pack_capacity_kwh_gross": 60,
+    "pack_capacity_kwh_net": 60,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 11,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 120,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "other",
+        "range_km": 500,
+        "notes": "MIDC cycle (estimated)"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "press",
+      "title": "Tata Sierra EV Concept Announcement",
+      "publisher": "Tata Motors",
+      "url": "https://www.tatamotors.com",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

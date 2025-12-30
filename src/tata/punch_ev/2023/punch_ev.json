@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["IN"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "fwd",
+    "system_power_kw": 60,
+    "system_torque_nm": 114,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 60,
+        "torque_nm": 114
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "li-ion",
+    "pack_capacity_kwh_gross": 25,
+    "pack_capacity_kwh_net": 25,
+    "thermal_management": "liquid"
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "front",
+        "position": "front"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 7.2,
+      "phases": 1
+    },
+    "dc": {
+      "max_power_kw": 50,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "other",
+        "range_km": 315,
+        "notes": "MIDC cycle"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Tata Punch EV Official Specifications",
+      "url": "https://www.tatamotors.com",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}

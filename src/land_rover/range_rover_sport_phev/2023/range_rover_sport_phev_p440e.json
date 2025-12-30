@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "p440e",
+    "name": "P440e",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "system_power_kw": 323
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Range Rover Sport PHEV P440e 2023 Official Specifications",
+      "url": "https://www.landrover.com/range-rover-sport",
+      "accessed_at": "2025-12-29T00:00:00Z"
+    }
+  ]
+}
