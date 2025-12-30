@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "variant": {
+    "slug": "black_badge",
+    "name": "Black Badge",
+    "kind": "performance_package"
+  },
+  "powertrain": {
+    "system_power_kw": 485,
+    "system_torque_nm": 1075
+  },
+  "dimensions": {
+    "length_mm": 5490,
+    "width_mm": 2144,
+    "height_mm": 1575
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 404,
+        "notes": "With 23-inch wheels"
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.1
+  },
+  "weights": {
+    "curb_weight_kg": 2900
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Rolls-Royce Spectre Black Badge 2025 Official Launch",
+      "url": "https://www.rolls-roycemotorcars.com/en_US/showroom/spectre/black-badge.html",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Rolls-Royce Spectre Black Badge: Enhanced Performance",
+      "publisher": "Rolls-Royce Motor Cars",
+      "url": "https://www.press.rolls-roycemotorcars.com",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    }
+  ]
+}

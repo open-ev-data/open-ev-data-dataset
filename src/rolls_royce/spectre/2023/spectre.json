@@ -1,0 +1,92 @@
+{
+  "$schema": "../../../../schema.json",
+  "schema_version": "1.0.0",
+  "year": 2023,
+  "trim": {
+    "slug": "base",
+    "name": "Base"
+  },
+  "markets": ["US", "GB", "DE", "FR", "IT", "PT", "BR", "CN", "JP"],
+  "availability": {
+    "status": "production",
+    "start_year": 2023
+  },
+  "powertrain": {
+    "drivetrain": "awd",
+    "system_power_kw": 430,
+    "system_torque_nm": 900,
+    "motors": [
+      {
+        "position": "front",
+        "type": "pmsm",
+        "power_kw": 190
+      },
+      {
+        "position": "rear",
+        "type": "pmsm",
+        "power_kw": 240
+      }
+    ]
+  },
+  "battery": {
+    "chemistry": "nmc",
+    "pack_capacity_kwh_gross": 105.7,
+    "pack_capacity_kwh_net": 102.0,
+    "thermal_management": "liquid",
+    "heat_pump": true
+  },
+  "charge_ports": [
+    {
+      "kind": "combo",
+      "connector": "ccs2",
+      "location": {
+        "side": "left",
+        "position": "rear"
+      }
+    }
+  ],
+  "charging": {
+    "ac": {
+      "max_power_kw": 22.0,
+      "phases": 3
+    },
+    "dc": {
+      "max_power_kw": 195,
+      "architecture_voltage_class": "400v"
+    }
+  },
+  "range": {
+    "rated": [
+      {
+        "cycle": "wltp",
+        "range_km": 520
+      },
+      {
+        "cycle": "epa",
+        "range_km": 446
+      }
+    ]
+  },
+  "performance": {
+    "acceleration_0_100_kmh_s": 4.4,
+    "top_speed_kmh": 250
+  },
+  "weights": {
+    "curb_weight_kg": 2975
+  },
+  "sources": [
+    {
+      "type": "oem",
+      "title": "Rolls-Royce Spectre Official Launch",
+      "url": "https://www.rolls-roycemotorcars.com/en_US/showroom/spectre.html",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    },
+    {
+      "type": "press",
+      "title": "Rolls-Royce Spectre: First Electric Rolls-Royce",
+      "publisher": "Rolls-Royce Motor Cars",
+      "url": "https://www.press.rolls-roycemotorcars.com",
+      "accessed_at": "2025-12-30T00:00:00Z"
+    }
+  ]
+}
