@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../schema.json",
+  "schema_version": "1.0.0",
+  "make": {
+    "slug": "faraday_future",
+    "name": "Faraday Future"
+  },
+  "model": {
+    "slug": "ff_91",
+    "name": "FF 91"
+  },
+  "vehicle_type": "suv",
+  "body": {
+    "style": "suv",
+    "doors": 4,
+    "seats": 5
+  }
+}
